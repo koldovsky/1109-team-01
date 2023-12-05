@@ -1,14 +1,15 @@
-<section>
-    <p>- DELIVERY -</p>
-    <h2>Delivery & Payment</h2>
-    <p>We promise not just fast water delivery but designate a specific period of time — 60 min *.</p>
-    <p> ● Subject to ordering before 18:00 (on Sun until 15:00);<br>
-        ● It is possible to change the delivery time the next day after the holidays;<br>
-        ● Delivery time may vary for offices;
-        ● Intervals are subject to change due to difficult weather and traffic conditions;<br>
-        ● Delivery outside the city may have a number of restrictions — check with the manager.
-    </p>
-    <p><svg width="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+<section class="delivery">
+    <p class="delivery__title">- DELIVERY -</p>
+    <h2 class="delivery__heading">Delivery & Payment</h2>
+    <p class="delivery__description">We promise not just fast water delivery but designate a specific period of time — 60 min *.</p>
+    <ul class="delivery__list">
+        <li class="delivery__item">Subject to ordering before 18:00 (on Sun until 15:00);</li>
+        <li class="delivery__item">It is possible to change the delivery time the next day after the holidays;</li>
+        <li class="delivery__item">Delivery time may vary for offices;</li>
+        <li class="delivery__item">Intervals are subject to change due to difficult weather and traffic conditions;</li>
+        <li class="delivery__item">Delivery outside the city may have a number of restrictions — check with the manager.</li>
+    </ul>
+    <p class="delivery__discount"><svg width="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
             x="0px" y="0px" viewBox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"
             style="max-width:100%" height="100%">
             <g style="" fill="currentColor">
@@ -26,15 +27,15 @@
             <g style="" fill="currentColor">
                 <circle cx="18.9" cy="22" r="1" style="" fill="currentColor"></circle>
             </g>
-        </svg> Get a discount for our delay:
-
+        </svg> Get a discount for our delay:<br>
         10 min. = 10% discount!
     </p>
-    <p> * The discount is not provided for complex traffic conditions;<br>
-        * The discount is not available the day after the public holiday;<br>
-        * The maximum discount is not more than $10.
-    </p>
-    <div>
+    <ul class="delivery__discount-info">
+        <li class="delivery__discount-info item">The discount is not provided for complex traffic conditions;</li>
+        <li class="delivery__discount-info item">The discount is not available the day after the public holiday;</li>
+        <li class="delivery__discount-info item">The maximum discount is not more than $10.</li>
+    </ul>
+    <div class="delivery__form">
         <form action="https://formspree.io/f/xrgwngbn" method="post">
             <input type="Full name*" name="Full name" value="Full name*" required><br>
             <input type="Phone number*" name="Phone number" value="Phone number*" required><br>
@@ -51,9 +52,8 @@
             <input type="submit" value="Submit"><br>
         </form>
     </div>
-
-    <div>
-        <article>
+    <div class="info__card">
+        <article class="info__card card">
             <svg width="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                 x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;max-width:100%"
                 xml:space="preserve" height="100%">
@@ -63,12 +63,12 @@
                         style="" fill="currentColor"></path>
                 </g>
             </svg>
-            <h3>Taking Orders</h3>
-            <p>Mon-Sat 08:00 - 20:00<br>
+            <h3 class="card__title">Taking Orders</h3>
+            <p class="card__text">Mon-Sat 08:00 - 20:00<br>
                 Sun 09:00 - 18:00
             </p>
         </article>
-        <article>
+        <article class="info__card card">
             <svg width="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                 x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"
                 style="max-width:100%" height="100%">
@@ -83,12 +83,12 @@
                     <circle cx="19.123" cy="17.89" r="0.701" style="" fill="currentColor"></circle>
                 </g>
             </svg>
-            <h3>Delivering Orders</h3>
-            <p>Mon-Sat 09:00 - 20:00<br>
+            <h3 class="card__title">Delivering Orders</h3>
+            <p class="card__text">Mon-Sat 09:00 - 20:00<br>
                 Sun 09:00 - 18:00
             </p>
         </article>
-        <article>
+        <article class="info__card card">
             <svg width="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                 x="0px" y="0px" viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;max-width:100%"
                 xml:space="preserve" height="100%">
@@ -146,12 +146,12 @@
                     </g>
                 </g>
             </svg>
-            <h3>Phone Number</h3>
-            <p> +1 (234) 567 89 00 <br>
+            <h3 class="card__title">Phone Number</h3>
+            <p class="card__text"> +1 (234) 567 89 00 <br>
                 +1 (234) 567 89 01
             </p>
         </article>
-        <article>
+        <article class="info__card card">
             <svg width="50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
                 y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"
                 style="max-width:100%" height="100%">
@@ -163,16 +163,18 @@
                         style="" fill="currentColor"></path>
                 </g>
             </svg>
-            <h3>Email</h3>
-            <p>sparkle.delivery@email.com<br>
+            <h3 class="card__title">Email</h3>
+            <p class="card__text">sparkle.delivery@email.com<br>
                 sparkle_support@email.com
             </p>
         </article>
     </div>
-    <iframe
+    <div class="delivery__location">
+        <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25380.148158772205!2d-121.89688683546851!3d37.330231221290134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fccbb29baaaaf%3A0x19745c4358315d95!2z0J_QsNGA0Log0JrRgNC40YHQvNCw0YEg0JjQvQ!5e0!3m2!1sru!2sua!4v1701781985094!5m2!1sru!2sua"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        width="1800" height="500" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+        </iframe>
+    </div>
 
 </section>
