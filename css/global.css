@@ -7,7 +7,10 @@
 :root {
     /* 
         WARNING!!!
-    IF THE COLOR YOU NEED IS NOT YET - Add the color you need below! 
+    IF THE COLOR YOU NEED IS NOT YET - Add the color you need below!
+    GPT Edition (Example): 
+    --main-bg-color: #3498db;
+    --text-color: #ffffff;
     */
     scroll-behavior: smooth;
     font-family: 'Work Sans', sans-serif;
