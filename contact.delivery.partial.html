@@ -37,9 +37,9 @@
     </ul>
     <div class="delivery__form">
         <form action="https://formspree.io/f/xrgwngbn" method="post">
-            <input type="Full name*" name="Full name" value="Full name*" required><br>
-            <input type="Phone number*" name="Phone number" value="Phone number*" required><br>
-            <input type="Adress*" name="Adress" value="Adress*" required><br>
+            <input type="text" name="full-name" placeholder="Full name*" required><br>
+            <input type="text" name="phone-number" placeholder="Phone number*" required><br>
+            <input type="text" name="adress" placeholder="Adress*" required><br>
             <select id="choices" name="choices">
                 <option value="" disabled selected hidden>Water type*</option>
                 <option value="option1">Bottled Water</option>
@@ -47,8 +47,8 @@
                 <option value="option3">Coffee Supplies</option>
                 <option value="option4">Private Lable</option>
             </select><br>
-            <input type="Amount*" name="Amount" value="Amount*"><br>
-            <input type="date" id="date" name="date"><br>
+            <input type="text" name="amount" placeholder="Amount*"><br>
+            <input type="date" name="date" value="2023-01-01"><br>
             <input type="submit" value="Submit"><br>
         </form>
     </div>
@@ -176,5 +176,4 @@
         referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </div>
-
 </section>
