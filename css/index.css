@@ -5,6 +5,7 @@
 3. Create own css file in folder CSS.
 */
 @import 'header-navbar.css'; /* Kyrylo Suprun */
+@import url(index.header-hero.css); /*Yevhen Malyna*/
 @import url(index.products.css); /* Yurii Gridin */
 @import url(index.about-sparkle.css);/* Hurskyi Roman */
 @import url(index.delivery.css); /* Kyrylo Suprun */
