@@ -5,5 +5,4 @@
 3. Create own css file in folder CSS.
 */
 @import url(index.products.css); /* Yurii Gridin */
-@import url(single-product.css); /* Yurii Gridin */
 @import url(index.equipment.css);
