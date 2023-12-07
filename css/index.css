@@ -4,4 +4,5 @@
 2  Add link to the style (there should be one link on each of the 3 pages)
 3. Create own css file in folder CSS.
 */
+@import url(index.products.css); /* Yurii Gridin */
 @import url(index.equipment.css);
