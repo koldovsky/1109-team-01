@@ -1,0 +1,36 @@
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #002579;
+}
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list__item {
+    padding: 10px 18px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Скидання стилів для ul */
+.menu-list {
+    list-style: none; /* Видаляє маркери списку */
+    padding: 0; /* Видаляє внутрішні відступи */
+    margin: 0; /* Видаляє зовнішні відступи */
+}
+
+/* Зробити лінки білими */
+.menu-list__link {
+    color: white;
+    text-decoration: none; /* Видаляє підкреслення лінків */
+}
+
+/* Зміна кольору лінків при наведенні */
+.menu-list__link:hover {
+    color: rgba(255, 255, 255, 0.59); /* Замініть це значення на бажаний колір при наведенні */
+}

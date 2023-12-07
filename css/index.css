@@ -4,7 +4,7 @@
 2  Add link to the style (there should be one link on each of the 3 pages)
 3. Create own css file in folder CSS.
 */
-@import url(header-navbar.css); /* Kyrylo Suprun */
+@import 'header-navbar.css'; /* Kyrylo Suprun */
 @import url(index.products.css); /* Yurii Gridin */
 @import url(index.about-sparkle.css);/* Hurskyi Roman */
 @import url(index.delivery.css); /* Kyrylo Suprun */
