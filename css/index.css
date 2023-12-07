@@ -5,16 +5,16 @@
 3. Create own css file in folder CSS.
 */
 @import url(header-navbar.css); /* Kyrylo Suprun */
-                                /* <section data-include="index.header-hero.partial.html"></section> */
+/* Yevhen Malyna */
 @import url(index.products.css); /* Yurii Gridin */
 @import url(index.about-sparkle.css);/* Hurskyi Roman */
 @import url(index.delivery.css); /* Kyrylo Suprun */
 @import url(index.equipment.css);
 @import url(index.water-purifying-technology.css);/* Hurskyi Roman */
-                                                /* <section data-include="index.fresh-water.partial.html"></section> */
-                                                /* <section data-include="index.whatsinside.partial.html"></section> */
+/* Tate Lesiv */
+/* Maryna Zamula */
 @import url(index.testimonials.css); /* Iryna Iasko */
 @import url(index.carousel-clents.css); /* Iryna Iasko */
-                                                    /* <section data-include="index.news.partial.html"></section> */
-                                                    /* <section data-include="index.contacts_main.partial.html"> */
+/* Diana Zaleska */
+/* Kutsyk Oleksandr */
 @import url(footer-navbar.css); /* Maksym Shylov */
