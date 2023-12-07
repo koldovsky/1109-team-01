@@ -1,62 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Sparkle</title>
-      <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
-  </head>
-  <body>
-    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
-    <header class="header">
-      <!-- some ccode for header Suprun -->
-      <div data-include="header-nav.partial.html"></div>
-    </header>
-    <main>
-      <!-- - WELCOME TO - -->
-      <section data-include="index.header-hero.partial.html"></section>
-      <!-- - PRODUCTS - -->
-      <!-- some code for main from Gridin -->
-      <section data-include="index.products.partial.html"></section>
-      
-      <!-- - ABOUT - -->
-      <section data-include="about-sparkle.partial.html"></section>
-      
-      <!-- - DELIVERY - -->
-      <!-- some code for main from Suprun -->
-      <section data-include="index.delivery.partial.html"></section>
-      
-      <!-- - EQUIPMENT - -->
-      <!-- some code for main from Shevchenko -->
-      <section data-include="index.equipment.partial.html"></section>
-      
-      <!-- - TECHNOLOGY - -->
-
-
-      <!-- -Fresh & Healthy Artesian Water- -->
-      <!-- some code for main from Tate Lesiv -->
-      <section data-include="index.freshwater.partial.html"></section>
-      
-      <!-- - WHAT'S INSIDE - -->
-      <!-- some code for main from Zamula -->
-      <section data-include="index.whatsinside.partial.html"></section>
-      
-      <!-- - TESTIMONIALS - -->
-      <!--some code from Iryna Iasko-->
-      <section data-include="index.testimonials.partial.html"></section> 
-      
-      <!-- - NEWS - -->
-      <!-- some code for main from Zalevska -->
-      <div data-include="index.news.partial.html"></div>
-      <!-- - CONTACTS - -->
-      <section data-include="index.contacts_main.partial.html"></section>
-      
-    </main>
-    <footer>
-      <!-- some code for footer -->
-      <div data-include="footer-nav.partial.html"></div>
-    </footer>
-  </body>
-
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sparkle</title>
+  <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header data-include="header-nav.partial.html"></header> <!--added by Kyrylo Suprun -->
+  <main>
+    <section data-include="index.header-hero.partial.html"></section>
+    <section data-include="index.products.partial.html"></section> <!--added by Yurii Gridin-->
+    <section data-include="index.about-sparkle.partial.html"></section>
+    <section data-include="index.delivery.partial.html"></section> <!--added by Kyrylo Suprun -->
+    <section data-include="index.equipment.partial.html"></section>
+    <section data-include="index.water-purifying-technology.partial.html"></section>
+    <section data-include="index.fresh-water.partial.html"></section>
+    <section data-include="index.whatsinside.partial.html"></section>
+    <section data-include="index.testimonials.partial.html"></section>
+    <section data-include="index.carousel-clients.partial.html"></section> <!--added by Iryna Iasko-->
+    <section data-include="index.news.partial.html"></section>
+    <section data-include="index.contacts_main.partial.html"></section>
+  </main>
+  <footer>
+    <div data-include="footer-nav.partial.html"></div>
+  </footer>
+  <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+</body>
 </html>

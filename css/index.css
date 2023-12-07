@@ -1,0 +1,7 @@
+@import url(global.css);
+/* 
+1. Everyone must write their own @import url('the name of their block or page that they created') 
+2  Add link to the style (there should be one link on each of the 3 pages)
+3. Create own css file in folder CSS.
+*/
+@import url(index.equipment.css);

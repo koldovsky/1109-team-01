@@ -1,39 +1,24 @@
-<!-- Contacts -->
-<!-- pohyta -->
-<!-- - DELIVERY - -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
     <title>Contacts</title>
-    <style>
-        .header__contacts {
-            background-color: #002c8f;
-            height: 223px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .header__contacts .text {
-            color: white;
-            font-size: 38px;
-            font-family: "Nunito",sans-serif;
-            font-weight: 900;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-        }
-    </style>
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header>
-        <nav data-include="header-nav.partial.html"></nav>
+    <header data-include="header-nav.partial.html"></header>
+    <main>
         <div class="header__contacts">
             <p class="header__contacts text">Contacts</p>
         </div>
-        <nav data-include="contact.delivery.partial.html"></nav>
+        <section data-include="contact.delivery.partial.html"></section>
+    </main>
+    <footer>
         <nav data-include="footer-nav.partial.html"></nav>
-    </header> 
+    </footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </body>
 </html>
