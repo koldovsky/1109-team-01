@@ -18,8 +18,8 @@
     
 }
 .delivery{
-padding-left: 15px;
-padding-right: 15px;
+padding-left: 24px;
+padding-right: 24px;
 }
 .delivery__title{
     color: var(--light-background-color);
@@ -35,9 +35,16 @@ padding-right: 15px;
 .delivery__description{
     color: var(--slate-gray);
     font-size: 19px;
+    font-weight: 600;
     font-family: 'Work Sans', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 0;
+    line-height: 1.5;
 }
 .delivery__description-time{
     color: var(--light-background-color);
+    font-family: 'Work Sans', sans-serif;
     font-weight: 800;
+    font-size: 16px;
+    padding: 0;
 }
