@@ -1,0 +1,14 @@
+.bottle-water__title {
+    color: #ffffff;
+    font-size: 55px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    background-color: #002c8f;
+    padding: 100px 100px;
+}
+
+.bottle-water__description {
+    color: #002570; /* #002570 */
+    font-size: 38px;
+    font-family: 'Nunito', sans-serif;
+}
