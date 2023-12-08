@@ -1,6 +1,12 @@
-.news__header_hero.header_hero{
+.news__header_news{
     text-align: center;
 }
-.header_hero.marcer{
+.header_news.marcer{
     color:var(--light-text-color)
+}
+.header_news.title{
+    color:var(--the-darkest-text-color)
+}
+.header_news.about{
+    color:var(--bald-text-color)
 }
