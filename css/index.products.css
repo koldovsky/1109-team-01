@@ -26,7 +26,7 @@
     padding: 20px;
 }
 
-.card__image img {
+.products .card__image img {
     display: block;
     width: 100%;
     height: auto;
@@ -37,18 +37,18 @@
     text-align: left;
 }
 
-.card__title {
+.products .card__title {
     color: #002570; /* #002570 */
     font-size: 26px;
     font-family: 'Nunito', sans-serif;
 }
 
-.card__description {
+.products .card__description {
     color: #5c607c;
     font-size: 17px;
 }
 
-.card__title, 
+.products .card__title, 
 .card__description {
     padding: 20px 0;
 }
