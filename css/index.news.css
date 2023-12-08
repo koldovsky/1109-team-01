@@ -2,11 +2,14 @@
     text-align: center;
 }
 .header_news.marcer{
-    color:var(--light-text-color)
+    color:var(--light-text-color);
+    font-size:var(--head-tag-text-size);
 }
 .header_news.title{
-    color:var(--the-darkest-text-color)
+    color:var(--the-darkest-text-color);
+    font-size:var(--head-nane-text-size);
 }
 .header_news.about{
-    color:var(--bald-text-color)
+    color:var(--bald-text-color);
+    font-size:var(--head-text-size);
 }
