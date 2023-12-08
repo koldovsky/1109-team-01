@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.google.com/share?selection.family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,800;1,6..12,300;1,6..12,800|Work+Sans:ital,wght@0,300;0,800;1,300;1,800');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 :root {
@@ -28,6 +29,7 @@
     --the-darkest-text-color: #002579;
     --bald-text-color: #5c607c;
     --accent-color: #78ee4a;
+    
 
     --head-teg-text-size: 12px;
     --head-nane-text-size: 46px;

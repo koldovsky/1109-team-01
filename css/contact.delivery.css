@@ -1,7 +1,9 @@
 .header__contacts {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #002c8f;
-    height: 255px;
+    height: 223px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,10 +11,33 @@
 
 .header__contacts .text {
     color: white;
-    font-size: 55px;
+    font-size: 12vw;
     font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
     text-align: center;
     font-weight: lighter;
+    
+}
+.delivery{
+padding-left: 15px;
+padding-right: 15px;
+}
+.delivery__title{
+    color: var(--light-background-color);
+    padding-top: 90px;
+    padding-bottom: 15px;
+}
+
+.delivery__heading{
+    color: var(--the-darkest-background-color);
+    font-size: 38px;
+    font-family: 'Nunito', sans-serif;
+}
+.delivery__description{
+    color: var(--slate-gray);
+    font-size: 19px;
+    font-family: 'Work Sans', sans-serif;
+}
+.delivery__description-time{
+    color: var(--light-background-color);
+    font-weight: 800;
 }
