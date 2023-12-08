@@ -15,8 +15,6 @@
     --main-bg-color: #3498db;
     --text-color: #ffffff;
     */
-    scroll-behavior: smooth;
-    font-family: 'Work Sans', sans-serif;
     --light-header-color: #002c8f;
     --dark-background-color: #0035ac;
     --light-background-color: #21b6ff;
@@ -30,11 +28,8 @@
     --bald-text-color: #5c607c;
     --accent-color: #78ee4a;
     
+}
 
-    --head-teg-text-size: 12px;
-    --head-nane-text-size: 46px;
-    --head-text-size: 19px;
-    --tag-text-size: 14px;
-    --nane-text-size: 24px;
-    --text-size: 17px;
+img {
+    width: 100%;
 }
