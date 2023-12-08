@@ -1,55 +1,73 @@
 /* --------  */
 .equipment__title,
 .equipment__bottle-title {
-    color: var(--light-background-color); /* #21b6ff */
+    color: var(--light-background-color);
+    /* #21b6ff */
     font-size: 12px;
 }
+
 .equipment__subtitle {
-    color: var(--the-darkest-background-color); /* #002570 */
+    color: var(--the-darkest-background-color);
+    /* #002570 */
     font-size: 38px;
     font-family: 'Nunito', sans-serif;
 }
+
 .equipment__description {
     font-size: 19px;
     font-weight: bold;
-    color: var(--slate-gray); /* #5c607c */
+    color: var(--slate-gray);
+    /* #5c607c */
 }
+
 .equipment__additional-info {
     font-size: 17px;
-    color: var(--slate-gray); /* #5c607c */
+    color: var(--slate-gray);
+    /* #5c607c */
 }
+
 .equipment__call-title {
     font-size: 18px;
     font-weight: bold;
-    color: var(--the-darkest-background-color); /* #5c607c */
+    color: var(--the-darkest-background-color);
+    /* #5c607c */
 }
+
 .equipment__call-number {
     font-size: 17px;
-    color: var(--slate-gray); /* #5c607c */
+    color: var(--slate-gray);
+    /* #5c607c */
 }
+
 .equipment__photo-caption {
     font-size: 22px;
     font-family: 'Nunito', sans-serif;
-    color:var(--the-darkest-background-color) /* #002570 */
+    color: var(--the-darkest-background-color)
+        /* #002570 */
 }
+
 .equipment__bottle-description {
     font-size: 24px;
     font-family: 'Nunito', sans-serif;
-    color: var(--the-darkest-background-color); /* #002570 */
+    color: var(--the-darkest-background-color);
+    /* #002570 */
 }
+
 .equipment__bottle-disclaimer {
     font-size: 14px;
     font-style: italic;
-    color: var(--slate-gray) /* #5c607c */
+    color: var(--slate-gray)
+        /* #5c607c */
 }
+
 .equipment__disconut-title {
     font-size: 90px;
     font-family: 'Nunito', sans-serif;
-    color: var(--light-background-color); /* #21b6ff */
+    color: var(--light-background-color);
+    /* #21b6ff */
 }
-.equipment__disconut-description 
-{
+
+.equipment__disconut-description {
     font-size: 15px;
     color: var(--slate-gray);
 }
-

@@ -1,0 +1,5 @@
+.delivery {
+    background-image: url('/img/delivery-background.png');
+    background-size: cover; 
+    background-position: center; /* Центрує зображення */
+}

@@ -1,0 +1,54 @@
+.products {
+    text-align: center;
+}
+
+.products__title {
+    color: #21b6ff;
+    font-size: 12px;
+}
+
+.products__tagline {
+    color: #002570; /* #002570 */
+    font-size: 55px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.products__subtitle {
+    color: #5c607c;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.products__cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+}
+
+.products .card__image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.products__card-item {
+    padding: 20px;
+    text-align: left;
+}
+
+.products .card__title {
+    color: #002570; /* #002570 */
+    font-size: 26px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.products .card__description {
+    color: #5c607c;
+    font-size: 17px;
+}
+
+.products .card__title, 
+.card__description {
+    padding: 20px 0;
+}
