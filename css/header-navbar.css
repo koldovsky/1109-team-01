@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     background-color: #002579;
+    padding: 30px 40px;
 }
+
 .menu-list {
     display: flex;
     justify-content: space-between;
@@ -10,6 +12,22 @@
 
 .menu-list__item {
     padding: 10px 18px;
+    font-weight: 700;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+.menu-list__link {
+    color: #ffffff96;
+    text-decoration: none;
+}
+
+.menu-list__link:hover {
+    color: #f2f2f2; 
 }
 
 .social-list {
@@ -17,20 +35,7 @@
     justify-content: space-between;
 }
 
-/* Скидання стилів для ul */
-.menu-list {
-    list-style: none; /* Видаляє маркери списку */
-    padding: 0; /* Видаляє внутрішні відступи */
-    margin: 0; /* Видаляє зовнішні відступи */
-}
-
-/* Зробити лінки білими */
-.menu-list__link {
-    color: white;
-    text-decoration: none; /* Видаляє підкреслення лінків */
-}
-
-/* Зміна кольору лінків при наведенні */
-.menu-list__link:hover {
-    color: rgba(255, 255, 255, 0.59); /* Замініть це значення на бажаний колір при наведенні */
+.social-list__item {
+    margin: 5px;
+    list-style: none; 
 }
