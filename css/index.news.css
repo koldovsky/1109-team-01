@@ -1,0 +1,27 @@
+.news__header_news{
+    text-align: center;
+}
+.header_news.marcer{
+    color:var(--light-text-color);
+    font-size:var(--head-tag-text-size);
+}
+.header_news.title{
+    color:var(--the-darkest-text-color);
+    font-size:var(--head-nane-text-size);
+}
+.header_news.about{
+    color:var(--bald-text-color);
+    font-size:var(--head-text-size);
+}
+.card__tag{
+    font-size:var(--tag-text-size);
+}
+.card__title{
+    font-size:var(--nane-text-size);
+}
+.card__text{
+    font-size:var(--text-size);
+}
+.card__icon{
+    color:var(--accent-color);
+}

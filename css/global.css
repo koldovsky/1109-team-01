@@ -23,5 +23,16 @@
     --the-darkest-background-color:#002579; 
     --avarage-background-color: #306fff;
     --light-blueish-color: #20b6ff;
+    --slate-gray: #5c607c;
+    --light-text-color: #21b6ff;
+    --the-darkest-text-color: #002579;
+    --bald-text-color: #5c607c;
+    --accent-color: #78ee4a;
 
+    --head-teg-text-size: 12px;
+    --head-nane-text-size: 46px;
+    --head-text-size: 19px;
+    --tag-text-size: 14px;
+    --nane-text-size: 24px;
+    --text-size: 17px;
 }
