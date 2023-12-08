@@ -28,6 +28,11 @@
     --the-darkest-text-color: #002579;
     --bald-text-color: #5c607c;
     --accent-color: #78ee4a;
+    --footer-text-color: #d1d7ea; /*gray*/
+    --footer-line-color: #78ee4a; /*lime*/
+    --footer-title-color: #ffffff; /*white*/
+
+
 
     --head-teg-text-size: 12px;
     --head-nane-text-size: 46px;
@@ -35,4 +40,5 @@
     --tag-text-size: 14px;
     --nane-text-size: 24px;
     --text-size: 17px;
+    --footer-text-size: 15px;
 }
