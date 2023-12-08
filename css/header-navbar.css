@@ -1,7 +1,9 @@
+@import url(global.css);
+
 .header__navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #002579;
+    background-color: var(--the-darkest-background-color);
     padding: 30px 40px;
 }
 

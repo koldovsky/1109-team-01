@@ -1,0 +1,50 @@
+.header__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002c8f;
+    height: 223px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__contacts .text {
+    color: white;
+    font-size: 12vw;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    
+}
+.delivery{
+padding-left: 24px;
+padding-right: 24px;
+}
+.delivery__title{
+    color: var(--light-background-color);
+    padding-top: 90px;
+    padding-bottom: 15px;
+}
+
+.delivery__heading{
+    color: var(--the-darkest-background-color);
+    font-size: 38px;
+    font-family: 'Nunito', sans-serif;
+}
+.delivery__description{
+    color: var(--slate-gray);
+    font-size: 19px;
+    font-weight: 600;
+    font-family: 'Work Sans', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 0;
+    line-height: 1.5;
+}
+.delivery__description-time{
+    color: var(--light-background-color);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 0;
+}
