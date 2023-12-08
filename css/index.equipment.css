@@ -58,11 +58,18 @@
     min-width: 40%;
 }
 
+.equipment__call-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--the-darkest-background-color);
+}
+
 .equipment__photo-caption {
     margin-top: 20px;
     font-size: 22px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
     color: var(--the-darkest-background-color);
-    font-family: 'Nunito', sans-serif
 }
 
 .equipment__disconut {
@@ -82,9 +89,10 @@
 
 .equipment__bottle-description {
     margin-top: 20px;
+    font-weight: 800;
     font-size: 24px;
-    color: var(--the-darkest-background-color);
     font-family: 'Nunito', sans-serif;
+    color: var(--the-darkest-background-color);
     text-align: left;
 }
 
@@ -99,7 +107,29 @@
     background-image: url(../img/free-bottle.png);
     background-repeat: no-repeat;
     background-size: cover, auto;
-    background-position-x: 43.54%, 0%;
-    background-position-y: 46.16%, 0%;
-    background-origin: padding-box;
+    height: 50%;
+}
+
+.equipment__disconut-bottle {
+    margin-top: 50px;
+    padding: 39px;
+    background-image: url(../img/discount.png);
+    background-repeat: no-repeat;
+    background-size: cover, auto;
+    height: 50%;
+}
+
+.equipment__disconut-title {
+    margin-top: 40px;
+    font-size: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    color: var(--light-text-color);
+    text-align: left;
+}
+
+.equipment__disconut-description {
+    margin-top: 34px 100px;
+    font-size: 14px;
+    text-align: left;
 }
