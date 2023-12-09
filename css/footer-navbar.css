@@ -5,8 +5,7 @@
     justify-content: space-between;
     background-color: var(--the-darkest-background-color);
     color: var(--footer-title-color);
-
-    }
+}
 .footer__line-title{
     height: 0.1px;
     background-color: var(--footer-line-color);
@@ -22,10 +21,10 @@
     padding: 22.5px;
     display: inline-block;
     vertical-align: top;
-
 }
 .footer__all{
-    padding: 120px 40px 40px;
+    padding: 120px 15px 40px;
+    margin: auto
 }
 .footer__social{
     width: 243px;
@@ -42,7 +41,6 @@
     font-size: var(--tag-text-size);
     word-wrap: break-word;
     margin: 2px 0px 0px ;
-
 }
 .footer__social-list{
     list-style: none;
@@ -51,7 +49,7 @@
     height:25px;
     color:var(--the-darkest-background-color);
     fill:var(--the-darkest-background-color);
-    margin-top: 30px;
+    margin: 10px 5px 25px;
     display: flex;
     justify-content: space-between;}
 .footer__social-item{
@@ -64,12 +62,6 @@
 .footer__delivery-title
 {
     font-size:var(--head-text-size);
-
-}
-.footer__navigation-title,
-.footer__information-title,
-.footer__support-title{
-    padding-left: 5px;
 }
 .footer__navigation-title{
     font-size: var(--head-text-size);
@@ -83,15 +75,12 @@
     text-decoration: none;
     font-size: var(--text-size);
     font-weight: 600;
-    margin: 10px 5px;
-
 }
 .footer__navigation-item,
 .footer__information-item ,
 .footer__support-item{
     text-decoration: none;
     color: var(--footer-text-color)
-
 }
 .footer__all_lists{
     padding-top: 10px
@@ -108,7 +97,6 @@
 {
     color: var(--footer-title-color);
 }
-
 .footer__navigation-item:active ,
 .footer__information-item:active,
 .footer__support-item:active
@@ -123,7 +111,6 @@
     text-decoration: underline;
     font-weight: 700;
 }
-
 .footer__line-bottom{
   background-color: var(--footer-text-color);
   border-color: var(--footer-title-color);
