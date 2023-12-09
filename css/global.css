@@ -38,6 +38,12 @@ img {
     --footer-text-color: #d1d7ea; /*gray*/
     --footer-line-color: #78ee4a; /*lime*/
     --footer-title-color: #ffffff; /*white*/
+    --light-button-color: #21b6ff;
+    --dark-button-color: #002579;
+    --button-font: 'Work Sans', sans-serif;
+    --button-font-size: 14.3px;
+    --button-font-color: #ffffff;
+    --button-font-spacing: 1.43px;
     
     --head-teg-text-size: 12px;
     --head-nane-text-size: 46px;
