@@ -5,7 +5,7 @@
     justify-content: space-between;
     background-color: var(--the-darkest-background-color);
     color: var(--footer-title-color);
-    max-width: max;
+
     }
 .footer__line-title{
     height: 0.1px;
@@ -90,6 +90,7 @@
 .footer__information-item ,
 .footer__support-item{
     text-decoration: none;
+    color: var(--footer-text-color)
 
 }
 .footer__all_lists{
