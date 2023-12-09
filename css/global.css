@@ -7,10 +7,20 @@
     
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
 :root {
     scroll-behavior: smooth;
     font-family: 'Work Sans', sans-serif;
-    
+
     --main-bg-color: #3498db;
     --text-color: #ffffff;
     --light-header-color: #002c8f;
@@ -36,9 +46,4 @@
     --nane-text-size: 24px;
     --text-size: 17px;
     --footer-text-size: 15px;
-}
-
-img {
-    display: block;
-    width: 100%;
 }
