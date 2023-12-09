@@ -3,6 +3,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    box-sizing: border-box;
 }
 
 .equipment__cooler {
@@ -67,18 +68,8 @@
     color: var(--the-darkest-background-color);
 }
 
-.equipment__photo {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
 .equipment__photo-img {
-    max-width: 370px;
     border-radius: 3%;
-}
-
-.equipment__photo-list {
-    display: flex;
 }
 
 .equipment__photo-caption {
