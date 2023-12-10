@@ -1,7 +1,10 @@
+.equipment {
+    padding: 24px;
+    color: var(--slate-gray);
+}
 .equipment__cooler {
     display: flex;
     flex-direction: column;
-    padding: 24px;
 }
 
 .equipment__info {
@@ -23,14 +26,12 @@
 }
 
 .equipment__description {
-    color: var(--slate-gray);
     font-size: 19;
     font-weight: 600;
     margin-top: 25px;
 }
 
 .equipment__additional-info {
-    color: var(--slate-gray);
     font-size: 17px;
     font-weight: 400;
     margin-top: 25px;
@@ -83,7 +84,6 @@
 }
 
 .equipment__call-number {
-    color: var(--slate-gray);
     font-size: 17px;
     font-weight: 400;
 }
@@ -98,6 +98,68 @@
     }
 }
 
-.equipment__carousel-container {
+.equipment__photo-img {
+    border-radius: 7%;
+}
+
+.equipment__photo-caption {
+    color: var(--the-darkest-text-color);
+    font-size: 22px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 20px;
+}
+
+.equipment__discount-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equipment__free-bottle,
+.equipment__discount-bottle {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+    .equipment__free-bottle,
+    .equipment__discount-bottle {
+        width: 100%;
+    }
+}
+
+.equipment__bottle-box {
+    background-image: url(../img/free-bottle.png);
+    width: 100%;
+    background-size: cover;
+    padding: 39px;
+    text-align: left;
+}
+
+.equipment__bottle-title {
+    color: var(--light-text-color);
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 20px;
     
+}
+
+.equipment__bottle-description {
+    color: var(--the-darkest-background-color);
+    font-size: 24px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+}
+
+.equipment__bottle-devider {
+    color: var(--light-text-color);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.equipment__bottle-disclaimer {
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 60px;
 }
