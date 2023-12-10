@@ -44,7 +44,7 @@
 
 .products .card__title {
     color: #002570; /* #002570 */
-    font-size: 26px;
+    font-size: 25px;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -67,6 +67,14 @@
     .products__tagline {
         font-size: 46px;
     }
+
+    .products .card__title {
+        font-size: 25px;
+    }
+    
+    .products .card__description {
+        font-size: 17px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -77,5 +85,13 @@
 
     .products__tagline {
         font-size: 55px;
+    }
+
+    .products .card__title {
+        font-size: 25px;
+    }
+    
+    .products .card__description {
+        font-size: 17px;
     }
 }
