@@ -4,12 +4,11 @@
     align-items: center;
     background-color: var(--light-header-color);
     height: 223px;
-    align-items: center;
 }
 
 .header__contacts .text {
     color: var(--text-color);
-    font-size: 5vw;
+    font-size: 38px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     font-weight: 800;
@@ -24,6 +23,8 @@ body {
     padding-right: 24px;
     max-width: 1200px;
     margin: auto;
+    padding-top: 105px;
+    padding-bottom: 30px;
 }
 
 .delivery__title {
@@ -47,23 +48,74 @@ body {
     line-height: 1.5;
 }
 
-.delivery__description-time {
+.delivery__description-time,
+.delivery__discount-item {
     color: var(--light-background-color);
     font-family: 'Work Sans', sans-serif;
     font-weight: 800;
     font-size: 16px;
     padding: 0;
 }
-
+.delivery__description-star {
+    color: var(--accent-color);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 0;
+    margin-left: 5px
+}
+.delivery__description,
+.delivery__description-time,
+.delivery__description-star,
+.point {
+    display: inline;
+}
+.image-with-text {
+    display: flex;
+    align-items: center; 
+}
+.delivery__discount-image {
+    width: 80px;
+}
+}
+.delivery__discount {
+    color: var(--slate-gray);
+    font-size: 19px;
+    font-weight:400;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.5;
+}
+.delivery__discount-info {
+    list-style: none;
+    padding-top: 15px;
+}
+.delivery__discount-info-item::before {
+    content: "*";
+    color: var(--light-blueish-color);
+    margin-right: 3px;
+    font-size: 1em;
+    font-family: 'Work Sans';
+    font-style: italic;
+    vertical-align: middle;
+}
+.delivery__discount-info-item {
+    font-family: 'Work Sans';
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1,2;
+    font-size: 15px;
+}
+}
 .delivery__list {
     list-style: none;
+    padding-top: 15px;
 }
 
 .delivery__item {
     font-family: 'Work Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 17px;
-    line-height: 1.5;
+    line-height: 1,2;
     color: var(--bald-text-color);
 }
 
@@ -127,18 +179,17 @@ input[type="submit"] {
 
 .info__card {
     display: grid;
-    grid-template-columns: 1fr;
     grid-gap: 10px;
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
-    
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .info__card svg {
     width: 50px;
     height: 50px;
-    margin-bottom: 10px;
     margin: 0 auto; 
     display: block;
 }
@@ -146,7 +197,6 @@ input[type="submit"] {
     font-family: 'Nunito', sans-serif;
     font-size: 24px;
     color: var(--the-darkest-background-color);
-    margin-bottom: 5px;
     
 }
 
@@ -158,16 +208,23 @@ input[type="submit"] {
 .delivery {
     display: grid;
     grid-template-columns: 1fr;
-    /* Изначально 1 столбец */
     grid-gap: 20px;
 }
 
+.delivery__location {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
 @media screen and (min-width: 768px) {
+    .header__contacts .text {
+        font-size: 55px;
+    }
     .delivery {
         grid-template-columns: 1fr 1fr;
-        /* Два столбца */
-        padding-top: 105px;
-        padding-bottom: 105px;
     }
 
     .header__contacts {
@@ -188,6 +245,23 @@ input[type="submit"] {
     }
 
     .info__card {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Автоматическое заполнение столбцов */
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        text-align: center;
+        margin: 0 auto;
       }
+    
+      .info__card .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    
+      .info__card svg {
+        width: 50px;
+        height: 50px;
+      }
+    }
 }
