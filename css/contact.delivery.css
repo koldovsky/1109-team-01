@@ -2,37 +2,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #002c8f;
+    background-color: var(--light-header-color);
     height: 223px;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .header__contacts .text {
-    color: white;
-    font-size: 12vw;
+    color: var(--text-color);
+    font-size: 5vw;
     font-family: 'Nunito', sans-serif;
     text-align: center;
-    font-weight: lighter;
-    
+    font-weight: 800;
 }
-.delivery{
-padding-left: 24px;
-padding-right: 24px;
+
+body {
+    background-color: var(--brightest-background-color);
 }
-.delivery__title{
+
+.delivery {
+    padding-left: 24px;
+    padding-right: 24px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.delivery__title {
     color: var(--light-background-color);
-    padding-top: 90px;
     padding-bottom: 15px;
 }
 
-.delivery__heading{
+.delivery__heading {
     color: var(--the-darkest-background-color);
     font-size: 38px;
     font-family: 'Nunito', sans-serif;
 }
-.delivery__description{
+
+.delivery__description {
     color: var(--slate-gray);
     font-size: 19px;
     font-weight: 600;
@@ -41,10 +46,148 @@ padding-right: 24px;
     padding-bottom: 0;
     line-height: 1.5;
 }
-.delivery__description-time{
+
+.delivery__description-time {
     color: var(--light-background-color);
     font-family: 'Work Sans', sans-serif;
     font-weight: 800;
     font-size: 16px;
     padding: 0;
+}
+
+.delivery__list {
+    list-style: none;
+}
+
+.delivery__item {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--bald-text-color);
+}
+
+.delivery__item::before {
+    content: "•";
+    color: var(--the-darkest-text-color);
+    margin-right: 8px;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+
+.delivery__form {
+    background-color: var(--footer-title-color);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+
+}
+
+.delivery__form form {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 50px 20px 50px;
+    width: 70%;
+}
+
+.delivery__form input[type="text"],
+.delivery__form input[type="date"],
+.delivery__form select {
+    margin-bottom: 4px;
+    padding: 11px 22px 11px 22px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    border-color: #f1f6fb;
+    background-color: #f1f6fb;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    width: 100%;
+    color: var(--form-text-color);
+}
+
+.select-text,
+.delivery__form input[type="text"]::placeholder {
+    color: var(--form-text-color);
+}
+
+input[type="submit"] {
+    background-color: var(--light-background-color);
+    color: var(--text-color);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-top: 25px;
+}
+
+.info__card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.info__card svg {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin: 0 auto; 
+    display: block;
+}
+.info__card .card__title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    color: var(--the-darkest-background-color);
+    margin-bottom: 5px;
+    
+}
+
+.info__card .card__text {
+    font-size: 14px;
+    color: #555;
+}
+
+.delivery {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Изначально 1 столбец */
+    grid-gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .delivery {
+        grid-template-columns: 1fr 1fr;
+        /* Два столбца */
+        padding-top: 105px;
+        padding-bottom: 105px;
+    }
+
+    .header__contacts {
+        height: 262px;
+    }
+
+    .delivery__info-text {
+        grid-column: 1 / span 1;
+    }
+    .delivery__form {
+        grid-column: 2 / span 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .info__card {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Автоматическое заполнение столбцов */
+      }
 }
