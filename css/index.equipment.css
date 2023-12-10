@@ -1,159 +1,204 @@
 .equipment {
+    padding: 24px;
     color: var(--slate-gray);
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
 }
-
 .equipment__cooler {
-    display: block;
-    width: 320;
-    margin-top: 90px;
-    margin-bottom: 30px;
-    padding-left: 24px;
-    padding-right: 24px;
-}
-
-.equipment__info {
     display: flex;
     flex-direction: column;
 }
 
+.equipment__info {
+    display: block;
+}
+
 .equipment__title {
+    color: var(--light-text-color);
     font-size: 12px;
-    color: var(--light-background-color);
+    font-weight: 700;
 }
 
 .equipment__subtitle {
-    margin-top: 20px;
-    font-family: 'Nunito', sans-serif;
+    color: var(--the-darkest-text-color);
     font-size: 38px;
-    color: var(--the-darkest-background-color);
-
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 20px;
 }
 
 .equipment__description {
+    font-size: 19;
+    font-weight: 600;
     margin-top: 25px;
-    font-size: 19px;
 }
 
 .equipment__additional-info {
-    margin-top: 25px;
     font-size: 17px;
+    font-weight: 400;
+    margin-top: 25px;
 }
 
 .equipment__call {
     display: flex;
     margin-top: 20px;
-    padding-top: 7.5;
-    padding-bottom: 7.5;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
+.equipment__call-box {
+    margin: 7.5px;
+    width: 50px;
 }
 
-.equipment__call-box {
+.call-box-background {
     width: 50px;
-    height: 70px;
-    margin: 7.5px;
+    height: 50px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.call-box-background img {
+    padding: 12px;
+    display: block;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+}
+.equipment__call-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .equipment__call-details {
-    display: flex;
-    flex-direction: column;
-    min-width: 40%;
+    margin: 7.5px;
 }
 
 .equipment__call-title {
-    font-size: 18px;
-    font-weight: 700;
     color: var(--the-darkest-background-color);
+    font-size: 19px;
+    font-weight: 700;
 }
 
-.equipment__photo {
-    margin-left: 15px;
-    margin-right: 15px;
+.equipment__call-number {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.equipment__carousel-conteiner {
+    display: block;
+}
+
+@media (min-width: 921px) {
+    .equipment__cooler {
+        flex-direction: row;
+    }
 }
 
 .equipment__photo-img {
-    max-width: 370px;
-    border-radius: 3%;
-}
-
-.equipment__photo-list {
-    display: flex;
+    border-radius: 7%;
 }
 
 .equipment__photo-caption {
-    margin-top: 20px;
+    color: var(--the-darkest-text-color);
     font-size: 22px;
-    font-family: 'Nunito', sans-serif;
     font-weight: 800;
-    color: var(--the-darkest-background-color);
-}
-
-.equipment__bottle-title {
-    margin-top: 20px;
-    font-size: 12px;
-    color: var(--light-background-color);
-    text-align: left;
-}
-
-.equipment__bottle-description {
-    margin-top: 20px;
-    font-weight: 800;
-    font-size: 24px;
     font-family: 'Nunito', sans-serif;
-    color: var(--the-darkest-background-color);
-    text-align: left;
+    margin-top: 20px;
+}
+/*--------------*/
+
+.equipment__disconut,
+.equipment__free-bottle,
+.equipment__disconut-bottle {
+  box-sizing: border-box;
+  margin: 10px;
 }
 
-.equipment__bottle-disclaimer {
-    margin-top: 34px;
-    font-size: 14px;
-    text-align: left;
+@media (max-width: 767px) {
+  .equipment__free-bottle,
+  .equipment__disconut-bottle {
+    width: 100%;
+  }
 }
 
-.equipment__bottle-box {
-    padding: 39px;
+@media (min-width: 768px) {
+  .equipment__disconut {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .equipment__free-bottle {
+    width: 60%;
+  }
+
+  .equipment__disconut-bottle {
+    width: 40%;
+  }
+}
+
+.equipment__free-box {
     background-image: url(../img/free-bottle.png);
-    background-repeat: no-repeat;
-    background-size: cover, auto;
-    height: 50%;
-    max-width: 610px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0px;
+    background-size: cover;
+    padding: 39px;
 }
 
-.equipment__disconut {
-    display: block;
-    width: 320;
-    margin-top: 30px;
-    margin-bottom: 90px;
-    padding-left: 24px;
-    padding-right: 24px;
+.equipment__free-box-title {
+    color: var(--light-text-color);
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 20px
+}
+
+.equipment__feree-box-description {
+    color: var(--the-darkest-background-color);
+    font-size: 24px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+}
+
+.equipment__feree-box-devider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.equipment__feree-box-disclaimer {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 60px;
 }
 
 .equipment__disconut-box {
-    display: flex;
-}
-
-.equipment__disconut-bottle {
-    margin-top: 50px;
-    padding: 39px;
     background-image: url(../img/discount.png);
-    background-repeat: no-repeat;
-    background-size: cover, auto;
-    height: 50%;
-    max-width: 470px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0px;
+    background-size: cover;
+    padding: 39px;
 }
 
-.equipment__disconut-title {
-    margin-top: 40px;
-    font-size: 60px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 800;
+.equipment__disconut-box-title {
     color: var(--light-text-color);
-    text-align: left;
+    font-size: 60px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 40px;
 }
 
-.equipment__disconut-description {
-    margin-top: 34px 100px;
+.equipment__discount-box-devider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.equipment__disconut-box-description {
     font-size: 14px;
-    text-align: left;
+    font-weight: 400;
+    margin-bottom: 100px;
 }

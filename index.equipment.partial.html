@@ -1,6 +1,5 @@
 <section class="equipment">
   <div class="equipment__cooler">
-    <!-- upper block -->
     <div class="equipment__info">
       <!-- information about cooler and call number -->
       <p id="equipment" class="equipment__title">
@@ -13,14 +12,14 @@
         Rent or buy a cooler right now.
       </p>
       <p class="equipment__additional-info">
-        We offer coolers for home and office use. 
+        We offer coolers for home and office use.
         Modern design and ease of use will not leave you indifferent.
       </p>
       <div class="equipment__call">
         <div class="equipment__call-box">
-          <img class="equipment__call-button" 
-          src="img/green-button-call.svg" 
-          alt="Call button to order water at a discount">
+          <div class="call-box-background">
+            <img src="img/green-button-call.svg" alt="Call button to order water at a discount">
+          </div>
         </div>
         <div class="equipment__call-details">
           <p class="equipment__call-title">
@@ -33,81 +32,64 @@
       </div>
     </div>
     <div class="equipment__carousel">
-      <!-- carousel consists of 3 photos of refrigerators -->
-      <ul class="equipment__photo-list">
-        <!-- only 2 photos should be visible -->
-        <li class="equipment__photo-item">
-          <div class="equipment__photo">
-            <img 
-              class="equipment__photo-img"
-              width="344"
-              src="img/apex-cooler.png"
-              alt="Apex Cooler photo">
-            <p class="equipment__photo-caption">
-              Apex Cooler
-            </p>
+      <div class="equipment__carousel-container">
+        <ul class="equipment__carousel-slide">
+          <div class="equipment__photo-item" data-active>
+            <div class="equipment__photo">
+              <img class="equipment__photo-img" width="344" src="img/apex-cooler.png" alt="Apex Cooler photo">
+              <p class="equipment__photo-caption">
+                Apex Cooler
+              </p>
+            </div>
           </div>
-        </li>
-        <li class="equipment__photo-item">
-          <div class="equipment__photo">
-            <img
-              class="equipment__photo-img" 
-              width="344"
-              src="img/archway-cooler.png"
-              alt="Archway Cooler photo">
-            <p class="equipment__photo-caption">
-              Archway Cooler
-            </p>
+          <!-- <div class="equipment__photo-item">
+            <div class="equipment__photo">
+              <img class="equipment__photo-img" width="344" src="img/archway-cooler.png" alt="Archway Cooler photo">
+              <p class="equipment__photo-caption">
+                Archway Cooler
+              </p>
+            </div>
           </div>
-        </li>
-        <li class="equipment__photo-item">
-          <div class="equipment__photo">
-            <img 
-              class="equipment__photo-img"
-              width="344"
-              src="img/premium-cooler.png"
-              alt="Premium Cooler photo">
-            <p class="equipment__photo-caption">
-              Premium Cooler
-            </p>
-          </div>
-        </li>
-      </ul>
+          <div class="equipment__photo-item">
+            <div class="equipment__photo">
+              <img class="equipment__photo-img" width="344" src="img/premium-cooler.png" alt="Premium Cooler photo">
+              <p class="equipment__photo-caption">
+                Premium Cooler
+              </p>
+            </div>
+          </div> -->
+        </ul>
+      </div>
     </div>
   </div>
   <div class="equipment__disconut">
-    <!-- bottom block -->
-    <div class="equipment__disconut-box">
-      <div class="equipment__free-bottle">
-        <div class="equipment__bottle-info">
-          <!-- <img class="equipment__bottle-img" 
-            src="img/free-bottle.png" 
-            alt="Free Botle photo with Water Pump"> -->
-          <div class="equipment__bottle-box">  
-            <h2 class="equipment__bottle-title">
+    <div class="equipment__free-bottle">
+      <div class="equipment__free-box">
+        <h2 class="equipment__free-box-title">
               - FOR NEW CUSTOMERS -
-            </h2>
-            <p class="equipment__bottle-description">
+        </h2>
+        <p class="equipment__feree-box-description">
               Get a Free Bottle
-            </p>
-            <p class="equipment__bottle-description">
+        <p class="equipment__feree-box-description">
               or Water Pump
-            </p>
-            <p class="equipment__bottle-disclaimer">
-              <i>* when ordering from two bottles</i>
-            </p>
-          </div>  
-        </div>
+        <p class="equipment__feree-box-devider">
+              <img src="img/eq-devider.svg" alt="Sky-blue text devider">
+        <p class="equipment__feree-box-disclaimer">
+              <i><span style="color: #78ee4a;">*</span> when ordering from two bottles</i>
+        </p>
       </div>
-      <div class="equipment__disconut-bottle">
-        <div class="equipment__disconut-box">
-          <h2 class="equipment__disconut-title">
-            10%
-          </h2>
-          <p class="equipment__disconut-description">
-            Discount on Avalanche Cooler  
-          </p>
-        </div>
+    </div>
+    <div class="equipment__disconut-bottle">
+      <div class="equipment__disconut-box">
+        <h2 class="equipment__disconut-box-title">
+          10%
+        </h2>
+        <p class="equipment__discount-box-devider">
+          <img src="img/eq-devider.svg" alt="Sky-blue text devider">
+        </p>-box
+        <p class="equipment__disconut-box-description">
+          Discount on Avalanche Cooler
+        </p>
       </div>
     </div>
   </div>

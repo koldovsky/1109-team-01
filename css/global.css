@@ -4,7 +4,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 
 img {
@@ -21,6 +20,7 @@ img {
     scroll-behavior: smooth;
     font-family: 'Work Sans', sans-serif;
 
+    --brightest-background-color: #f1f6fb;
     --main-bg-color: #3498db;
     --text-color: #ffffff;
     --light-header-color: #002c8f;
@@ -40,6 +40,9 @@ img {
     --footer-title-color: #ffffff; /*white*/
     --light-button-color: #21b6ff;
     --dark-button-color: #002579;
+    --about-light-color: #ffffffba ;
+
+    --about-some-text : 'Nunito', sans-serif;
     --button-font: 'Work Sans', sans-serif;
     --button-font-size: 14.3px;
     --button-font-color: #ffffff;
@@ -52,4 +55,9 @@ img {
     --nane-text-size: 24px;
     --text-size: 17px;
     --footer-text-size: 15px;
+    --about-title-size: 55px ;
+    --about-teg-size: 12px;
+    --button-text-size: 14.3px;
+
+    --form-text-color: #6f85b5;
 }
