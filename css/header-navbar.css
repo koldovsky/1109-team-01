@@ -1,5 +1,10 @@
 @import url(global.css);
 
+.header__logo-link {}
+.header__logo-image {
+    width: 146px;
+}
+
 .header__navbar {
     display: flex;
     justify-content: space-between;

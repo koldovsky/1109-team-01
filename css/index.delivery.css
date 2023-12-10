@@ -1,5 +1,68 @@
 .delivery {
+    display: flex;
+    justify-content: flex-end;
     background-image: url('/img/delivery-background.png');
     background-size: cover; 
     background-position: center; /* Центрує зображення */
+}
+
+.delivery-content {
+    width: 50%;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+/* Загальні стилі для акордеону */
+.delivery-accordion {
+    display: none;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery-accordion-container {
+    width: 50%;
+}
+
+/* Стилі для чекбокса */
+.delivery-accordion__checkbox {
+    display: none;
+}
+
+/* Стилі для заголовка акордеону */
+.delivery-accordion__label {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    /*background-color: #f0f0f0; */
+    /*border: 1px solid #ddd; */
+    font-weight: bold;
+}
+
+/* Стилі для заголовка акордеону при наведенні */
+.delivery-accordion__label:hover {
+    /*background-color: #e0e0e0;*/
+}
+
+
+/* Стилі для контенту акордеону */
+.delivery-accordion__content {
+    display: none;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/* Стилі для тексту контенту */
+.delivery-accordion__content-text {
+    margin: 0;
+}
+
+/* Стилі для контенту, коли чекбокс активний (розгорнутий) */
+.delivery-accordion__checkbox:checked + .delivery-accordion__label + .delivery-accordion__content {
+    display: block;
+}
+
+/* Стилі для контенту, коли чекбокс неактивний (згорнутий) */
+.delivery-accordion__checkbox:not(:checked) + .delivery-accordion__label + .delivery-accordion__content {
+    display: none;
 }
