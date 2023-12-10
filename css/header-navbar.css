@@ -1,7 +1,14 @@
+@import url(global.css);
+
+.header__logo-link {}
+.header__logo-image {
+    width: 146px;
+}
+
 .header__navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #002579;
+    background-color: var(--the-darkest-background-color);
     padding: 30px 40px;
 }
 

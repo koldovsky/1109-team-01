@@ -1,0 +1,97 @@
+.products {
+    min-width: 338px;
+    text-align: center;
+    padding: 90px 9px;
+}
+
+.products__info {
+    display: block;
+    padding: 0px 15px;
+}
+
+.products__title {
+    display: block;
+    color: #21b6ff;
+    font-size: 12px;
+}
+
+.products__tagline {
+    color: #002570;
+    display: block;
+    font-size: 38px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    padding: 15px;
+}
+
+.products__subtitle {
+    display: block;
+    color: #5C607C;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 15px;
+} 
+
+.products__cards {
+    display: grid;
+}
+
+
+.products__card-item {
+    padding: 15px 15px;
+    text-align: left;
+}
+
+.products .card__title {
+    color: #002570; /* #002570 */
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.products .card__description {
+    color: #5c607c;
+    font-size: 17px;
+}
+
+.products .card__title, 
+.card__description {
+    padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+    .products__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .products__tagline {
+        font-size: 46px;
+    }
+
+    .products .card__title {
+        font-size: 25px;
+    }
+    
+    .products .card__description {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 992px) {
+    .products__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .products__tagline {
+        font-size: 55px;
+    }
+
+    .products .card__title {
+        font-size: 25px;
+    }
+    
+    .products .card__description {
+        font-size: 17px;
+    }
+}

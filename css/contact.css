@@ -1,14 +1,4 @@
 @import url(global.css);
-@import url(header-navbar.css); /* Kyrylo Suprun */
-.header__contacts {
-    
-    background: var(--ligt-header-color);
-    position: relative;
-    min-height: 100%
-    width: 660px;
-    height: 223px;
-}
-.header__contacts.text {
-    text-align: center; 
-    font-size: 24px; 
-}
+@import url(header-navbar.css);
+@import url(contact.delivery.css);
+@import url(footer-navbar.css); 

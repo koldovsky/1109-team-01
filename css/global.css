@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,800;1,6..12,300;1,6..12,800&family=Nunito:ital,wght@0,300;0,800;0,900;0,1000;1,300;1,800&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,700;1,800;1,900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -6,16 +6,23 @@
     padding: 0;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
 :root {
-    /* 
-        WARNING!!!
-    IF THE COLOR YOU NEED IS NOT YET - Add the color you need below!
-    GPT Edition (Example): 
-    --main-bg-color: #3498db;
-    --text-color: #ffffff;
-    */
     scroll-behavior: smooth;
     font-family: 'Work Sans', sans-serif;
+
+    --brightest-background-color: #f1f6fb;
+    --main-bg-color: #3498db;
+    --text-color: #ffffff;
     --light-header-color: #002c8f;
     --dark-background-color: #0035ac;
     --light-background-color: #21b6ff;
@@ -24,4 +31,34 @@
     --avarage-background-color: #306fff;
     --light-blueish-color: #20b6ff;
     --slate-gray: #5c607c;
+    --light-text-color: #21b6ff;
+    --the-darkest-text-color: #002579;
+    --bald-text-color: #5c607c;
+    --accent-color: #78ee4a;
+    --footer-text-color: #d1d7ea; /*gray*/
+    --footer-line-color: #78ee4a; /*lime*/
+    --footer-title-color: #ffffff; /*white*/
+    --light-button-color: #21b6ff;
+    --dark-button-color: #002579;
+    --about-light-color: #ffffffba;
+    --news-backgraund-color: #efefef;
+
+    --about-some-text : 'Nunito', sans-serif;
+    --button-font: 'Work Sans', sans-serif;
+    --button-font-size: 14.3px;
+    --button-font-color: #ffffff;
+    --button-font-spacing: 1.43px;
+    
+    --head-teg-text-size: 0.7em;
+    --head-name-text-size: 2.4em;
+    --head-text-size: 1.3em;
+    --tag-text-size: 14px;
+    --nane-text-size: 24px;
+    --text-size: 17px;
+    --footer-text-size: 15px;
+    --about-title-size: 55px ;
+    --about-teg-size: 12px;
+    --button-text-size: 14.3px;
+
+    --form-text-color: #6f85b5;
 }

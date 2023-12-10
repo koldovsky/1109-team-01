@@ -1,0 +1,91 @@
+.bottle-water {
+    background-color: #f1f6fb;
+    min-width: 338px;
+}
+
+.bottle-water__title {
+    color: hsl(0, 0%, 100%);
+    font-size: 55px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    background-color: #002c8f;
+    padding: 90px 90px;
+}
+
+.bottle-water__description {
+    color: #002570;
+    display: block;
+    font-size: 38px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    padding: 15px 0px;
+}
+
+.bottle-water__subdescription {
+    display: block;
+    color: #5C607C;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 15px 0px;
+}
+
+.bottle-water__info {
+    padding: 80px 20px 15px 20px;
+}
+
+.bottle-water_benefits {
+    padding: 15px 20px 120px 20px;
+}
+
+
+.bottel_water__drop {
+    display: inline;
+    width: 20px;
+    height: 24px;
+    color: var(--accent-color);
+    border: 20px;
+}
+
+.bottel-water__conteiner .feature__description {
+    color: #5C607C;
+    font-size: 19px;
+    padding: 0px 25px 0px 15px;
+}
+
+.bottle-water__filtration {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filtration-stage__icon {
+    display: block;
+}
+
+.bottle-water__features {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .filtration-info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+} */
+
+.bottle-water__features .feature {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+.filtration-stage {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    color: var(--the-darkest-background-color);
+    padding: 10px; 
+}
