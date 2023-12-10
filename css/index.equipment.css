@@ -109,57 +109,96 @@
     font-family: 'Nunito', sans-serif;
     margin-top: 20px;
 }
+/*--------------*/
 
-.equipment__discount-box {
-    display: flex;
-    flex-wrap: wrap;
-}
-
+.equipment__disconut,
 .equipment__free-bottle,
-.equipment__discount-bottle {
-    width: 50%;
-    box-sizing: border-box;
+.equipment__disconut-bottle {
+  box-sizing: border-box;
+  margin: 10px;
 }
 
 @media (max-width: 767px) {
-    .equipment__free-bottle,
-    .equipment__discount-bottle {
-        width: 100%;
-    }
+  .equipment__free-bottle,
+  .equipment__disconut-bottle {
+    width: 100%;
+  }
 }
 
-.equipment__bottle-box {
+@media (min-width: 768px) {
+  .equipment__disconut {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .equipment__free-bottle {
+    width: 60%;
+  }
+
+  .equipment__disconut-bottle {
+    width: 40%;
+  }
+}
+
+.equipment__free-box {
     background-image: url(../img/free-bottle.png);
     width: 100%;
+    max-width: 100%;
+    min-width: 0px;
     background-size: cover;
     padding: 39px;
-    text-align: left;
 }
 
-.equipment__bottle-title {
+.equipment__free-box-title {
     color: var(--light-text-color);
     font-size: 12px;
     font-weight: 700;
     margin-top: 60px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px
 }
 
-.equipment__bottle-description {
+.equipment__feree-box-description {
     color: var(--the-darkest-background-color);
     font-size: 24px;
     font-weight: 800;
     font-family: 'Nunito', sans-serif;
 }
 
-.equipment__bottle-devider {
-    color: var(--light-text-color);
-    font-size: 17px;
-    font-weight: 400;
+.equipment__feree-box-devider {
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
-.equipment__bottle-disclaimer {
+.equipment__feree-box-disclaimer {
     font-size: 14px;
     font-weight: 400;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+.equipment__disconut-box {
+    background-image: url(../img/discount.png);
+    width: 100%;
+    max-width: 100%;
+    min-width: 0px;
+    background-size: cover;
+    padding: 39px;
+}
+
+.equipment__disconut-box-title {
+    color: var(--light-text-color);
+    font-size: 60px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 40px;
+}
+
+.equipment__discount-box-devider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.equipment__disconut-box-description {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 100px;
 }
