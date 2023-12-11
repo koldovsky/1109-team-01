@@ -37,6 +37,7 @@ div.news__header{
     min-width: 327px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 25px;
     border-radius: 5px;
     background-color:white;
     display: flex;
@@ -107,7 +108,6 @@ div.news__header{
     .news__card{
         height: 390px;
         min-width: 467px;
-        margin-top: 25px;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
