@@ -112,7 +112,18 @@ div.news__header{
         grid-template-columns: 1fr 1fr;
     }
     .news .card__foto{
-        object-position: -115px;
         object-fit: cover;
+    }
+    img#water_deliwery{
+        object-position: -220px;
+    }
+    img#water_cooler_talks{
+        object-position: -115px;
+    }
+    img#new_bottles{
+        object-position: -260px;
+    }
+    img#water_quality{
+        object-position: -90px;
     }
 }
