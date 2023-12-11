@@ -23,7 +23,7 @@ body {
     padding-right: 24px;
     max-width: 1200px;
     margin: auto;
-    padding-top: 105px;
+    padding-top: 90px;
     padding-bottom: 30px;
     display: grid;
     grid-template-columns: 1fr;
@@ -32,10 +32,10 @@ body {
 .delivery__info-text {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 .delivery__title {
     color: var(--light-background-color);
-    padding-bottom: 15px;
 }
 
 .delivery__heading {
@@ -112,7 +112,6 @@ body {
 
 .delivery__list {
     list-style: none;
-    padding-top: 15px;
 }
 
 .delivery__item {
@@ -199,7 +198,7 @@ input[type="submit"] {
 }
 .info__card .card__title {
     font-family: 'Nunito', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     color: var(--the-darkest-background-color);
     
 }
@@ -224,8 +223,11 @@ input[type="submit"] {
     }
     .delivery {
         grid-template-columns: 1fr 1fr;
+        padding-top: 105px;
     }
-
+    .delivery__heading {
+        font-size: 46px;
+    }
     .header__contacts {
         height: 262px;
     }
@@ -262,4 +264,17 @@ input[type="submit"] {
         width: 50px;
         height: 50px;
       }
+      .info__card .card__title {
+        font-size: 24px;
+    }
+    @media screen and (min-width: 992px) {
+        .delivery {
+            padding-top: 105px;
+        }
+        .delivery__heading {
+            font-size: 55px;
+        }
+        .info__card .card__title {
+            font-size: 26px;
+        }
     }
