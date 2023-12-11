@@ -1,1 +1,51 @@
+.header__hero {
+    display: flex;
+    background-image: url(../img/header-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    border: 1px solid black
+}
 
+.header__container {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: right;
+    border: 1px solid black
+}
+
+.header_buttons-container {
+    display: flex;
+    border: 1px solid black
+}
+
+.header__text {
+    margin: 50px;
+}
+
+.header__tagline {
+    color: var(--footer-line-color);
+}
+
+.header__title {
+    color: var(--footer-title-color);
+
+}
+
+
+.header__video-icon {
+    color: var(--footer-title-color);
+}
+
+.header__tagline {
+    color: var(--footer-line-color);
+}
+
+.header__title {
+    color: var(--footer-title-color);
+}
+
+.header__description {
+    color: var(--footer-title-color);
+}
