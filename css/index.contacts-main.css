@@ -1,3 +1,53 @@
 .main-contacts {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-background-color);
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.main-contacts .left {
+    color: var(--text-color);
+    /*    display: grid;*/
+}
+
+/*
+.main-contacts .info-block {
+    display: flex;
+*/
+}
+
+.main-contacts .information {
+    padding-top: 10px;
+/*    display: flex;*/
+    justify-content: left;
+    align-items: center;
+}
+
+.main-contacts .img {
+    width: 40px;
+}
+
+.main-contacts form {
+    background-color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    margin: 50px 50px 20px 50px;
+    width: 100%;
+}
+
+.main-contacts input,
+select {
+    margin-bottom: 4px;
+    padding: 11px 22px 11px 22px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    border-color: #f1f6fb;
+    background-color: #f1f6fb;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    width: 100%;
+    color: var(--form-text-color);
 }
