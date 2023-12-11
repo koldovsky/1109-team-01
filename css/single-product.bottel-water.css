@@ -1,19 +1,19 @@
 .bottle-water {
-    background-color: #f1f6fb;
+    background-color: var(--bottle-water-bg-color);
     min-width: 338px;
 }
 
 .bottle-water__title {
-    color: hsl(0, 0%, 100%);
+    color: var(--text-color);
     font-size: 55px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
-    background-color: #002c8f;
+    background-color: var(--dark-bg-color);
     padding: 90px 90px;
 }
 
 .bottle-water__description {
-    color: #002570;
+    color: var(--description-text-color);
     display: block;
     font-size: 38px;
     font-weight: 800;
@@ -23,7 +23,7 @@
 
 .bottle-water__subdescription {
     display: block;
-    color: #5C607C;
+    color: var(--subdescription-text-color);
     font-size: 19px;
     font-weight: 600;
     padding: 15px 0px;
@@ -47,12 +47,17 @@
 }
 
 .bottel-water__conteiner .feature__description {
-    color: #5C607C;
+    color: var(--bottel-water-text-color);
     font-size: 19px;
     padding: 0px 25px 0px 15px;
 }
 
 .bottle-water__filtration {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filtration-stage {
     display: flex;
     flex-wrap: wrap;
 }
@@ -80,7 +85,7 @@
 
 
 .filtration-stage {
-    display: inline-block;
+    display: block;
     width: 50px;
     height: 50px;
     text-align: center;

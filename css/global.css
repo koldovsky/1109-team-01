@@ -46,6 +46,13 @@ img {
     --dark-button-color: #002579;
     --about-light-color: #ffffffba;
     --news-backgraund-color: #efefef;
+    --bottle-water-bg-color: #f1f6fb;
+    --dark-bg-color: #002c8f;
+    --title-text-color: #21b6ff;
+    --description-text-color: #002570;
+    --subdescription-text-color: #5C607C;
+    --bottel-water-text-color: #5C607C;
+
 
     --about-some-text : 'Nunito', sans-serif;
     --button-font: 'Work Sans', sans-serif;
