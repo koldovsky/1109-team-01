@@ -11,12 +11,13 @@
 
 .products__title {
     display: block;
-    color: #21b6ff;
+    color: var(--title-text-color);
     font-size: 12px;
+    padding: 15px 0px;
 }
 
 .products__tagline {
-    color: #002570;
+    color: var(--description-text-color);
     display: block;
     font-size: 38px;
     font-weight: 800;
@@ -26,7 +27,7 @@
 
 .products__subtitle {
     display: block;
-    color: #5C607C;
+    color: var(--subdescription-text-color);
     font-size: 19px;
     font-weight: 600;
     padding: 15px;
@@ -43,13 +44,13 @@
 }
 
 .products .card__title {
-    color: #002570; /* #002570 */
-    font-size: 26px;
+    color: var(--description-text-color);
+    font-size: 25px;
     font-family: 'Nunito', sans-serif;
 }
 
 .products .card__description {
-    color: #5c607c;
+    color: var(--bottel-water-text-color);
     font-size: 17px;
 }
 
@@ -67,6 +68,14 @@
     .products__tagline {
         font-size: 46px;
     }
+
+    .products .card__title {
+        font-size: 25px;
+    }
+    
+    .products .card__description {
+        font-size: 17px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -77,5 +86,13 @@
 
     .products__tagline {
         font-size: 55px;
+    }
+
+    .products .card__title {
+        font-size: 25px;
+    }
+    
+    .products .card__description {
+        font-size: 17px;
     }
 }
