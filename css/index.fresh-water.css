@@ -1,10 +1,13 @@
 .freshwater__img {
-    background-image: url('../img/two_glasses_of_water.png');
+    background-image: url('../img/two_glasses_of_water.png'); /* Updated image file name */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-clip: border-box;
-  }
+    width: 100%;
+    height: 100%;
+}
+
 .freshwater {
     padding-top: 130px;
     padding-bottom: 110px;
@@ -12,9 +15,9 @@
 
 .style_3DA {
     transform: scaleY(-1);
-  }
+}
 
-  .background-wrapper_RZ2 {
+.background-wrapper_RZ2 {
     position: absolute;
     top: 25%;
     left: 23%;
@@ -39,11 +42,9 @@
     height: 40px;
 }
 
-
-  .freshwater__container {
+.freshwater__container {
     position: relative;
 }
-
 
 .freshwater__title,
 .freshwater__description {
@@ -80,8 +81,6 @@
     line-height: 26.6px;
 }
 
-
-
 .freshwater__facts {
     display: flex;
     justify-content: space-between; /* Adjust this property based on your design */
@@ -97,6 +96,5 @@
 
 .freshwater__icon {
     display: block;
-    margin: center; 
-    
+    margin: 0 auto; /* Center the icon horizontally */
 }
