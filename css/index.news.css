@@ -98,6 +98,7 @@ div.news__header{
     .news .card__foto{
         height: 100%;
         width: 228px;
+        border-radius: 5px 0px 0px 5px ;
     }
     .news__cards{
         min-height: 390px;
@@ -106,6 +107,7 @@ div.news__header{
     .news__card{
         height: 390px;
         min-width: 467px;
+        margin-top: 25px;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
