@@ -1,9 +1,8 @@
 .testimonials {
     box-sizing: border-box;
-    width: 357px;
-    height: 1422.050px; <!--need update-->
-    margin-left: -15px;
-    margin-right: -15px;
+    width: 375px;
+    height: 1422.050px;
+    text-align: center;
     background-color: #f1f6fc;
     }
 .h2{
@@ -20,7 +19,7 @@
 }
 .testimonials__tagline{
     font-size: 38px;
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: normal;
     text-align: center;
     line-height: 43.32px;
@@ -40,13 +39,18 @@
 }
 .testimonials__providers {
     box-sizing: border-box;
-    width: 327px;
-    height: 448.617px;
+    width: 269px;
+    height: 387.617px;
+    padding-left: 29;
+    padding-top: 31;
+    padding-right: 29;
+    padding-bottom: 31;
+    position: relative;
+    align-items: center;
     background-color: white;
 
 }
 .profile__image {
-    display: flex;
     align-items: center;
     justify-content: center;
     height: 70px;
@@ -74,11 +78,10 @@
     color: #5c607c;
 
 }
-p {
+.quotation {
     font-size: 17px;
     font-weight: 400;
     letter-spacing: normal;
-    text-align: center;
     vertical-align: baseline;
     line-height: 23.80px;
     font-family:  "Work Sans", sans-serif;
@@ -87,6 +90,7 @@ p {
 }
 .p em {
     font-style: italic;
+    justify-content: space-between;
 }
 .testimonial-date {
     font-size: 14px;
