@@ -40,7 +40,8 @@ img {
     --footer-title-color: #ffffff; /*white*/
     --light-button-color: #21b6ff;
     --dark-button-color: #002579;
-    --about-light-color: #ffffffba ;
+    --about-light-color: #ffffffba;
+    --news-backgraund-color: #efefef;
 
     --about-some-text : 'Nunito', sans-serif;
     --button-font: 'Work Sans', sans-serif;
@@ -48,9 +49,9 @@ img {
     --button-font-color: #ffffff;
     --button-font-spacing: 1.43px;
     
-    --head-teg-text-size: 12px;
-    --head-nane-text-size: 46px;
-    --head-text-size: 19px;
+    --head-teg-text-size: 0.7em;
+    --head-name-text-size: 2.4em;
+    --head-text-size: 1.3em;
     --tag-text-size: 14px;
     --nane-text-size: 24px;
     --text-size: 17px;
