@@ -11,6 +11,10 @@ img {
     width: 100%;
 }
 
+.none {
+    display: none !important;
+}
+
 .container {
     max-width: 1200px;
     margin: auto;
