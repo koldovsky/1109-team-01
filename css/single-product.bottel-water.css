@@ -5,12 +5,16 @@
 
 .bottle-water__title {
     color: var(--text-color);
-    font-size: 55px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
     background-color: var(--dark-bg-color);
-    padding: 90px 90px;
+    padding: 90px 0px;
 }
+
+.bottle-water__title h1{
+    font-size: 38px;
+}
+
 
 .bottle-water__description {
     color: var(--description-text-color);
