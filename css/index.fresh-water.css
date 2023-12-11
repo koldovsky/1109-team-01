@@ -1,5 +1,5 @@
 .freshwater__img {
-    background-image: url('../img/two_glasses_of_water.png'); /* Updated image file name */
+    background-image: url('../img/two_glasses_of_water.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,18 +83,18 @@
 
 .freshwater__facts {
     display: flex;
-    justify-content: space-between; /* Adjust this property based on your design */
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .experience__fact,
 .anybottlesize__fact,
 .quickdelivery__fact {
-    width: calc(33.33% - 20px); /* Adjust width and margin based on your design */
+    width: calc(33.33% - 20px);
     margin-bottom: 20px;
 }
 
 .freshwater__icon {
     display: block;
-    margin: 0 auto; /* Center the icon horizontally */
+    margin: 0 auto;
 }
