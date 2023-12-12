@@ -1,20 +1,34 @@
 .freshwater__img {
-    background-image: url('../img/two_glasses_of_water.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-  }
-.freshwater {
-    padding-top: 130px;
-    padding-bottom: 110px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Image on top of the wave */
 }
 
-.style_3DA {
-    transform: scaleY(-1);
-  }
+.freshwater__photo {
+    position: relative;
+    overflow: hidden;
+}
 
-  .background-wrapper_RZ2 {
+.wave {
+    position: absolute;
+    top: -35%; 
+    left: 0;
+    width: 100%;
+    height: 90%; 
+    background: url('your_wave_svg_url.svg') repeat-x center top; 
+    transform: scaleY(-1);
+    z-index: 2;
+}
+@media screen {
+    
+}
+
+.freshwater__container {
+    position: relative;
+}
+
+.background-wrapper_RZ2 {
     position: absolute;
     top: 25%;
     left: 23%;
@@ -23,27 +37,28 @@
     height: 70px;
     border-radius: 50%;
     overflow: hidden;
+    z-index: 2;
 }
 
 .background_2xT {
     width: 100%;
     height: 100%;
-    background: #21b6ff; /* Blue color */
+    background: var(--title-text-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 
 .freshwater__icon {
     width: 40px;
     height: 40px;
+    z-index: 2;
 }
 
-
-  .freshwater__container {
+.freshwater__container {
     position: relative;
 }
-
 
 .freshwater__title,
 .freshwater__description {
@@ -56,47 +71,46 @@
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
+    z-index: 2
 }
 
 .freshwater__title {
-    top: 35%;
+    top: 40%;
     border-bottom: 0;
-    color: #002c8f;
+    color: var(--dark-bg-color);
     font-family: 'Nunito', sans-serif;
     font-size: 38px;
     font-weight: 800;
     line-height: 43.32px;
+    z-index: 2
 }
 
 .freshwater__description {
-    top: 45%;
-    border-bottom-color: rgb(92, 96, 124);
+    top: 55%;
+    border-bottom-color: ver(--bald-text-color);
     border-bottom-style: none;
     border-bottom-width: 0px;
-    color: rgb(92, 96, 124);
+    color: var(--bald-text-color);
     font-family: 'Work Sans', sans-serif;
     font-size: 19px;
     font-weight: 600;
     line-height: 26.6px;
 }
 
-
-
 .freshwater__facts {
     display: flex;
-    justify-content: space-between; /* Adjust this property based on your design */
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .experience__fact,
 .anybottlesize__fact,
 .quickdelivery__fact {
-    width: calc(33.33% - 20px); /* Adjust width and margin based on your design */
+    width: calc(33.33% - 20px);
     margin-bottom: 20px;
 }
 
 .freshwater__icon {
     display: block;
-    margin: center; 
-    
+    margin: 0 auto;
 }

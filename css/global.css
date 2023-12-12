@@ -15,12 +15,12 @@ img {
     scroll-behavior: smooth;
     font-family: 'Work Sans', sans-serif;
     
-    --title-text-color: #21b6ff;    /* new */
-    --accent-text-color: #002579;  /* new */
-    --standart-text-color: #737793; /* new */
-    --bold-text-color: #5c607c;     /* new */
-    --container-width: 1152px;        /* new */
-    --standart-paddings: 24px;        /* new */
+    --title-text-color: #21b6ff;    
+    --accent-text-color: #002579;  
+    --standart-text-color: #737793; 
+    --bold-text-color: #5c607c;     
+    --container-width: 1152px;        
+    --standart-paddings: 24px;        
     
     --brightest-background-color: #f1f6fb;
     --main-bg-color: #3498db;
@@ -43,13 +43,21 @@ img {
     --light-button-color: #21b6ff;
     --dark-button-color: #002579;
     --about-light-color: #ffffffba;
-    --news-backgraund-color: #efefef;
+    --news-backgraund-color: #f9fafc;
+    
     
     --about-some-text : 'Nunito', sans-serif;
     --button-font: 'Work Sans', sans-serif;
     --button-font-size: 14.3px;
     --button-font-color: #ffffff;
     --button-font-spacing: 1.43px;
+
+    --bottle-water-bg-color: #f1f6fb;
+    --dark-bg-color: #002c8f;
+    --title-text-color: #21b6ff;
+    --description-text-color: #002570;
+    --subdescription-text-color: #5C607C;
+    --bottel-water-text-color: #5C607C;
     
     --head-teg-text-size: 0.7em;
     --head-name-text-size: 2.4em;
