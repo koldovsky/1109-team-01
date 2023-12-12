@@ -1,6 +1,12 @@
 .bottle-water {
     background-color: var(--bottle-water-bg-color);
     min-width: 338px;
+    padding: 0 0 90px 0;
+}
+
+.bottel-water__conteiner {
+    display: flex;
+    flex-direction: column;
 }
 
 .bottle-water__title {
@@ -11,7 +17,7 @@
     padding: 90px 0px;
 }
 
-.bottle-water__title h1{
+.bottle-water__title h1 {
     font-size: 38px;
 }
 
@@ -34,11 +40,11 @@
 }
 
 .bottle-water__info {
-    padding: 80px 20px 15px 20px;
+    padding: 80px 0px 15px 0px;
 }
 
 .bottle-water_benefits {
-    padding: 15px 20px 120px 20px;
+    padding: 15px 0 120px 0;
 }
 
 
@@ -52,11 +58,14 @@
 
 .bottel-water__conteiner .feature__description {
     color: var(--bottel-water-text-color);
-    font-size: 19px;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 17px;
     padding: 0px 25px 0px 15px;
 }
 
-.filtration-info__title {
+.filtration-info__title,
+.bottle-water__order .order__title {
     color: var(--description-text-color);
     font-size: 22px;
     font-family: 'Nunito', sans-serif;
@@ -71,7 +80,7 @@
 
 .bottle-water__filtration {
     display: grid;
-    grid-template-columns: 70px 1fr;  
+    grid-template-columns: 100px 1fr;
 }
 
 
@@ -112,12 +121,6 @@
     flex-wrap: wrap;
 }
 
-/* .filtration-info {
-    display: flex;
-    align-items: center;
-    padding-bottom: 20px;
-} */
-
 .bottle-water__features .feature {
     display: flex;
     align-items: center;
@@ -133,5 +136,192 @@
     border-radius: 50%;
     background-color: var(--text-color);
     color: var(--the-darkest-background-color);
-    padding: 10px; 
+    padding: 12px;
+}
+
+.bottle-water__pricing {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--single-product-bg-color);
+    padding: 34px 28px 34px 28px;
+}
+
+.pricing-option__label,
+.composition-item__description {
+    font-size: 17px;
+    color: var(--subdescription-text-color);
+}
+
+.pricing-option__price {
+    font-size: 26px;
+    font-family: 'Nunito', sans-serif;
+    color: var(--title-text-color);
+    font-weight: 800;
+}
+
+.pricing-note__text {
+    margin-top: 30px;
+    font-size: 15px;
+    color: var(--subdescription-text-color);
+}
+
+.bottle-water__order,
+.bottle-water__composition {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 0 25px;
+}
+
+.bottle-water__order .order__description,
+.bottle-water__order .order-step,
+.bottle-water__order .order__conclusion {
+    color: var(--bottel-water-text-color);
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.bottle-water__order .order__conclusion {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.bottle-water__composition .composition-item__label {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    color: var(--the-darkest-text-color);
+    font-weight: 800;
+}
+
+.bottle-water__composition .composition-item:nth-child(2),
+.bottle-water__composition .composition-item:nth-child(3) {
+    margin-top: 20px;
+}
+
+.bottle-water__composition .composition-item__line {
+    color: var(--accent-color);
+}
+
+.bottle-water__composition .composition-item__quantity {
+    color: var(--title-text-color);
+}
+
+
+@media (min-width: 768px) {
+
+    .bottle-water__title h1,
+    .bottle-water__description {
+        font-size: 55px;
+    }
+
+    .bottle-water__filtration-conteiner {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+/* 
+    .pricing-option__choice {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    } */
+
+    .filtration-info__quality,
+    .bottle-water__info,
+    .pricing-option__2bottles,
+    .pricing-option__5bottels {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bottle-water_benefits {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+    }
+
+    .pricing-option__2bottles,
+    .pricing-option__5bottels {
+        align-items: center;
+    }
+
+    .bottle-water__pricing {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0 25px;
+    }
+
+    .filtration-info__equipment {
+        padding: 8px 15px 0 0;
+    }
+
+    .filtration-info__clear-water {
+        padding: 8px 0 0 15px;
+    }
+
+    .bottle-water__pricing,
+    .bottle-water__order,
+    .bottle-water__composition,
+    .bottle-water__image {
+        flex: 1;
+    }
+
+    .bottle-water__filtration-conteiner {
+        flex: 2;
+    }
+
+    .bottle-water__order,
+    .bottle-water__composition {
+        margin-top: 0px;
+    }
+
+    /* .bottle-water__image, */
+    .bottle-water__filtration-conteiner {
+        padding: 0 25px;
+    }
+
+    .bottle-water__image {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .bottle-water__pricing .pricing-option__2bottles,
+    .bottle-water__pricing .pricing-option__5bottels {
+        margin-bottom: 16px;
+    }
+
+    .pricing-option__2bottles .pricing-option__label {
+        padding: 8px 15px 8px 0;
+    }
+
+    .pricing-option__5bottels .pricing-option__label {
+        padding: 8px 15px 0 0;
+    }
+
+
+    .pricing-option__2bottles .pricing-option__price {
+        padding: 8px 0 8px 15px;
+    }
+
+    .pricing-option__5bottels .pricing-option__price {
+        padding: 8px 0px 0 15px;
+    }
+
+    .filtration-stage {
+        display: block;
+        width: 70px;
+        height: 70px;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .composition-item__description {
+        font-size: 17px;
+        color: var(--subdescription-text-color);
+        margin-top: 20px;
+    }
+
 }

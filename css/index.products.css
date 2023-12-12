@@ -46,7 +46,6 @@
     align-items: flex-start;
     margin: 50px 0 0;
     padding: 0 15px;
-    row-gap: 20px;
 }
 
 
@@ -54,13 +53,17 @@
     color: var(--description-text-color);
     font-size: 22px;
     font-family: 'Nunito', sans-serif;
-
+    margin-top: 20px;
 }
 
 .products .card__description {
     color: var(--bottel-water-text-color);
     font-size: 17px;
+    margin-top: 20px;
+}
 
+.products .button {
+    margin-top: 35px;
 }
 
 
