@@ -9,30 +9,6 @@
     flex-direction: column;
 }
 
-@media (min-width: 768px) {
-    .bottle-water__filtration-conteiner {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .bottle-water__info {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .bottle-water_benefits {
-        display: flex;
-        flex-direction: row;
-        flex-basis: 33.3%;
-    }
-
-    .bottle-water__pricing .pricing-option,
-    .bottle-water__pricing .pricing-note {
-        flex-basis: 33.3%;
-    }
-
-}
-
 .bottle-water__title {
     color: var(--text-color);
     font-family: 'Nunito', sans-serif;
@@ -64,13 +40,11 @@
 }
 
 .bottle-water__info {
-    /* display: flex; */
     padding: 80px 20px 15px 20px;
 }
 
 .bottle-water_benefits {
-    /* display: flex; */
-    padding: 15px 20px 120px 20px;
+    padding: 15px 0 120px 0;
 }
 
 
@@ -165,16 +139,12 @@
     padding: 10px;
 }
 
-.bottle-water_benefits {
-    padding: 0 20px;
-}
-
 .bottle-water__pricing {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
     background-color: var(--single-product-bg-color);
-    padding: 31px 27px 31px 27px;
+    padding: 0 20px;
+    margin: 0 20px;
 }
 
 .pricing-option__label,
@@ -196,8 +166,7 @@
     color: var(--subdescription-text-color);
 }
 
-.bottle-water__order, .bottle-water__composition,
-.bottle-water__composition {
+.bottle-water__order, .bottle-water__composition {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
@@ -210,7 +179,6 @@
     color: var(--bottel-water-text-color);
     font-size: 17px;
     margin-top: 20px;
-    max-width: 100%;
 }
 
 .bottle-water__order .order__conclusion {
@@ -236,4 +204,43 @@
 
 .bottle-water__composition .composition-item__quantity {
     color: var(--title-text-color);
+}
+
+
+@media (min-width: 768px) {
+    .bottle-water__filtration-conteiner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottle-water__info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bottle-water_benefits {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bottle-water__pricing,
+    .bottle-water__order,
+    .bottle-water__composition,
+    .bottle-water__image {
+        flex: 1;
+    }
+
+    .bottle-water__filtration-conteiner {
+        flex: 2;
+    }
+
+    .bottle-water__order, .bottle-water__composition {
+        margin-top: 0px;
+    }
+
+    .bottle-water__image,
+    .bottle-water__filtration-conteiner {
+        padding: 0 25px;
+    }
+
 }
