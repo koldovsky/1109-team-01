@@ -1,0 +1,30 @@
+.description__natural-water{
+    background-color: var(--natural-water-background-color);
+}
+
+.description__title{
+    font-size: inherit;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.description__text{
+    font-size: 1.0625rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.description__link{
+    font-size: 0.9375rem;
+    color: var(--link-color);
+}
+.description__rich-with-elements{
+    background-color: var(--even-more-dark-background-color);
+}
+.description__award-winning-water{
+    background-color: var(--the-darkest-background-color);
+}
+.description__non-crafted_taste{
+    background-color: var(--non-crafter-background-color);
+}
