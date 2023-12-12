@@ -1,32 +1,89 @@
+.wave-contacts {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .main-contacts {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: auto;
     align-items: center;
-    background-color: var(--dark-background-color);
-    max-height: 100%;
-    max-width: 100%;
+}
+
+@media (min-width: 1000px) {
+    .main-contacts {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--even-more-dark-background-color);
+        max-height: 100%;
+        max-width: 100%;
+        color: var(--text-color);
+        padding-bottom: 120px;
+        padding-top: 150px;
+    }
+}
+
+.main-contacts .part-information {
+    padding-top: 10px;
+    display: flex;
+    justify-content: left;
+    margin-top: 25px;
 }
 
 .main-contacts .left {
+    justify-content: space-between
+}
+
+.main-contacts h2 {
     color: var(--text-color);
-    /*    display: grid;*/
-}
-
-/*
-.main-contacts .info-block {
-    display: flex;
-*/
-}
-
-.main-contacts .information {
-    padding-top: 10px;
-/*    display: flex;*/
-    justify-content: left;
-    align-items: center;
+    font-size: 52px;
+    font-weight: 900;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 20px;
+    width: 500px;
 }
 
 .main-contacts .img {
-    width: 40px;
+    width: 100px;
+    display: flex;
+    align-content: center;
+    margin-right: 5px;
+}
+
+.main-contacts .text p {
+    color: #d1d7ea;
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.main-contacts .text-information {
+    display: table-header-group;
+    align-self: center;
+}
+
+.main-contacts p {
+    color: #c2c9dc;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: inherit;
+    font-weight: bold;
+}
+
+.main-contacts p:nth-of-type(1) {
+    color: #c2c9dc;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: inherit;
+    font-weight: bold;
+}
+
+.main-contacts p[id="contacts"] {
+    color: var(--accent-color);
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .main-contacts form {
@@ -34,11 +91,12 @@
     display: flex;
     flex-direction: column;
     margin: 50px 50px 20px 50px;
+    padding: 50px 100px 50px 100px;
     width: 100%;
+    border-radius: 5px;
 }
 
-.main-contacts input,
-select {
+.main-contacts input, select {
     margin-bottom: 4px;
     padding: 11px 22px 11px 22px;
     border: 1px solid #ccc;
@@ -50,4 +108,13 @@ select {
     font-size: 15px;
     width: 100%;
     color: var(--form-text-color);
+}
+
+.main-contacts input[type="submit"] {
+    background-color: var(--light-background-color);
+    color: var(--text-color);
+}
+
+.main-contacts .icon {
+    width: 80px
 }

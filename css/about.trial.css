@@ -1,28 +1,33 @@
 .about__trial-partial{
     background-image: url(../img/water_paralax_bottom.png);
-    min-width : 320px;
+    background-position: center; /* Центрирование фона */
+    background-size: cover;
     height : auto;
     padding-top: 160px;
     padding-bottom : 160px;
     scroll-behavior: smooth;
     box-sizing: border-box;
-
-
+    display: flex;
+    margin: 0;
+    justify-content: center;
 }
 .about__trial{
-    padding: 1px 15px;
-    margin-left: 90px;
+    padding: 0px 15px;
+    margin-left: -20%;
 }
 .about__text-trial{
     font-size: var(--about-teg-size);
     color: var(--accent-color);
     font-weight: 600;
+    margin-bottom: 10px;
 }
 .about__rent-a-water{
     font-size: var(--about-title-size);
     font-family : var(--about-some-text);
     color: var(--text-color);
     font-weight: 800;
+    margin: 10px 0px;
+
 }
 .about__text-delivery{
     color: var(--about-light-color);
@@ -30,35 +35,25 @@
     word-wrap: break-word;
 
 }
-.about__button{
-
-    margin-top: 40px;
-    border-radius: 10px;
-    fill: blue;
-    max-width: 150px;
-    border: 1px solid #3498db;
-    padding: 10px 10px;
+.about__start{
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    vertical-align: baseline;
+    text-align: center;
+    font-family: var(--button-font);
+    font-size: var(--button-font-size);
+    letter-spacing: var(--button-font-spacing);
+    font-weight: 700;
+    background-color: var(--light-button-color);
+    color: var(--button-font-color);
     border-radius: 25px;
-    border: 2px solid var(--light-text-color);
-    background-color: var(--light-text-color);
+    text-decoration: none;
+    margin-top: 30px;
     }
-.about__button:hover,
 .about__start:hover
 {
-    background-color: var{--button-font-color}
-}
-.about__button:active,
-..about__start:active{
-    color: var{--button-font-color}
-}
-.about__button:visited,
-..about__start:visited{
-    color: var{--button-font-color}
-}
-.about__start{
-    font-size: var(--button-text-size);
-    font-weight: 700;
-    color: var(--text-color);
-    text-decoration: none;
-    margin: center;
+    background-color: white;
+    color: var(--dark-button-color);
 }
