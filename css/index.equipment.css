@@ -1,0 +1,245 @@
+.slide-block {
+    content: "";
+    width: 600px;
+    height: 200px;
+    background-color: blue;
+}
+
+.my-hidden {
+    display: none !important;
+}
+
+.equipment {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 120px 40px;
+    max-width: var(--container-width);
+}
+
+.equipment__bottom {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    min-width: 370px;
+}
+
+
+
+@media (min-width: 768px) {
+    .equipment__bottom {
+        flex-direction: row;
+    }
+
+    .bottom-free {
+        flex: 0 0 59%;
+    }
+    .bottom-discount {
+        flex: 0 0 41%;
+        margin-top: 0 !important;
+        margin-left: 30px;
+    }
+}
+                    /* BOTTOM */
+
+/* BOTTOM FREE*/
+
+.bottom-free {
+    padding: 39px;
+    background-image: url(../img/free-bottle.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-free__spacer {
+    flex: 0;
+    margin: 15px;
+    height: auto;
+}
+
+.bottom-free__title {
+    flex: 1;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--title-text-color);
+}
+
+.bottom-free__subtitle {
+    flex: 1;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    color: var(--accent-text-color);
+
+    margin-top: 20px;
+}
+
+.down-subtitle {
+    margin-top: 0;
+}
+
+.bottom-free__devider-blue {
+    margin: 15px 0;     
+    width: 55px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: var(--title-text-color);
+}
+
+.bottom-free__description {
+    flex: 1;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--bold-text-color);
+}
+
+/* BOTTOM DISCOUNT */
+
+.bottom-discount {
+    margin-top: 50px;
+    padding: 30px;
+    background-image: url(../img/discount.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-discount__title {
+    flex: 1;
+    font-size: 90px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    color: var(--title-text-color);
+}
+
+.bottom-discount__devider-green {
+    margin: 15px 0;     
+    width: 55px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: var(--accent-color);
+}
+
+.bottom-discount__description {
+    font-size: 14;
+    font-weight: 400;
+    color: var(--bold-text-color);
+
+}
+
+                    /* UPPER */
+
+/* EQUIPMENT INFO */
+
+.equipment__upper {
+    display: flex;
+    flex-direction: column;
+    min-width: 370px;
+}
+
+/* update all media-request to JS slider */
+
+@media (max-width: 768px) {
+    .slide-block {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .slide-block {
+        width: 850px;
+        height: 330px;
+    }
+}
+
+@media (min-width: 992px) {
+    .equipment__upper {
+        flex-direction: row;
+    }
+    .equipment__info {
+        flex: 0 0 30%
+    }
+    .equipment__slider{
+        margin-top: 0 !important;
+        flex: 0 0 70%
+    }
+}
+
+/* EQUIPMENT SLIDER */
+
+.equipment__slider {
+    margin-top: 30px;
+}
+
+/* .equipment__info {
+    text-align: left;   
+} */
+
+.equipment__info-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--title-text-color);
+}
+
+.equipment__info-subtitle {
+    font-size: 38px;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    color: var(--accent-text-color);
+
+    margin-top: 20px;
+}
+
+.equipment__info-description {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--standart-text-color);
+
+    margin-top: 25px;
+}
+
+.equipment__info-offer {
+    font-size: 17px;
+    font-weight: 400;
+color: var(--standart-text-color);
+
+    margin-top: 25px;
+}
+
+.equipment__info-box {
+    margin-top: 20px;
+    display: flex;
+}
+
+.equipment__info-box-date {
+    min-width: 207px;
+    margin: 7.5px;
+}
+
+.equipment__info-answer {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--accent-text-color);
+}
+
+.equipment__info-number {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--standart-text-color);
+}
+
+.equipment__ico-phone-box {
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    padding: 13px;
+    margin: 7.5px;
+}
