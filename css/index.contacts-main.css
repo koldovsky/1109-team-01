@@ -38,10 +38,11 @@
 
 .main-contacts h2 {
     color: var(--text-color);
-    font-size: 38px;
-    font-weight: 800;
+    font-size: 52px;
+    font-weight: 900;
     font-family: 'Nunito', sans-serif;
     margin-top: 20px;
+    width: 500px;
 }
 
 .main-contacts .img {
