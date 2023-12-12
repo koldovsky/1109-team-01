@@ -37,27 +37,32 @@
     display: grid;
 }
 
-
 .products__card-item {
-    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     text-align: left;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 50px 0 0;
+    padding: 0 15px;
+    row-gap: 20px;
 }
+
 
 .products .card__title {
     color: var(--description-text-color);
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Nunito', sans-serif;
+
 }
 
 .products .card__description {
     color: var(--bottel-water-text-color);
     font-size: 17px;
+
 }
 
-.products .card__title, 
-.card__description {
-    padding: 20px 0;
-}
 
 @media (min-width: 768px) {
     .products__cards {
@@ -70,7 +75,7 @@
     }
 
     .products .card__title {
-        font-size: 25px;
+        font-size: 24px;
     }
     
     .products .card__description {
@@ -89,7 +94,7 @@
     }
 
     .products .card__title {
-        font-size: 25px;
+        font-size: 26px;
     }
     
     .products .card__description {
