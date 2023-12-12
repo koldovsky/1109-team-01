@@ -4,6 +4,10 @@
     padding: 90px 9px;
 }
 
+/* .card {
+    border: 0;
+  } */
+
 .products__info {
     display: block;
     padding: 0px 15px;
@@ -42,7 +46,7 @@
     flex-direction: column;
     margin: 0;
     text-align: left;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-start;
     margin: 50px 0 0;
     padding: 0 15px;

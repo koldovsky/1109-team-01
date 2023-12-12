@@ -28,7 +28,7 @@
     font-size: 38px;
     font-weight: 800;
     font-family: 'Nunito', sans-serif;
-    padding: 15px 0px;
+    padding: 0;
 }
 
 .bottle-water__subdescription {
@@ -43,7 +43,7 @@
     padding: 80px 20px 15px 20px;
 }
 
-.bottle-water_benefits {
+.bottle-water__benefits {
     padding: 15px 0 120px 0;
 }
 
@@ -69,13 +69,19 @@
     color: var(--description-text-color);
     font-size: 22px;
     font-family: 'Nunito', sans-serif;
-    padding: 5px 0px;
+    padding: 0;
 }
 
-.filtration-info__description {
+.filtration-info__description,
+.filtration-info__quality {
     color: var(--bottel-water-text-color);
     font-size: 17px;
     padding: 0px 0px 15px 0px;
+}
+
+.filtration-info__equipment, 
+.filtration-info__clear-water {
+
 }
 
 .bottle-water__filtration {
@@ -159,8 +165,14 @@
     font-weight: 800;
 }
 
-.pricing-note__text {
+.pricing-note__text:nth-child(1) {
     margin-top: 30px;
+    font-size: 15px;
+    color: var(--subdescription-text-color);
+}
+
+.pricing-note__text:nth-child(2) {
+    margin-top: 18px;
     font-size: 15px;
     color: var(--subdescription-text-color);
 }
@@ -219,39 +231,37 @@
         flex-direction: column;
         align-self: center;
     }
-/* 
-    .pricing-option__choice {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-    } */
 
     .filtration-info__quality,
-    .bottle-water__info,
-    .pricing-option__2bottles,
-    .pricing-option__5bottels {
+    .bottle-water__info {
         display: flex;
         flex-direction: row;
     }
 
-    .bottle-water_benefits {
+    .pricing-option__2bottles,
+    .pricing-option__5bottels {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bottle-water__benefits {
         display: flex;
         flex-direction: row;
         align-items: center;
+        align-items: stretch;
         height: 100%;
-    }
-
-    .pricing-option__2bottles,
-    .pricing-option__5bottels {
-        align-items: center;
     }
 
     .bottle-water__pricing {
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin: 0;
+        margin: 0 25px;
         padding: 0 25px;
+        justify-content: center;
     }
 
     .filtration-info__equipment {
@@ -278,19 +288,13 @@
         margin-top: 0px;
     }
 
-    /* .bottle-water__image, */
     .bottle-water__filtration-conteiner {
         padding: 0 25px;
     }
 
     .bottle-water__image {
         width: 100%;
-        padding: 0 10px;
-    }
-
-    .bottle-water__pricing .pricing-option__2bottles,
-    .bottle-water__pricing .pricing-option__5bottels {
-        margin-bottom: 16px;
+        padding: 0 35px;
     }
 
     .pricing-option__2bottles .pricing-option__label {
@@ -298,7 +302,7 @@
     }
 
     .pricing-option__5bottels .pricing-option__label {
-        padding: 8px 15px 0 0;
+        padding: 8px 15px 8px 0;
     }
 
 
@@ -307,7 +311,7 @@
     }
 
     .pricing-option__5bottels .pricing-option__price {
-        padding: 8px 0px 0 15px;
+        padding: 8px 0px 0 15px;  
     }
 
     .filtration-stage {
@@ -322,6 +326,11 @@
         font-size: 17px;
         color: var(--subdescription-text-color);
         margin-top: 20px;
+    }
+
+    .filtration-info__title,
+    .bottle-water__order .order__title {
+    font-size: 26px;
     }
 
 }
