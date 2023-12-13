@@ -1,11 +1,12 @@
 .carousel__title {
     color: rgb(29, 182, 255);
-    background-color: rgb(240, 246, 252);
+    background-color: rgb(242, 246, 252);
     font-size: 22px;
     font-weight: 600;
     line-height: 27.06px;
     margin-bottom: 8px;
-    text-align: center;
+    margin-left: 85px;
+    text-align: left;
     vertical-align: baseline;
     border-image-slice: 100% !important;
 }
