@@ -25,9 +25,13 @@
     padding: 70px 10px 40px;
     margin: auto
 }
-@media (max-width: 800px) {
-    .footer__navbar{
-        text-align: center;
+@media screen and (max-width: 800px) {
+    ..footer__social,
+    .footer__navigation,
+    .footer__information,
+    .footer__support,
+    .footer__delivery{
+
     }
 }
 .footer__social{
@@ -54,11 +58,12 @@
     height:25px;
     color:var(--the-darkest-background-color);
     fill:var(--the-darkest-background-color);
-    margin: 0;
+    margin: 20px 0px 0px;
     display: flex;
-    justify-content: space-between;}
+    justify-content: space-between;
+    padding: 0}
 .footer__social-item{
-    margin: 15px 3px 15px;
+    margin: 0px 3px 0px;
     padding: 3px 3px 30px;
 }
 .footer__navigation-title,
