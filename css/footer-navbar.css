@@ -1,18 +1,17 @@
-        /*main*/
+        /*footer*/
 .footer__navbar{
     scroll-behavior: smooth;
     display: flex;
     justify-content: space-between;
     background-color: var(--the-darkest-background-color);
     color: var(--footer-title-color);
-    text-align: center;
-    max-width: max;
-    }
+}
 .footer__line-title{
     height: 0.1px;
     background-color: var(--footer-line-color);
     border-color: var(--footer-line-color);
     width: 20px;
+    margin: 10px 0px 10px;
 }
 .footer__social,
 .footer__navigation,
@@ -21,23 +20,27 @@
 .footer__delivery{
     padding: 22.5px;
     display: inline-block;
+    vertical-align: top;
+}
+.footer__all{
+    padding: 70px 10px 40px;
+    margin: auto
 }
 .footer__social{
-
     width: 243px;
     box-sizing: border-box;
-
 }
 .footer__social-logo{
     width:173px;
     height: auto;
-
+    margin-bottom: 20px;
 }
 .footer__social-text {
     white-space: pre-line;
     color: var(--footer-text-color);
     font-size: var(--tag-text-size);
     word-wrap: break-word;
+    margin: 2px 0px 0px ;
 }
 .footer__social-list{
     list-style: none;
@@ -46,11 +49,12 @@
     height:25px;
     color:var(--the-darkest-background-color);
     fill:var(--the-darkest-background-color);
-    margin-top: 30px;
+    margin: 10px 5px 25px;
     display: flex;
     justify-content: space-between;}
 .footer__social-item{
     margin: 5px;
+    padding-top: 2px;
 }
 .footer__navigation-title,
 .footer__information-title,
@@ -76,8 +80,11 @@
 .footer__information-item ,
 .footer__support-item{
     text-decoration: none;
+    color: var(--footer-text-color)
 }
-
+.footer__all_lists{
+    padding-top: 10px
+}
 .footer__navigation-item:visited,
 .footer__information-item:visited,
 .footer__support-item:visited{
@@ -90,7 +97,6 @@
 {
     color: var(--footer-title-color);
 }
-
 .footer__navigation-item:active ,
 .footer__information-item:active,
 .footer__support-item:active
@@ -98,23 +104,6 @@
   color: var(--footer-title-color);
 }
 
-        /*information*/
-.footer__information{
-}
-.footer__information-title{
-}
-.footer__information-items{
-}
-        /*support*/
-.footer__support{
-}
-.footer__support-title{
-}
-.footer__support-items{
-}
-        /*delivery*/
-.footer__delivery{
-}
 .footer__delivery-items{
     list-style: none;
     color: var(--accent-color);
@@ -122,18 +111,18 @@
     text-decoration: underline;
     font-weight: 700;
 }
-        /*bottom*/
 .footer__line-bottom{
-
   background-color: var(--footer-text-color);
   border-color: var(--footer-title-color);
-
-
 }
-.footer__created-by{
+.footer__created-left,
+.footer__created-right{
     font-size: var(--footer-text-size)
+    padding: 10px;
+    display: flex;
+    margin-top: 15px;
+    float: left;
 }
-.created_by__left{
-}
-.created_by__right{
+.footer__created-right{
+    float: right;
 }

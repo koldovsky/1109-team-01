@@ -1,7 +1,62 @@
 .about__trial-partial{
+    padding-top: 160px;
+    padding-bottom : 160px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+.about__trial{
+    padding: 0px 15px;
+    margin-left: -20%;
+}
+.about__text-trial{
+    font-size: var(--about-teg-size);
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about__rent-a-water{
+    font-size: var(--about-title-size);
+    font-family : var(--about-some-text);
+    color: var(--text-color);
+    font-weight: 800;
+    margin: 10px 0px;
+}
+.about__text-delivery{
+    color: var(--about-light-color);
+    font-size: var(--text-size);
+    word-wrap: break-word;
+}
+.about__start{
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    vertical-align: baseline;
+    text-align: center;
+    font-family: var(--button-font);
+    font-size: var(--button-font-size);
+    letter-spacing: var(--button-font-spacing);
+    font-weight: 700;
+    background-color: var(--light-button-color);
+    color: var(--button-font-color);
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 30px;
+    }
+.about__start:hover
+{
+    background-color: var(--text-color) ;
+    color: var(--dark-button-color);
+}
+.about__trial-wave{
+    transform: scaleY(-1);
+    margin-top: 5%;
+}
+.about__trial-all{
     background-image: url(../img/water_paralax_bottom.png);
-    min-width : 320px;
-
-    height : 600px;
-
+    background-position: center;
+    background-size: cover;
 }

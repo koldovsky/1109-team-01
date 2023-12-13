@@ -1,21 +1,4 @@
 @import url(global.css);
-<<<<<<< HEAD
-@import url(header-navbar.css); /* Kyrylo Suprun */
-
-.header__contacts {
-    
-    background: var(--ligt-header-color);
-    position: relative;
-    min-height: 100%
-    width: 660px;
-    height: 223px;
-}
-.header__contacts.text {
-    text-align: center; 
-    font-size: 24px; 
-}
-=======
 @import url(header-navbar.css);
 @import url(contact.delivery.css);
->>>>>>> af467bbf25f836c1c2ac1f57396303db03e0cbaf
-@import url(footer-navbar.css); /* maksym shylov*/
+@import url(footer-navbar.css); 
