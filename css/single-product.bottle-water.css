@@ -4,7 +4,7 @@
     padding: 0 0 90px 0;
 }
 
-.bottel-water__conteiner {
+.bottel-water__container {
     display: flex;
     flex-direction: column;
 }
@@ -56,7 +56,7 @@
     border: 20px;
 }
 
-.bottel-water__conteiner .feature__description {
+.bottel-water__container .feature__description {
     color: var(--bottel-water-text-color);
     font-style: italic;
     font-weight: 500;
@@ -226,7 +226,7 @@
         font-size: 55px;
     }
 
-    .bottle-water__filtration-conteiner {
+    .bottle-water__filtration-container {
         display: flex;
         flex-direction: column;
         align-self: center;
@@ -283,7 +283,7 @@
         flex: 1;
     }
 
-    .bottle-water__filtration-conteiner {
+    .bottle-water__filtration-container {
         flex: 2;
     }
 
@@ -292,7 +292,7 @@
         margin-top: 0px;
     }
 
-    .bottle-water__filtration-conteiner {
+    .bottle-water__filtration-container {
         padding: 0 25px;
     }
 
