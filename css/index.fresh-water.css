@@ -1,20 +1,101 @@
 .freshwater__img {
-    background-image: url('../img/two_glasses_of_water.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-  }
-.freshwater {
-    padding-top: 130px;
-    padding-bottom: 110px;
+    width: 1500px; /* Adjust the width as needed */
+    height: 650px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url('img/two_glasses_of_water.png') repeat-x center top;
+    background-size: cover; /* Use 'cover' to fill the entire container */
 }
 
-.style_3DA {
-    transform: scaleY(-1);
-  }
+.freshwater__img img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 1500px;
+    height: 650px;
+}
 
-  .background-wrapper_RZ2 {
+.freshwater__photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    top: -3%;
+    left: 50%;
+    transform: translateX(-50%) scaleY(-1);
+    width: 100%;
+    height: auto; 
+    z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+    .freshwater__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .freshwater__img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .freshwater__facts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience__fact,
+    .anybottlesize__fact,
+    .quickdelivery__fact {
+        width: 100%;
+        margin-bottom: 20px;
+        height: auto;
+    }
+}
+.freshwater__img {
+    width: 1500px; /* Adjust the width as needed */
+    height: 650px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url('img/two_glasses_of_water.png') repeat-x center top;
+    background-size: cover; /* Use 'cover' to fill the entire container */
+}
+
+.freshwater__img img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 1500px;
+    height: 650px;
+}
+
+.freshwater__photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.wave {
+    position: absolute;
+    top: -3%;
+    left: 50%;
+    transform: translateX(-50%) scaleY(-1);
+    width: 100%;
+    height: auto; 
+    z-index: 2;
+}
+@media screen {
+    
+}
+
+.freshwater__container {
+    position: relative;
+}
+
+.background-wrapper_RZ2 {
     position: absolute;
     top: 25%;
     left: 23%;
@@ -23,27 +104,28 @@
     height: 70px;
     border-radius: 50%;
     overflow: hidden;
+    z-index: 2;
 }
 
 .background_2xT {
     width: 100%;
     height: 100%;
-    background: #21b6ff; /* Blue color */
+    background: var(--title-text-color);
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
 
 .freshwater__icon {
     width: 40px;
     height: 40px;
+    z-index: 2;
 }
 
-
-  .freshwater__container {
+.freshwater__container {
     position: relative;
 }
-
 
 .freshwater__title,
 .freshwater__description {
@@ -56,47 +138,91 @@
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
+    z-index: 2
 }
 
 .freshwater__title {
-    top: 35%;
+    top: 40%;
     border-bottom: 0;
-    color: #002c8f;
+    color: var(--dark-bg-color);
     font-family: 'Nunito', sans-serif;
     font-size: 38px;
     font-weight: 800;
     line-height: 43.32px;
+    z-index: 2
 }
 
 .freshwater__description {
-    top: 45%;
-    border-bottom-color: rgb(92, 96, 124);
+    top: 55%;
+    border-bottom-color: ver(--bald-text-color);
     border-bottom-style: none;
     border-bottom-width: 0px;
-    color: rgb(92, 96, 124);
+    color: var(--bald-text-color);
     font-family: 'Work Sans', sans-serif;
     font-size: 19px;
     font-weight: 600;
     line-height: 26.6px;
 }
 
-
-
 .freshwater__facts {
     display: flex;
-    justify-content: space-between; /* Adjust this property based on your design */
     flex-wrap: wrap;
 }
 
 .experience__fact,
 .anybottlesize__fact,
 .quickdelivery__fact {
-    width: calc(33.33% - 20px); /* Adjust width and margin based on your design */
-    margin-bottom: 20px;
+    width: calc(33.33% - 20px);
+    margin-bottom: 30px;
+    display: block;
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    height: 5.5cm; /* Increase the height by 0.5 centimeters */
+}
+
+.freshwater__subtitle {
+    font-family: Nunito, sans-serif;
+    font-size: 24px;
+    box-sizing: border-box;
+    line-height: 29.52px;
+}
+
+@media .freshwater__subtitle * {
+    font-size: inherit;
+}
+
+.freshwater__text {
+    color: #c2c9dc;
+    font-family: "Work Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    box-sizing: border-box;
 }
 
 .freshwater__icon {
     display: block;
-    margin: center; 
-    
+    margin: 10px;
+}
+
+.background-color-1,
+.background-color-2,
+.background-color-3 {
+    margin-bottom: 0;
+    width: 480px;
+    height: 6cm; 
+}
+
+.background-color-1 {
+    background-color: #0035ac;
+}
+
+.background-color-2 {
+    background-color: #002d92;
+}
+
+.background-color-3 {
+    background-color: #002579;
 }

@@ -4,6 +4,10 @@
     padding: 90px 9px;
 }
 
+/* .card {
+    border: 0;
+  } */
+
 .products__info {
     display: block;
     padding: 0px 15px;
@@ -37,27 +41,35 @@
     display: grid;
 }
 
-
 .products__card-item {
-    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
     text-align: left;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px 0 0;
+    padding: 0 15px;
 }
+
 
 .products .card__title {
     color: var(--description-text-color);
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'Nunito', sans-serif;
+    margin-top: 20px;
 }
 
 .products .card__description {
     color: var(--bottel-water-text-color);
     font-size: 17px;
+    margin-top: 20px;
 }
 
-.products .card__title, 
-.card__description {
-    padding: 20px 0;
+.products .button {
+    margin-top: 35px;
 }
+
 
 @media (min-width: 768px) {
     .products__cards {
@@ -70,7 +82,7 @@
     }
 
     .products .card__title {
-        font-size: 25px;
+        font-size: 24px;
     }
     
     .products .card__description {
@@ -89,7 +101,7 @@
     }
 
     .products .card__title {
-        font-size: 25px;
+        font-size: 26px;
     }
     
     .products .card__description {

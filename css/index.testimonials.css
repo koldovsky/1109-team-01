@@ -1,13 +1,19 @@
 .testimonials {
     box-sizing: border-box;
-    width: 375px;
-    height: 1422.050px;
+    width: 100%;
+    min-width: 375px;
+    max-width: 1500px;
+    margin: 0;
+    padding-top: 90px;
+    height: 1791,90px;
     text-align: center;
+    flex: 1;
     background-color: #f1f6fc;
     }
-.h2{
+.testimonials h2 {
     font-weight: bold;
 }
+    
 .testimonials__title {
     font-size: 12px;
     font-weight: 800;
@@ -20,6 +26,7 @@
 .testimonials__tagline{
     font-size: 38px;
     font-weight: 600;
+    margin-top: 20px;
     letter-spacing: normal;
     text-align: center;
     line-height: 43.32px;
@@ -29,7 +36,8 @@
 }
 .testimonials__subtitle {
     font-size: 19px;
-    font-weight: 800;
+    font-weight: 600;
+    margin-top: 25px;
     font-smooth: antialized;
     letter-spacing: normal;
     text-align: center;
@@ -37,22 +45,43 @@
     font-family:  "Work Sans", sans-serif;
     color: #5c607c;
 }
-.testimonials__providers {
+.testimonials__provider {
     box-sizing: border-box;
-    width: 269px;
-    height: 387.617px;
-    padding-left: 29;
-    padding-top: 31;
-    padding-right: 29;
-    padding-bottom: 31;
+    border-radius: 6px;
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 448,62px;
+    padding: 15px; /*need a check here*/
     position: relative;
     align-items: center;
     background-color: white;
-
 }
+@media (min-width: 600px) {
+  .testimonials__providers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+  
+@media (min-width: 801px) {
+  .testimonials__providers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+  
+@media (min-width: 980px) {
+  .testimonials__providers {
+     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .profile__image {
     align-items: center;
     justify-content: center;
+    margin: auto;
     height: 70px;
     width: 70px;
     border-radius: 50%; 
@@ -62,13 +91,14 @@
     font-weight: 800;
     letter-spacing: normal;
     text-align: center;
+    margin-top: 20px;
     line-height: 27.06px;
     font-family: "Nunito", sans-serif;
     color: #002579;
 }
 .profile__occupation {
     font-size: 14px;
-    font-weight: 800;
+    font-weight: 700;
     font-smooth: antialized;
     letter-spacing: normal;
     text-align: center;
@@ -83,12 +113,12 @@
     font-weight: 400;
     letter-spacing: normal;
     vertical-align: baseline;
+    margin-top: 45px;
+    padding-left: 0px;
+    padding-right: 0px;
     line-height: 23.80px;
     font-family:  "Work Sans", sans-serif;
     color: #5c607c;
-
-}
-.p em {
     font-style: italic;
     justify-content: space-between;
 }
@@ -97,8 +127,16 @@
     font-weight: 700;
     letter-spacing: normal;
     text-align: center;
+    margin-top: 20px;
+    vertical-align: baseline;
     line-height: 19.60px;
     font-family: "Nunito", sans-serif;
     color: #002579;
     box-sizing: border-box;
 }
+@media only screen and (max-width: 1500px) {
+    .testimonials__providers {
+      padding: 15px; 
+    }
+  }
+  

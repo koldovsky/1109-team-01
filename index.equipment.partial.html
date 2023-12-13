@@ -1,96 +1,102 @@
-<section class="equipment">
-  <div class="equipment__cooler">
+<div id="equipment" class="equipment">
+  <div class="equipment__upper">
+
     <div class="equipment__info">
-      <!-- information about cooler and call number -->
-      <p id="equipment" class="equipment__title">
+      <h2 class="equipment__info-title">
         - EQUIPMENT -
-      </p>
-      <h2 class="equipment__subtitle">
-        Equipment
       </h2>
-      <p class="equipment__description">
-        Rent or buy a cooler right now.
+      <p class="equipment__info-subtitle">
+        Equipment
       </p>
-      <p class="equipment__additional-info">
-        We offer coolers for home and office use.
-        Modern design and ease of use will not leave you indifferent.
+      <p class="equipment__info-description">
+        <b>Rent or buy a cooler right now.</b>
       </p>
-      <div class="equipment__call">
-        <div class="equipment__call-box">
-          <div class="call-box-background">
-            <img src="img/green-button-call.svg" alt="Call button to order water at a discount">
-          </div>
+      <p class="equipment__info-offer">
+        We offer coolers for home and office use. Modern design and ease of use will not leave you indifferent.
+      </p>
+      <div class="equipment__info-box">
+        <div class="equipment__ico-phone-box">
+          <img class="equipment__ico-phone-img" src="img/green-button-call.svg" alt="phone ico">
         </div>
-        <div class="equipment__call-details">
-          <p class="equipment__call-title">
+        <div class="equipment__info-box-date">
+          <p class="equipment__info-answer">
             Need a Consultation?
           </p>
-          <p class="equipment__call-number">
+          <p class="equipment__info-number">
             Call us now <b>+1 (234) 567 89 00</b>
           </p>
         </div>
       </div>
     </div>
-    <div class="equipment__carousel">
-      <div class="equipment__carousel-container">
-        <ul class="equipment__carousel-slide">
-          <div class="equipment__photo-item" data-active>
-            <div class="equipment__photo">
-              <img class="equipment__photo-img" width="344" src="img/apex-cooler.png" alt="Apex Cooler photo">
-              <p class="equipment__photo-caption">
-                Apex Cooler
-              </p>
-            </div>
+    <div class="equipment__slider">
+
+      <div id="equipment__slider-wrap" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/apex-cooler.png" class="d-block w-100 active" alt="Apex cooler">
+            <p class="eq-slider-item-name">Apex cooler</p>
           </div>
-          <!-- <div class="equipment__photo-item">
-            <div class="equipment__photo">
-              <img class="equipment__photo-img" width="344" src="img/archway-cooler.png" alt="Archway Cooler photo">
-              <p class="equipment__photo-caption">
-                Archway Cooler
-              </p>
-            </div>
+          <div class="carousel-item">
+            <img src="img/archway-cooler.png" class="d-block w-100" alt="Archway cooler">
+            <p class="eq-slider-item-name">Archway cooler</p>
           </div>
-          <div class="equipment__photo-item">
-            <div class="equipment__photo">
-              <img class="equipment__photo-img" width="344" src="img/premium-cooler.png" alt="Premium Cooler photo">
-              <p class="equipment__photo-caption">
-                Premium Cooler
-              </p>
-            </div>
-          </div> -->
-        </ul>
+          <div class="carousel-item">
+            <img src="img/premium-cooler.png" class="d-block w-100" alt="Premium-cooler">
+            <p class="eq-slider-item-name">Premium cooler</p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#equipment__slider-wrap" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#equipment__slider-wrap" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+      
+      <!-- <div class="equipment__slider-item">
+        <img class="slider-item-img" src="img/apex-cooler.png" alt="">
+        <p class="slider-item-name">Apex cooler</p>
+      </div>
+      <div class="equipment__slider-item">
+        <img class="slider-item-img" src="img/archway-cooler.png" alt="">
+        <p class="slider-item-name">Archway cooler</p>
+      </div>
+      <div class="equipment__slider-item">
+        <img class="slider-item-img" src="img/premium-cooler.png" alt="">
+        <p class="slider-item-name">Premium cooler</p>
+      </div> -->
     </div>
   </div>
-  <div class="equipment__disconut">
-    <div class="equipment__free-bottle">
-      <div class="equipment__free-box">
-        <h2 class="equipment__free-box-title">
-              - FOR NEW CUSTOMERS -
+  <div class="equipment__bottom">
+    <div class="bottom-free">
+      <div class="rows-container">
+        <p class="bottom-free__spacer"></p>
+        <h2 id="special-offers" class='bottom-free__title'>
+          - FOR NEW CUSTOMERS -
         </h2>
-        <p class="equipment__feree-box-description">
-              Get a Free Bottle
-        <p class="equipment__feree-box-description">
-              or Water Pump
-        <p class="equipment__feree-box-devider">
-              <img src="img/eq-devider.svg" alt="Sky-blue text devider">
-        <p class="equipment__feree-box-disclaimer">
-              <i><span style="color: #78ee4a;">*</span> when ordering from two bottles</i>
+        <p class="bottom-free__subtitle">
+          Get a Free Bottle
         </p>
+        <p class="bottom-free__subtitle down-subtitle">
+          or Water Pump
+        </p>
+        <p class="bottom-free__devider-blue"></p>
+        <p class="bottom-free__description">
+          * when ordering from two bottles.
+        </p>
+        <p class="bottom-free__spacer"></p>
       </div>
     </div>
-    <div class="equipment__disconut-bottle">
-      <div class="equipment__disconut-box">
-        <h2 class="equipment__disconut-box-title">
-          10%
-        </h2>
-        <p class="equipment__discount-box-devider">
-          <img src="img/eq-devider.svg" alt="Sky-blue text devider">
-        </p>-box
-        <p class="equipment__disconut-box-description">
-          Discount on Avalanche Cooler
-        </p>
-      </div>
+    <div class="bottom-discount">
+      <h2 class="bottom-discount__title">
+        10%
+      </h2>
+      <p class="bottom-discount__devider-green"></p>
+      <p class="bottom-discount__description">
+        Discount on Avalanche Cooler
+      </p>
     </div>
   </div>
-</section>
+</div>
