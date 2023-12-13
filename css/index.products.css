@@ -69,6 +69,7 @@
 
 
 @media (min-width: 768px) {
+
     .products__cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -88,6 +89,7 @@
 }
 
 @media (min-width: 992px) {
+
     .products__cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
