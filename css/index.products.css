@@ -4,10 +4,6 @@
     padding: 90px 9px;
 }
 
-/* .card {
-    border: 0;
-  } */
-
 .products__info {
     display: block;
     padding: 0px 15px;
@@ -35,7 +31,7 @@
     font-size: 19px;
     font-weight: 600;
     padding: 15px;
-} 
+}
 
 .products__cards {
     display: grid;
@@ -84,7 +80,7 @@
     .products .card__title {
         font-size: 24px;
     }
-    
+
     .products .card__description {
         font-size: 17px;
     }
@@ -103,7 +99,7 @@
     .products .card__title {
         font-size: 26px;
     }
-    
+
     .products .card__description {
         font-size: 17px;
     }
