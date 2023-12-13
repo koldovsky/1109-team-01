@@ -23,7 +23,7 @@ img {
     --container-width: 1200px;
     --btn-dark-cooler: rgba(10, 10, 10, 0.85);        
     --btn-light-cooler: rgba(33, 181, 255, 0.85);        
-    
+    --form-shadow-color: rgba(0, 0, 0, 0.1);
     --brightest-background-color: #f1f6fb;
     --main-bg-color: #3498db;
     --text-color: #ffffff;
