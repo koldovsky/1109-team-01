@@ -4,3 +4,51 @@
     text-align: center;
     text-transform: uppercase;
 }
+.whychooseus__subtitle{
+    font-size: xx-large;
+    text-align: center;
+    color: var(--the-darkest-background-color);
+}
+.quality__Experienced{
+    font-size: large;
+    text-align: center;
+    color: var(--the-darkest-background-color);
+}
+
+.quality__Fresh{
+    font-size: large;
+    text-align: center;
+    color: var(--the-darkest-background-color);
+}
+
+.Proven__quality{
+    font-size: large;
+    text-align: center;
+    color: var(--the-darkest-background-color);
+}
+
+.whychooseus__of-water{
+    font-size: large;
+    text-align: center;
+    color: var(--the-darkest-background-color);
+}
+
+.delivery__team{
+    text-align: center;
+}
+
+
+.quality_icon{
+    width: 26px;
+    height: 26px;
+    margin: auto;
+    background-color: var(--brightest-background-color);
+}
+
+.whychooseus{
+    background-color: var(--brightest-background-color);
+}
+
+.quality{
+    background-color: var(--text-color);
+}
