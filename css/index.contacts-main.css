@@ -71,7 +71,7 @@
     font-weight: 400;
     font-style: inherit;
     font-weight: bold;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 .main-contacts p:nth-of-type(1) {
@@ -118,5 +118,6 @@
 }
 
 .main-contacts .icon {
-    width: 80px
+    width: 80px;
+    height: 80px;
 }
