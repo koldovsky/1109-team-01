@@ -1,18 +1,33 @@
 .carousel__title {
-    border-image-repeat: stretch;
     color: rgb(29, 182, 255);
+    background-color: rgb(240, 246, 252);
     font-size: 22px;
     font-weight: 600;
     line-height: 27.06px;
-    overflow-wrap: break-word;
-    text-align: left;
+    margin-bottom: 8px; /* Fix: Removed extra value */
+    text-align: center;
     vertical-align: baseline;
-    border-image-slice: 100% !important
+    border-image-slice: 100% !important;
 }
+/*#carousel-clients .carousel-inner .carousel-item.active {
+    width: 297px;
+    height: 154.430px;
+    padding-left: 15px;
+    padding-right: 15px !important;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
  .carousel-control-prev .carousel-control-prev-icon {
-    background-image: url(../img/chevron-left.svg)
+    background-image: url(../img/chevron-left.svg);
+    background-color: rgb(240, 246, 252);
 }
  .carousel-control-next .carousel-control-next-icon {
     background-image: url(../img/chevron-right.svg);
+    background-color: rgb(240, 246, 252);
+}
+.carousel button {
+    background-color: rgb(240, 246, 252);
 }
  
