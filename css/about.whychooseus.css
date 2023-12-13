@@ -4,3 +4,9 @@
     text-align: center;
     text-transform: uppercase;
 }
+.quality_icon{
+    width: 26px;
+    height: 26px;
+    margin: auto;
+    background-color: var(--brightest-background-color);
+}
