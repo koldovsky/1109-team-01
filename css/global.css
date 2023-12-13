@@ -20,7 +20,9 @@ img {
     --accent-text-color: #002579;  
     --standart-text-color: #737793; 
     --bold-text-color: #5c607c;     
-    --container-width: 1200px;        
+    --container-width: 1200px;
+    --btn-dark-cooler: rgba(10, 10, 10, 0.85);        
+    --btn-light-cooler: rgba(33, 181, 255, 0.85);        
     
     --brightest-background-color: #f1f6fb;
     --main-bg-color: #3498db;
