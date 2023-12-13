@@ -57,10 +57,15 @@
     align-items: center;
     background-color: white;
 }
+.testimonials__providers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 @media (min-width: 600px) {
   .testimonials__providers {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
   }
 }
   
