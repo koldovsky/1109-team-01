@@ -79,10 +79,6 @@
     padding: 0px 0px 15px 0px;
 }
 
-.filtration-info__equipment, 
-.filtration-info__clear-water {
-
-}
 
 .bottle-water__filtration {
     display: grid;
@@ -218,6 +214,10 @@
     color: var(--title-text-color);
 }
 
+.bottle-water__benefits .pricing-note__snow-sign {
+    color: var(--title-text-color);
+}
+
 
 @media (min-width: 768px) {
 
@@ -232,10 +232,15 @@
         align-self: center;
     }
 
-    .filtration-info__quality,
     .bottle-water__info {
         display: flex;
         flex-direction: row;
+    }
+
+    .filtration-info__quality {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 
     .pricing-option__2bottles,
@@ -256,9 +261,8 @@
     }
 
     .bottle-water__pricing {
-        display: flex;
-        align-items: center;
         flex-direction: column;
+        */ align-items: center;
         margin: 0 25px;
         padding: 0 25px;
         justify-content: center;
@@ -311,7 +315,7 @@
     }
 
     .pricing-option__5bottels .pricing-option__price {
-        padding: 8px 0px 0 15px;  
+        padding: 8px 0px 0 15px;
     }
 
     .filtration-stage {
@@ -322,7 +326,7 @@
         margin: 10px;
     }
 
-    .composition-item__description {
+    .bottle-water__composition .composition-item__description {
         font-size: 17px;
         color: var(--subdescription-text-color);
         margin-top: 20px;
@@ -330,7 +334,7 @@
 
     .filtration-info__title,
     .bottle-water__order .order__title {
-    font-size: 26px;
+        font-size: 26px;
     }
 
 }

@@ -47,6 +47,7 @@
 
 .main-contacts .img {
     width: 100px;
+    height: 100px;
     display: flex;
     align-content: center;
     margin-right: 5px;
@@ -70,6 +71,7 @@
     font-weight: 400;
     font-style: inherit;
     font-weight: bold;
+    margin-bottom: 0px;
 }
 
 .main-contacts p:nth-of-type(1) {
@@ -116,5 +118,6 @@
 }
 
 .main-contacts .icon {
-    width: 80px
+    width: 80px;
+    height: 80px;
 }
