@@ -1,28 +1,14 @@
-.section.testimonials.container {
-  max-width: 1200px;
-  margin: 0;
-  padding: 0;
-}
-
 .testimonials {
   /*box-sizing: border-box;*/
-  width: auto;
   min-width: 375px;
-  margin: 0;
   padding-top: 90px;
-  height: auto;
-  text-align: center;
-  flex: auto;
   background-color: rgb(241, 246, 252);
-}
-
-.testimonials h2 {
-  font-weight: bold;
 }
 
 .testimonials__title {
   font-size: 12px;
   font-weight: 800;
+  font-weight: bold;
   letter-spacing: 1.2px;
   text-align: center;
   line-height: 20.04px;
@@ -34,7 +20,6 @@
   font-size: 38px;
   font-weight: 600;
   margin-top: 20px;
-  letter-spacing: normal;
   text-align: center;
   line-height: 43.32px;
   font-family: "Nunito", sans-serif;
@@ -46,7 +31,7 @@
   font-size: 19px;
   font-weight: 600;
   margin-top: 25px;
-  font-smooth: antialized;
+  margin-bottom: 16px;
   letter-spacing: normal;
   text-align: center;
   line-height: 26.60px;
@@ -55,49 +40,23 @@
 }
 
 .testimonials__provider {
-  display: flex;
+  display: grid;
   box-sizing: border-box;
-  border-radius: 6px;
-  display: block;
-  margin: auto;
-  width: 90%;
-  height: 448.62px;
-  padding: 15px;
+  margin-top: 45px;
   position: relative;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  padding: 0 15px;
 }
 
 .profile-card {
-  width: 327px;
-  height: 448px;
-}
-
-.testimonials__providers {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-@media (min-width: 338px) {
-  .testimonials__providers {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  .testimonials__providers {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media (min-width: 993px) {
-  .testimonials__providers {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  display: flex;
+  justify-content: stretch;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+  border-radius: 6px;
+  padding: 34px 31px;
+  background-color: rgb(255, 255, 255);
 }
 
 .profile__image {
@@ -123,7 +82,6 @@
 .profile__occupation {
   font-size: 14px;
   font-weight: 700;
-  font-smooth: antialized;
   letter-spacing: normal;
   text-align: center;
   vertical-align: baseline;
@@ -133,19 +91,16 @@
 
 }
 
-.quotation {
+.profile-card .quotation {
   font-size: 17px;
   font-weight: 400;
   letter-spacing: normal;
   vertical-align: baseline;
-  margin-top: 45px;
-  padding-left: 0px;
-  padding-right: 0px;
+  margin-top: 20px;
   line-height: 23.80px;
   font-family: "Work Sans", sans-serif;
   color: rgb(92, 96, 124);
   font-style: italic;
-  justify-content: space-between;
 }
 
 .testimonial-date {
@@ -158,11 +113,18 @@
   line-height: 19.60px;
   font-family: "Nunito", sans-serif;
   color: rgb(0, 37, 121);
-  box-sizing: border-box;
 }
 
-@media only screen and (max-width: 1500px) {
+@media (min-width: 768px) {
   .testimonials__providers {
-    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 993px) {
+  .testimonials__providers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
