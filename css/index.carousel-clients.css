@@ -39,6 +39,14 @@
     display: block;
 }
 
+.carousel-container .carousel-indicators {
+    margin-bottom: -50px;
+}
+
+.carousel-container .carousel-indicators [data-bs-target] {
+    background-color: #212529;
+}
+
 .carousel-control-prev .carousel-control-prev-icon {
     background-image: url(../img/chevron-left.svg);
 }
