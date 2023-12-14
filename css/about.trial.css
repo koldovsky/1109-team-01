@@ -5,11 +5,17 @@
     box-sizing: border-box;
     display: flex;
     margin: 0;
-    justify-content: center;
+    margin-top: 1%;
+
+    background-image: url(../img/water_paralax_bottom.png);
+    background-position: center;
+    background-size: cover;
+    background-height:
 }
 .about__trial{
     padding: 0px 15px;
-    margin-left: -20%;
+    margin-left: +5%;
+    margin-right: 5%;
 }
 .about__text-trial{
     font-size: var(--about-teg-size);
@@ -52,11 +58,6 @@
     color: var(--dark-button-color);
 }
 .about__trial-wave{
-    transform: scaleY(-1);
-    margin-top: 5%;
-}
-.about__trial-all{
-    background-image: url(../img/water_paralax_bottom.png);
-    background-position: center;
-    background-size: cover;
+    transform: scaleY(-1) translateY(-100%);
+    margin-top: +4%;
 }

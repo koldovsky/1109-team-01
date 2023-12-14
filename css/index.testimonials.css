@@ -1,90 +1,62 @@
 .testimonials {
-  box-sizing: border-box;
-  width: 100%;
+  /*box-sizing: border-box;*/
   min-width: 375px;
-  max-width: 1500px;
-  margin: 0;
   padding-top: 90px;
-  height: auto;
-  text-align: center;
-  flex: 1;
-  background-color: #f1f6fc;
-  }
-.testimonials h2 {
-  font-weight: bold;
+  background-color: rgb(241, 246, 252);
 }
-  
+
 .testimonials__title {
   font-size: 12px;
   font-weight: 800;
+  font-weight: bold;
   letter-spacing: 1.2px;
   text-align: center;
   line-height: 20.04px;
   font-family: "Work Sans", sans-serif;
-  color: #5bace8;
+  color: rgb(91, 172, 232);
 }
-.testimonials__tagline{
+
+.testimonials__tagline {
   font-size: 38px;
   font-weight: 600;
   margin-top: 20px;
-  letter-spacing: normal;
   text-align: center;
   line-height: 43.32px;
   font-family: "Nunito", sans-serif;
-  color: #002579;
+  color: rgb(0, 37, 121);
 
 }
+
 .testimonials__subtitle {
   font-size: 19px;
   font-weight: 600;
   margin-top: 25px;
-  font-smooth: antialized;
+  margin-bottom: 16px;
   letter-spacing: normal;
   text-align: center;
   line-height: 26.60px;
-  font-family:  "Work Sans", sans-serif;
-  color: #5c607c;
+  font-family: "Work Sans", sans-serif;
+  color: rgb(92, 96, 124);
 }
+
 .testimonials__provider {
+  display: grid;
   box-sizing: border-box;
-  border-radius: 6px;
-  display: block;
-  margin: auto;
-  width: 90%;
-  height: 448.62px;
-  padding: 15px; /*need a check here*/
+  margin-top: 45px;
   position: relative;
   align-items: center;
-  background-color: white;
+  padding: 0 15px;
 }
+
 .profile-card {
-  width: 327px;
-  height: 448px;
-}
-.testimonials__providers {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-}
-@media (min-width: 600px) {
-.testimonials__providers {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: stretch;
+  flex-direction: column;
+  align-items: stretch;
   height: 100%;
-}
-}
-
-@media (min-width: 801px) {
-.testimonials__providers {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-}
-
-@media (min-width: 980px) {
-.testimonials__providers {
-   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
+  border-radius: 6px;
+  padding: 34px 31px;
+  background-color: rgb(255, 255, 255);
 }
 
 .profile__image {
@@ -93,9 +65,10 @@ grid-template-columns: 1fr 1fr 1fr;
   margin: auto;
   height: 70px;
   width: 70px;
-  border-radius: 50%; 
+  border-radius: 50%;
 }
-.profile__name  {
+
+.profile__name {
   font-size: 22px;
   font-weight: 800;
   letter-spacing: normal;
@@ -103,34 +76,33 @@ grid-template-columns: 1fr 1fr 1fr;
   margin-top: 20px;
   line-height: 27.06px;
   font-family: "Nunito", sans-serif;
-  color: #002579;
+  color: rgb(0, 37, 121);
 }
+
 .profile__occupation {
   font-size: 14px;
   font-weight: 700;
-  font-smooth: antialized;
   letter-spacing: normal;
   text-align: center;
   vertical-align: baseline;
-  line-height: 19,60px;
-  font-family:  "Work Sans", sans-serif;
-  color: #5c607c;
+  line-height: 19, 60px;
+  font-family: "Work Sans", sans-serif;
+  color: rgb(92, 96, 124);
 
 }
-.quotation {
+
+.profile-card .quotation {
   font-size: 17px;
   font-weight: 400;
   letter-spacing: normal;
   vertical-align: baseline;
-  margin-top: 45px;
-  padding-left: 0px;
-  padding-right: 0px;
+  margin-top: 20px;
   line-height: 23.80px;
-  font-family:  "Work Sans", sans-serif;
-  color: #5c607c;
+  font-family: "Work Sans", sans-serif;
+  color: rgb(92, 96, 124);
   font-style: italic;
-  justify-content: space-between;
 }
+
 .testimonial-date {
   font-size: 14px;
   font-weight: 700;
@@ -140,12 +112,19 @@ grid-template-columns: 1fr 1fr 1fr;
   vertical-align: baseline;
   line-height: 19.60px;
   font-family: "Nunito", sans-serif;
-  color: #002579;
-  box-sizing: border-box;
+  color: rgb(0, 37, 121);
 }
-@media only screen and (max-width: 1500px) {
+
+@media (min-width: 768px) {
   .testimonials__providers {
-    padding: 15px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
+@media (min-width: 993px) {
+  .testimonials__providers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
