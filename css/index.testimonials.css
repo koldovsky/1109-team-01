@@ -1,5 +1,4 @@
 .testimonials {
-  /*box-sizing: border-box;*/
   min-width: 375px;
   padding-top: 90px;
   background-color: rgb(241, 246, 252);
@@ -12,7 +11,7 @@
   letter-spacing: 1.2px;
   text-align: center;
   line-height: 20.04px;
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--button-font);
   color: rgb(91, 172, 232);
 }
 
@@ -22,7 +21,7 @@
   margin-top: 20px;
   text-align: center;
   line-height: 43.32px;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--about-some-text);
   color: var(--dark-button-color);
 
 }
@@ -35,7 +34,7 @@
   letter-spacing: normal;
   text-align: center;
   line-height: 26.60px;
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--button-font);
   color: var(--bald-text-color);
 }
 
@@ -82,7 +81,7 @@
   text-align: center;
   margin-top: 20px;
   line-height: 27.06px;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--about-some-text);
   color: var(--dark-button-color);
 }
 
@@ -93,7 +92,7 @@
   text-align: center;
   vertical-align: baseline;
   line-height: 19, 60px;
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--button-font);
   color: var(--bald-text-color);
 
 }
@@ -105,7 +104,7 @@
   vertical-align: baseline;
   margin-top: 20px;
   line-height: 23.80px;
-  font-family: "Work Sans", sans-serif;
+  font-family: var(--button-font);
   color: var(--bald-text-color);
   font-style: italic;
 }
@@ -118,7 +117,7 @@
   margin-top: 20px;
   vertical-align: baseline;
   line-height: 19.60px;
-  font-family: "Nunito", sans-serif;
+  font-family: var(--about-some-text);
   color: var(--dark-button-color);
 }
 
