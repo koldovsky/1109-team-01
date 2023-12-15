@@ -8,14 +8,12 @@
     margin-top: 1%;
 
     background-image: url(../img/water_paralax_bottom.png) ;
-    background-position: center;
     background-size: cover;
-
+    background-attachment: fixed;
 }
 .about__trial{
     padding: 0px 15px;
     margin-left: +10%;
-
 }
 .about__text-trial{
     font-size: var(--about-teg-size);
