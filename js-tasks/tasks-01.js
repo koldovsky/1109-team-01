@@ -12,7 +12,7 @@ function mouthSize(animal) {
 
 1.Grasshopper - Messi goals function - https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
-  return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
   
 2.Return Negative - https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
