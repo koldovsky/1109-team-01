@@ -146,6 +146,11 @@ border-bottom: 2px solid #21b6ff;
     }
 }
 
+.header-burger {
+    background: transparent;
+}
+
+
 .menu-list-mobile {
     display: flex;
 }
