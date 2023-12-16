@@ -34,6 +34,8 @@ function greet (name, owner) {
 function litres(time) {
   return Math.floor(time*0.5);
 }
+or
+litres = t => ~~(t / 2);
 
 // 6.Opposites Attract - https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
 // var1
