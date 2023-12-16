@@ -1,5 +1,10 @@
 .description__natural-water{
     background-color: var(--natural-water-background-color);
+    width: 360px;
+    height: 217px;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
 }
 
 .description__title{
@@ -21,10 +26,23 @@
 }
 .description__rich-with-elements{
     background-color: var(--even-more-dark-background-color);
+    width: 360px;
+    height: 217px;
+    display: inline-block;
+    float: left;
 }
 .description__award-winning-water{
     background-color: var(--the-darkest-background-color);
+    width: 360px;
+    height: 217px;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
 }
 .description__non-crafted_taste{
     background-color: var(--non-crafter-background-color);
+    width: 360px;
+    height: 217px;
+    display: inline-block;
+    vertical-align: top;
 }
