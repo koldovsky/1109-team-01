@@ -13,30 +13,18 @@
     font-size: large;
     text-align: center;
     color: var(--the-darkest-background-color);
-    width: auto;
-    height: auto;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .quality__Fresh{
     font-size: large;
     text-align: center;
     color: var(--the-darkest-background-color);
-    width: auto;
-    height: auto;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .Proven__quality{
     font-size: large;
     text-align: center;
     color: var(--the-darkest-background-color);
-    width: auto;
-    height: auto;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .whychooseus__of-water{
@@ -64,11 +52,4 @@
 
 .quality{
     background-color: var(--text-color);    
-}
-
-@media (min-width: 600px){
-.quality{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}    
 }
