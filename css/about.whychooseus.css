@@ -53,3 +53,12 @@
 .quality{
     background-color: var(--text-color);    
 }
+
+@media (min-width: 600px){
+.whychooseus__quality{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr
+}
+}
