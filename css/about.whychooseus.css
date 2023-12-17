@@ -51,7 +51,7 @@
 }
 
 .quality{
-    background-color: var(--text-color);    
+    background-color: var(--bottle-water-bg-color);    
 }
 
 @media (min-width: 600px){
@@ -61,4 +61,37 @@
     height: auto;
     grid-template-columns: 1fr 1fr 1fr
 }
+}
+
+.Fresh-box{
+    height: 272px;
+    width: auto;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-radius: 10px;
+    background-color: var(--single-product-bg-color);
+}
+
+.Experienced-box{
+    height: 272px;
+    width: auto;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-radius: 10px;
+    background-color: var(--single-product-bg-color);
+}
+
+.Proven-box{
+    height: 272px;
+    width: auto;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-radius: 10px;
+    background-color: var(--single-product-bg-color);
 }
