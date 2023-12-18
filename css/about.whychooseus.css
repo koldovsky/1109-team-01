@@ -4,3 +4,94 @@
     text-align: center;
     text-transform: uppercase;
 }
+.whychooseus__subtitle{
+    font-size: xx-large;
+    text-align: center;
+    color: var(--the-darkest-background-color);
+}
+.quality__Experienced{
+    font-size: large;
+    text-align: center;
+    color: var(--the-darkest-background-color);
+}
+
+.quality__Fresh{
+    font-size: large;
+    text-align: center;
+    color: var(--the-darkest-background-color);
+}
+
+.Proven__quality{
+    font-size: large;
+    text-align: center;
+    color: var(--the-darkest-background-color);
+}
+
+.whychooseus__of-water{
+    font-size: large;
+    text-align: center;
+    color: var(--the-darkest-background-color);
+}
+
+.delivery__team{
+    text-align: center;
+}
+
+
+.quality_icon{
+    width: 26px;
+    height: 26px;
+    margin: auto;
+    padding: 0%;
+    background-color: var(--brightest-background-color);
+}
+
+.whychooseus{
+    background-color: var(--brightest-background-color);
+}
+
+.quality{
+    background-color: var(--bottle-water-bg-color);    
+}
+
+@media (min-width: 600px){
+.whychooseus__quality{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr
+}
+}
+
+.Fresh-box{
+    height: 272px;
+    width: auto;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-radius: 10px;
+    background-color: var(--single-product-bg-color);
+}
+
+.Experienced-box{
+    height: 272px;
+    width: auto;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-radius: 10px;
+    background-color: var(--single-product-bg-color);
+}
+
+.Proven-box{
+    height: 272px;
+    width: auto;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-radius: 10px;
+    background-color: var(--single-product-bg-color);
+}

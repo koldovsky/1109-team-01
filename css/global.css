@@ -23,10 +23,11 @@ img {
     --container-width: 1200px;
     --btn-dark-cooler: rgba(10, 10, 10, 0.85);        
     --btn-light-cooler: rgba(33, 181, 255, 0.85);        
-    
+    --form-shadow-color: rgba(0, 0, 0, 0.1);
     --brightest-background-color: #f1f6fb;
     --main-bg-color: #3498db;
     --text-color: #ffffff;
+    --map-address-backgraund-color: rgba(255, 255, 255, 0.8);
     --light-header-color: #002c8f;
     --dark-background-color: #0035ac;
     --light-background-color: #21b6ff;
@@ -49,11 +50,7 @@ img {
     --natural-water-background-color: #0035ac;
     --non-crafter-background-color: #001d5f;
     --link-color: rgb(120,238,74);
-    
-    
-
-    
-    
+ 
     --about-some-text : 'Nunito', sans-serif;
     --button-font: 'Work Sans', sans-serif;
     --button-font-size: 14.3px;
@@ -78,13 +75,22 @@ img {
     --about-title-size: 55px ;
     --about-teg-size: 12px;
     --button-text-size: 14.3px;
+    --about-mobile-title-size: 38px;
+    --footer-mobile-title-size: 18px;
     
     --form-text-color: #6f85b5;
 }
+
 .none {
     display: none !important;
 }
+
 .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-water {
     max-width: 1200px;
     margin: auto;
 }

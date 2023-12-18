@@ -1,3 +1,7 @@
+.body__contacts {
+    background-color: var(--brightest-background-color);
+}
+
 .header__contacts {
     display: flex;
     justify-content: center;
@@ -12,10 +16,6 @@
     font-family: 'Nunito', sans-serif;
     text-align: center;
     font-weight: 800;
-}
-
-body {
-    background-color: var(--brightest-background-color);
 }
 
 .delivery {
@@ -140,7 +140,7 @@ body {
 
 .delivery__form {
     background-color: var(--footer-title-color);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px var(--form-shadow-color);
     display: flex;
     justify-content: center;
 }
@@ -183,7 +183,7 @@ input[type="submit"] {
     border-radius: 20px;
     cursor: pointer;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--text-color);
     margin-top: 25px;
 }
 
@@ -225,9 +225,43 @@ input[type="submit"]:hover {
 
 .delivery__location {
     margin-top: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.delivery__location-map {
+    width: 100%;
+    height: 740px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 0;
+}
+
+.delivery__location-overlay {
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--map-address-backgraund-color);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 2;
+}
+
+.delivery__location-overlay-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    color: var(--the-darkest-background-color);
+}
+
+.delivery__location-address {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--the-darkest-background-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -285,6 +319,10 @@ input[type="submit"]:hover {
     .info__card .card__title {
         font-size: 24px;
     }
+
+    .delivery__location-map {
+        height: 750px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -298,5 +336,9 @@ input[type="submit"]:hover {
 
     .info__card .card__title {
         font-size: 26px;
+    }
+
+    .delivery__location-map {
+        height: 760px;
     }
 }

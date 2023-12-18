@@ -262,7 +262,7 @@
 
     .bottle-water__pricing {
         flex-direction: column;
-        */ align-items: center;
+        align-items: center;
         margin: 0 25px;
         padding: 0 25px;
         justify-content: center;
