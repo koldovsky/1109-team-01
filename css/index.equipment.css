@@ -228,7 +228,7 @@
     .equipment__carousel .equipment__list-sl {
         grid-auto-columns: calc(100%);
     }
-})
+}
 
 @media (min-width: 767px) and (max-width: 991px) {
     .equipment__carousel .equipment__list-sl {
