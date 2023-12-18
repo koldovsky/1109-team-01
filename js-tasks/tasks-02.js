@@ -44,3 +44,45 @@ function min(arr, toReturn) {
   }
   return toReturn === "value" ? minValue : arr.indexOf(minValue);
 }
+
+// Hard tasks
+
+//A wolf in sheep's clothing
+//https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
+
+function warnTheSheep(queue) {
+  const animals = queue.reverse();
+  for (let animal = 0; animal < animals.length; animal++) {
+    if (animals[animal] === "wolf" && animal === 0) {
+      return "Pls go away and stop eating my sheep";
+    } else if (animals[animal] === "wolf" && animal > 0) {
+      return `Oi! Sheep number ${animal}! You are about to be eaten by a wolf!`;
+    }
+  }
+}
+
+//Beginner - Lost Without a Map
+//https://www.codewars.com/kata/beginner-lost-without-a-map
+
+function maps(x) {
+  const result = [];
+  for (el of x) {
+    result.push(el * 2);
+  }
+  return result;
+}
+
+//Find the first non-consecutive number
+//https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
+
+function firstNonConsecutive(arr) {
+  let prevNum = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] - 1 != prevNum) {
+      return arr[i];
+    } else {
+      prevNum = arr[i];
+    }
+  }
+  return null;
+}
