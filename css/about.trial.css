@@ -7,15 +7,13 @@
     margin: 0;
     margin-top: 1%;
 
-    background-image: url(../img/water_paralax_bottom.png);
-    background-position: center;
+    background-image: url(../img/water_paralax_bottom.png) ;
     background-size: cover;
-    background-height:
+    background-attachment: fixed;
 }
 .about__trial{
     padding: 0px 15px;
-    margin-left: +5%;
-    margin-right: 5%;
+    margin-left: +10%;
 }
 .about__text-trial{
     font-size: var(--about-teg-size);
@@ -60,4 +58,9 @@
 .about__trial-wave{
     transform: scaleY(-1) translateY(-100%);
     margin-top: +4%;
+}
+@media screen and (max-width: 768px){
+    .about__rent-a-water{
+    font-size: var(--about-mobile-title-size);
+    }
 }
