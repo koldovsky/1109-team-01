@@ -11,8 +11,8 @@ const DNAtoRNA = (dna) => dna.replace(/T/g, "U");
 //Find Maximum and Minimum Values of a List
 // https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 
-const min = function (list) {
-  for (el of list) {
+const min = function (list) {     // min => findMin
+  for (const el of list) {
     if (el < list[0]) {
       list[0] = el;
     }
@@ -20,8 +20,8 @@ const min = function (list) {
   return list[0];
 };
 
-const max = function (list) {
-  for (el of list) {
+const max = function (list) {   // max => findMax
+  for (const el of list) {
     if (el > list[0]) {
       list[0] = el;
     }
