@@ -100,3 +100,65 @@ function firstNonConsecutive(arr) {
   }
   return null;
 }
+
+// additional tasks
+
+//You Can't Code Under Pressure #1
+//https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
+
+const doubleInteger = (i) => i * 2;
+
+//Century From Year
+//https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097
+
+const century = (year) => Math.ceil(year / 100);
+
+//Return Negative
+//https://www.codewars.com/kata/55685cd7ad70877c23000102/train/javascript
+
+const makeNegative = (num) => -Math.abs(num);
+
+//Beginner Series #4 Cockroach
+//https://www.codewars.com/kata/55fab1ffda3e2e44f00000c6/train/javascript
+
+const cockroachSpeed = (s) => Math.floor((s * 1000) / 36);
+
+//Angle of triangle
+//https://www.codewars.com/kata/5a023c426975981341000014/train/javascript
+const otherAngle = (a, b) => 180 - (a + b);
+
+//Twice as old
+//https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript
+
+const twiceAsOld = (dadYearsOld, sonYearsOld) =>
+  Math.abs(dadYearsOld - sonYearsOld * 2);
+
+//Return n-th even number
+//https://www.codewars.com/kata/5933a1f8552bc2750a0000ed/train/javascript
+
+const nthEven = (n) => (n - 1) * 2;
+
+//What's the real floor?
+//https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript
+
+function getRealFloor(n) {
+  if (n === 0) {
+    return +0;
+  } else if (n < 0) {
+    return n;
+  } else if (n > 0 && n < 14) {
+    return n - 1;
+  } else {
+    return n - 2;
+  }
+}
+
+//Beginner Series #2 Clock
+//https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
+
+const past = (h, m, s) => (h * 3600 + m * 60 + s) * 1000;
+
+//Is n divisible by x and y?
+//https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript
+
+const isDivisible = (n, x, y) => n % x === 0 && n % y === 0;
