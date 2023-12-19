@@ -1,6 +1,5 @@
 .our-history {
     font-family: 'Nunito', sans-serif;
-    max-width: 1500px;
 }
 
 .our-history__top {
@@ -9,7 +8,7 @@
     overflow: hidden;
 }
 
-.fresh-water__foto img {
+.fresh-water__foto-img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -121,7 +120,7 @@
         justify-content: space-between;
     }
 
-    .fresh-water__foto img {
+    .fresh-water__foto-img {
         background-position-x: 50%;
         background-position-y: 50%;
         box-sizing: border-box;
