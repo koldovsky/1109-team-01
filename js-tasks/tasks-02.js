@@ -59,6 +59,11 @@ function min(arr, toReturn) {
     return arr.indexOf(Math.min(...arr));
   }
 }
+
+or;
+const min = (arr, toReturn) =>
+  toReturn === "value" ? Math.min(...arr) : arr.indexOf(Math.min(...arr));
+
 // Hard tasks
 
 //A wolf in sheep's clothing
@@ -73,6 +78,14 @@ function warnTheSheep(queue) {
       return `Oi! Sheep number ${animal}! You are about to be eaten by a wolf!`;
     }
   }
+}
+
+or;
+function warnTheSheep(queue) {
+  const wolfPosition = queue.reverse().indexOf("wolf");
+  return wolfPosition === 0
+    ? "Pls go away and stop eating my sheep"
+    : `Oi! Sheep number ${wolfPosition}! You are about to be eaten by a wolf!`;
 }
 
 //Beginner - Lost Without a Map
