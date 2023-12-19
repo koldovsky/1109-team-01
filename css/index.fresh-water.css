@@ -1,10 +1,47 @@
 .freshwater__container {
-    background: url('img/two_glasses_of_water.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background: url('../img/two_glasses_of_water.jpg');
+    background-position: right;
     background-size: cover;
+    width: 100%;
+    min-width: 338px;
 }
+
+
+.freshwater__info {
+    padding: 130px 24px 110px 24px;
+}
+
+.background__play-icon {
+    width: 100px;
+    background-color: var(--light-button-color);
+    border-radius: 50%;
+}
+
+.freshwater__icon-wrap {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    background-color: var(--light-button-color);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.freshwater__icon {
+    width: 40px;
+    height: 40px;
+}
+
+.freshwater__facts {
+    display: grid;
+}
+
+.experience__fact,
+.anybottlesize__fact,
+.quickdelivery__fact {
+    padding: 39px;
+}
+
 .freshwater__title {
     color: var(--dark-bg-color);
     font-family: 'Nunito', sans-serif;
@@ -13,12 +50,47 @@
     line-height: 43.32px;
 }
 
-.wave-freshwater {
+.freshwater__wave {
     margin: 0;
     padding: 0;
     transform: rotate(180deg);
 }
 
-.wave-freshwater img {
-    width: 100%;
+@media (min-width: 768px) {
+    .freshwater__facts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .experience__fact,
+    .anybottlesize__fact {
+        padding: 46px;
+    }
+
+    .quickdelivery__fact {
+        padding: 46px;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+    .freshwater__facts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .experience__fact,
+    .anybottlesize__fact,
+    .quickdelivery__fact {
+        padding: 60px;
+    }
+
+    .quickdelivery__fact {
+        padding: 60px;
+        grid-column: 1;
+        grid-row: 1;
+    }
 }
