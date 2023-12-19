@@ -29,14 +29,14 @@ const max = function (list) {
   return list[0];
 };
 
-or 
-const min = function(list){
+or;
+const min = function (list) {
   return Math.min(...list);
-}
+};
 
-const max = function(list){
+const max = function (list) {
   return Math.max(...list);
-}
+};
 
 //Smallest value of an array
 // https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
@@ -50,14 +50,14 @@ function min(arr, toReturn) {
   }
   return toReturn === "value" ? minValue : arr.indexOf(minValue);
 }
-or
+or;
 
 function min(arr, toReturn) {
-  if (toReturn === 'value') {
-   return Math.min(...arr);
- } else {
-   return arr.indexOf(Math.min(...arr));
- }
+  if (toReturn === "value") {
+    return Math.min(...arr);
+  } else {
+    return arr.indexOf(Math.min(...arr));
+  }
 }
 // Hard tasks
 
@@ -84,6 +84,10 @@ function maps(x) {
     result.push(el * 2);
   }
   return result;
+}
+or;
+function maps(x) {
+  return x.map((element) => element * 2);
 }
 
 //Find the first non-consecutive number
