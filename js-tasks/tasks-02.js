@@ -6,10 +6,7 @@ const stringToArray = (string) => string.split(" ");
 // DNA to RNA Conversion
 // https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 
-function DNAtoRNA(dna) {
-  const newRNA = dna.replace("/T/g", "U");
-  return newRNA;
-}
+const DNAtoRNA = (dna) => dna.replace(/T/g, "U");
 
 //Find Maximum and Minimum Values of a List
 // https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
@@ -32,6 +29,15 @@ const max = function (list) {
   return list[0];
 };
 
+or 
+const min = function(list){
+  return Math.min(...list);
+}
+
+const max = function(list){
+  return Math.max(...list);
+}
+
 //Smallest value of an array
 // https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 
@@ -44,7 +50,15 @@ function min(arr, toReturn) {
   }
   return toReturn === "value" ? minValue : arr.indexOf(minValue);
 }
+or
 
+function min(arr, toReturn) {
+  if (toReturn === 'value') {
+   return Math.min(...arr);
+ } else {
+   return arr.indexOf(Math.min(...arr));
+ }
+}
 // Hard tasks
 
 //A wolf in sheep's clothing
