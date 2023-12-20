@@ -31,7 +31,7 @@ const min = (arr, toReturn) =>
 //https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
 
 function warnTheSheep(queue) {
-  const wolfPosition = queue.reverse().indexOf("wolf");
+  const wolfPosition = queue.toReversed().indexOf("wolf");
   return wolfPosition === 0
     ? "Pls go away and stop eating my sheep"
     : `Oi! Sheep number ${wolfPosition}! You are about to be eaten by a wolf!`;
