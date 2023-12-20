@@ -178,6 +178,18 @@ function getRealFloor(n) {
     return n - 2;
   }
 }
+or;
+function getRealFloor(n) {
+  if (n >= 14) {
+    return n - 2;
+  } else if (n > 0) {
+    return n - 1;
+  } else {
+    return n;
+  }
+}
+or;
+const getRealFloor = (n) => (n >= 14 ? n - 2 : n > 0 ? n - 1 : n);
 
 //Beginner Series #2 Clock
 //https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
