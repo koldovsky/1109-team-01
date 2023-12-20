@@ -11,25 +11,6 @@ const DNAtoRNA = (dna) => dna.replace(/T/g, "U");
 //Find Maximum and Minimum Values of a List
 // https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 
-const min = function (list) {     // min => findMin
-  for (const el of list) {
-    if (el < list[0]) {
-      list[0] = el;
-    }
-  }
-  return list[0];
-};
-
-const max = function (list) {   // max => findMax
-  for (const el of list) {
-    if (el > list[0]) {
-      list[0] = el;
-    }
-  }
-  return list[0];
-};
-
-or;
 const min = function (list) {
   return Math.min(...list);
 };
@@ -41,26 +22,6 @@ const max = function (list) {
 //Smallest value of an array
 // https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 
-function min(arr, toReturn) {
-  let minValue = Infinity;
-  for (const num of arr) {
-    if (num < minValue) {
-      minValue = num;
-    }
-  }
-  return toReturn === "value" ? minValue : arr.indexOf(minValue);
-}
-or;
-
-function min(arr, toReturn) {
-  if (toReturn === "value") {
-    return Math.min(...arr);
-  } else {
-    return arr.indexOf(Math.min(...arr));
-  }
-}
-
-or;
 const min = (arr, toReturn) =>
   toReturn === "value" ? Math.min(...arr) : arr.indexOf(Math.min(...arr));
 
@@ -69,18 +30,6 @@ const min = (arr, toReturn) =>
 //A wolf in sheep's clothing
 //https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
 
-function warnTheSheep(queue) {
-  const animals = queue.reverse();
-  for (let animal = 0; animal < animals.length; animal++) {
-    if (animals[animal] === "wolf" && animal === 0) {
-      return "Pls go away and stop eating my sheep";
-    } else if (animals[animal] === "wolf" && animal > 0) {
-      return `Oi! Sheep number ${animal}! You are about to be eaten by a wolf!`;
-    }
-  }
-}
-
-or;
 function warnTheSheep(queue) {
   const wolfPosition = queue.reverse().indexOf("wolf");
   return wolfPosition === 0
@@ -92,32 +41,12 @@ function warnTheSheep(queue) {
 //https://www.codewars.com/kata/beginner-lost-without-a-map
 
 function maps(x) {
-  const result = [];
-  for (el of x) {
-    result.push(el * 2);
-  }
-  return result;
-}
-or;
-function maps(x) {
   return x.map((element) => element * 2);
 }
 
 //Find the first non-consecutive number
 //https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
 
-function firstNonConsecutive(arr) {
-  let prevNum = arr[0];
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] - 1 != prevNum) {
-      return arr[i];
-    } else {
-      prevNum = arr[i];
-    }
-  }
-  return null;
-}
-or;
 function firstNonConsecutive(arr) {
   for (let i = 0; i < arr.length - 1; ++i) {
     if (arr[i] + 1 !== arr[i + 1]) {
@@ -167,28 +96,6 @@ const nthEven = (n) => (n - 1) * 2;
 //What's the real floor?
 //https://www.codewars.com/kata/574b3b1599d8f897470018f6/train/javascript
 
-function getRealFloor(n) {
-  if (n === 0) {
-    return +0;
-  } else if (n < 0) {
-    return n;
-  } else if (n > 0 && n < 14) {
-    return n - 1;
-  } else {
-    return n - 2;
-  }
-}
-or;
-function getRealFloor(n) {
-  if (n >= 14) {
-    return n - 2;
-  } else if (n > 0) {
-    return n - 1;
-  } else {
-    return n;
-  }
-}
-or;
 const getRealFloor = (n) => (n >= 14 ? n - 2 : n > 0 ? n - 1 : n);
 
 //Beginner Series #2 Clock
