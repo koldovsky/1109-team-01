@@ -26,3 +26,18 @@ function giveMeFive(obj) {
 
 // optional in-depth circuit problem 
 
+//Understanding closures - the basics
+//https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
+
+function buildFun(n) {
+  const res = [];
+  function savePosition(value) {
+    return function () {
+      return value;
+    };
+  }
+  for (let i = 0; i < n; i++) {
+    res.push(savePosition(i));
+  }
+  return res;
+}
