@@ -19,7 +19,8 @@ img {
     --title-text-color: #21b6ff;    
     --accent-text-color: #002579;  
     --standart-text-color: #737793; 
-    --bold-text-color: #5c607c;     
+    --bold-text-color: #5c607c;    
+    --light-dark-text-color: #c2c9dc;
     --container-width: 1200px;
     --btn-dark-cooler: rgba(10, 10, 10, 0.85);        
     --btn-light-cooler: rgba(33, 181, 255, 0.85);        
