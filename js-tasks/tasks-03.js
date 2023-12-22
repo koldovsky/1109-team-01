@@ -16,12 +16,12 @@ const circleCircumference = (circle) => 2 * Math.PI * circle.radius;
 //https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
 
 function giveMeFive(obj) {
-  const myList = [];
+  const resultArray = [];
   for (const key in obj) {
-    key.length === 5 ? myList.push(key) : null;
-    obj[key].length === 5 ? myList.push(obj[key]) : null;
+    key.length === 5 ? resultArray.push(key) : null;
+    obj[key].length === 5 ? resultArray.push(obj[key]) : null;
   }
-  return myList;
+  return resultArray;
 }
 
 // OPTIONAL IN-DEPTH CIRCUIT PROBLEM
