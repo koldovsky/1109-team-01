@@ -146,16 +146,27 @@
 }
 
 .delivery__form form {
-    display: flex;
+    
     flex-direction: column;
     margin: 50px 50px 20px 50px;
     width: 80%;
 }
 
-.delivery__form input[type="text"],
+.error .input-field {
+    border-color: var(--error-color);
+    margin-bottom: 5px;
+}
+.error-label {
+    display: block;
+    color: var(--error-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.input-field,
 .delivery__form input[type="date"],
 .delivery__form select {
-    margin-bottom: 4px;
+    margin-bottom: 30px;
     padding: 11px 22px 11px 22px;
     border: 1px solid var(--brightest-background-color);
     border-radius: 20px;
@@ -185,7 +196,11 @@ input[type="submit"] {
     padding: 8px;
     border: 1px solid var(--text-color);
     margin-top: 25px;
+    width: 100%;
 }
+.delivery__form form input:focus {
+    outline-color: var(--main-bg-color);
+} 
 
 input[type="submit"]:hover {
     background-color: var(--the-darkest-background-color);
@@ -301,7 +316,7 @@ input[type="submit"]:hover {
         padding: 0;
         vertical-align: baseline;
     }
-        
+      
     .info__card {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
