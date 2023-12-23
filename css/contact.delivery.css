@@ -1,6 +1,7 @@
 .body__contacts {
     background-color: var(--brightest-background-color);
 }
+
 .header__contacts {
     display: flex;
     justify-content: center;
@@ -8,6 +9,7 @@
     background-color: var(--light-header-color);
     height: 223px;
 }
+
 .header__contacts .text {
     color: var(--text-color);
     font-size: 38px;
@@ -15,6 +17,7 @@
     text-align: center;
     font-weight: 800;
 }
+
 .delivery {
     padding-left: 24px;
     padding-right: 24px;
@@ -26,19 +29,23 @@
     grid-template-columns: 1fr;
     grid-gap: 20px;
 }
+
 .delivery__info-text {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 .delivery__title {
     color: var(--light-background-color);
 }
+
 .delivery__heading {
     color: var(--the-darkest-background-color);
     font-size: 38px;
     font-family: 'Nunito', sans-serif;
 }
+
 .delivery__description {
     color: var(--slate-gray);
     font-size: 19px;
@@ -48,6 +55,7 @@
     padding-bottom: 0;
     line-height: 1.5;
 }
+
 .delivery__description-time,
 .delivery__discount-item {
     color: var(--light-background-color);
@@ -56,6 +64,7 @@
     font-size: 16px;
     padding: 0;
 }
+
 .delivery__description-star {
     color: var(--accent-color);
     font-family: 'Work Sans', sans-serif;
@@ -64,16 +73,20 @@
     padding: 0;
     margin-left: 5px
 }
+
 .delivery__first-text-block {
     display: block;
 }
+
 .image-with-text {
     display: flex;
     align-items: center;
 }
+
 .delivery__discount-image {
     width: 80px;
 }
+
 .delivery__discount {
     color: var(--slate-gray);
     font-size: 19px;
@@ -81,10 +94,12 @@
     font-family: 'Work Sans', sans-serif;
     line-height: 1.5;
 }
+
 .delivery__discount-info {
     list-style: none;
     padding-top: 15px;
 }
+
 .delivery__discount-info-item::before {
     content: "*";
     color: var(--light-blueish-color);
@@ -94,6 +109,7 @@
     font-style: italic;
     vertical-align: middle;
 }
+
 .delivery__discount-info-item {
     font-family: 'Work Sans';
     font-style: italic;
@@ -101,9 +117,11 @@
     line-height: 1, 2;
     font-size: 15px;
 }
+
 .delivery__list {
     list-style: none;
 }
+
 .delivery__item {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
@@ -111,6 +129,7 @@
     line-height: 1, 2;
     color: var(--bald-text-color);
 }
+
 .delivery__item::before {
     content: "•";
     color: var(--the-darkest-text-color);
@@ -118,18 +137,21 @@
     font-size: 1.5em;
     vertical-align: middle;
 }
+
 .delivery__form {
     background-color: var(--footer-title-color);
     box-shadow: 0px 0px 10px var(--form-shadow-color);
     display: flex;
     justify-content: center;
 }
+
 .delivery__form form {
     display: flex;
     flex-direction: column;
     margin: 50px 50px 20px 50px;
-    width: 70%;
+    width: 80%;
 }
+
 .delivery__form input[type="text"],
 .delivery__form input[type="date"],
 .delivery__form select {
@@ -145,10 +167,12 @@
     width: 100%;
     color: var(--form-text-color);
 }
+
 .select-text,
 .delivery__form input[type="text"]::placeholder {
     color: var(--form-text-color);
 }
+
 input[type="submit"] {
     background-color: var(--light-background-color);
     color: var(--text-color);
@@ -162,9 +186,11 @@ input[type="submit"] {
     border: 1px solid var(--text-color);
     margin-top: 25px;
 }
+
 input[type="submit"]:hover {
     background-color: var(--the-darkest-background-color);
 }
+
 .info__card {
     display: grid;
     grid-gap: 10px;
@@ -174,29 +200,35 @@ input[type="submit"]:hover {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .info__card svg {
     width: 50px;
     height: 50px;
     margin: 0 auto;
     display: block;
 }
+
 .info__card .card__title {
     font-family: 'Nunito', sans-serif;
     font-size: 22px;
     color: var(--the-darkest-background-color);
 }
+
 .info__card .card__text {
     font-size: 14px;
     color: var(--bold-text-color);
 }
+
 .info__card-svg {
     color: var(--bold-text-color);
 }
+
 .delivery__location {
     margin-top: 100px;
     position: relative;
     width: 100%;
 }
+
 .delivery__location-map {
     width: 100%;
     height: 740px;
@@ -205,6 +237,7 @@ input[type="submit"]:hover {
     align-items: center;
     border: 0;
 }
+
 .delivery__location-overlay {
     position: absolute;
     top: 39%;
@@ -216,11 +249,13 @@ input[type="submit"]:hover {
     text-align: center;
     z-index: 2;
 }
-.delivery__location-overlay-title{
+
+.delivery__location-overlay-title {
     font-family: 'Nunito', sans-serif;
     font-size: 15px;
     color: var(--the-darkest-background-color);
 }
+
 .delivery__location-address {
     margin: 0;
     font-family: 'Work Sans', sans-serif;
@@ -255,12 +290,18 @@ input[type="submit"]:hover {
         grid-column: 2 / span 1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         margin: 0;
-        padding: 0;
+        padding: 60px 0 0 0;
+        vertical-align: baseline;
     }
-
+    .delivery__form form {
+        margin: 0;
+        padding: 0;
+        vertical-align: baseline;
+    }
+        
     .info__card {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -284,7 +325,8 @@ input[type="submit"]:hover {
     .info__card .card__title {
         font-size: 24px;
     }
-    .delivery__location-map{
+
+    .delivery__location-map {
         height: 750px;
     }
 }
@@ -301,6 +343,8 @@ input[type="submit"]:hover {
     .info__card .card__title {
         font-size: 26px;
     }
-    .delivery__location-map{
+
+    .delivery__location-map {
         height: 760px;
+    }
 }
