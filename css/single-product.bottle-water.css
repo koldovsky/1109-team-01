@@ -82,7 +82,7 @@
 
 .bottle-water__filtration {
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 70px 1fr;
 }
 
 
@@ -274,6 +274,11 @@
 
     .filtration-info__clear-water {
         padding: 8px 0 0 15px;
+    }
+
+    .bottle-water__filtration {
+        display: grid;
+        grid-template-columns: 90px 1fr;
     }
 
     .bottle-water__pricing,

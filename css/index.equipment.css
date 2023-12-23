@@ -1,323 +1,187 @@
-.slide-block {
-    content: "";
-    width: 600px;
-    height: 200px;
-    background-color: blue;
-}
-
-.my-hidden {
-    display: none !important;
-}
-
 .equipment {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 120px 40px;
-    max-width: var(--container-width);
+  max-width: 1200px;
+  margin: 120px auto 60px;
+  display: grid;
+  padding: 0 32px;
+  grid-template-rows: repeat(4, auto);
+  color: var(--standart-text-color);
+  row-gap: 30px;
 }
 
-.equipment__bottom {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    min-width: 370px;
+.block__carousel {
+  width: 370px;
+  height: 200px;
+  background-color: rgb(124, 26, 26);
+  border: 2px solid blue;
 }
-
-
 
 @media (min-width: 768px) {
-    .equipment__bottom {
-        flex-direction: row;
-    }
+  .equipment {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 30px;
+    grid-template-rows: auto;
+  }
 
-    .bottom-free {
-        flex: 0 0 59%;
-    }
-    .bottom-discount {
-        flex: 0 0 41%;
-        margin-top: 0 !important;
-        margin-left: 30px;
-    }
-}
-                    /* BOTTOM */
+  .equipment__free {
+    padding: 46px !important;
+  }
 
-/* BOTTOM FREE*/
-
-.bottom-free {
-    padding: 39px;
-    background-image: url(../img/free-bottle.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
+  .equipment__discount {
+    padding: 34px 28px !important;
+  }
 }
 
-.bottom-free__spacer {
-    flex: 0;
-    margin: 15px;
-    height: auto;
-}
-
-.bottom-free__title {
-    flex: 1;
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--title-text-color);
-}
-
-.bottom-free__subtitle {
-    flex: 1;
-    font-size: 30px;
-    font-weight: 800;
-    font-family: 'Nunito', sans-serif;
-    color: var(--accent-text-color);
-
-    margin-top: 20px;
-}
-
-.down-subtitle {
-    margin-top: 0;
-}
-
-.bottom-free__devider-blue {
-    margin: 15px 0;     
-    width: 55px;
-    height: 4px;
-    border-radius: 5px;
-    background-color: var(--title-text-color);
-}
-
-.bottom-free__description {
-    flex: 1;
-    font-size: 14px;
-    font-style: italic;
-    font-weight: 400;
-    color: var(--bold-text-color);
-}
-
-/* BOTTOM DISCOUNT */
-
-.bottom-discount {
-    margin-top: 50px;
-    padding: 30px;
-    background-image: url(../img/discount.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-}
-
-.bottom-discount__title {
-    flex: 1;
-    font-size: 90px;
-    font-weight: 800;
-    font-family: 'Nunito', sans-serif;
-    color: var(--title-text-color);
-}
-
-.bottom-discount__devider-green {
-    margin: 15px 0;     
-    width: 55px;
-    height: 4px;
-    border-radius: 5px;
-    background-color: var(--accent-color);
-}
-
-.bottom-discount__description {
-    font-size: 14;
-    font-weight: 400;
-    color: var(--bold-text-color);
-
-}
-
-                    /* UPPER */
 
 /* EQUIPMENT INFO */
 
-.equipment__upper {
-    display: flex;
-    flex-direction: column;
-    min-width: 370px;
+
+.info__title-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--title-text-color);
+  margin: 0;
 }
 
-/* update all media-request to JS slider */
-
-@media (max-width: 479px) {
-    .slide-block {
-        width: 300px;
-        height: 200px;
-    }
+.info__subtitle-text {
+  font-size: 55px;
+  font-weight: 800;
+  color: var(--accent-text-color);
+  font-family: var(--about-some-text);
+  margin: 20px 0 0;
 }
 
-
-@media (min-weidth: 480px) and (max-width: 767px) {
-    .slide-block {
-        width: 400px;
-        height: 300px;
-    }
+.info__description-text {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 25px 0 0;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    .slide-block {
-        width: 850px;
-        height: 330px;
-    }
+.info__additional-text {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 25px 0 0;
 }
 
-@media (min-width: 992px) {
-    .equipment__upper {
-        flex-direction: row;
-    }
-    .equipment__info {
-        flex: 0 0 30%
-    }
-    .equipment__slider{
-        margin-top: 0 !important;
-        flex: 0 0 70%
-    }
+.info__contacts {
+  display: flex;
+  margin-top: 20px;
+  padding: 7.5px 7.5px 7.5px 0;
 }
 
-/* EQUIPMENT SLIDER */
-.equipment__product-name-sl {
-    font-size: 26px;
-    font-weight: 800;
-    font-family: 'Nunito', sans-serif;
-    color: var(--accent-text-color);
-
-    margin-top: 20px;
+.contact__ico {
+  width: 45px;
+  height: 45px;
+  padding: 9px;
+  margin: 7.5px 7.5px 7.5px 0;
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 
-.equipment__img-sl {
-    border-radius: 7px;
+.contact__info-text {
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--accent-text-color);
+  margin: 0;
 }
+
+.contact__info-number {
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* EQUIPMENT CAROUSEL */
 
 .equipment__carousel {
-    margin-left: 20px;
-    position: relative;
+  max-width: 770px;
+  display: flex;
 }
 
-.equipment__carousel .equipment__list-sl {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 2) - 15px);
-    gap: 0 15px;
-    overflow: hidden;
+.equipment__list{
+  display: flex;
 }
 
-.equipment__carousel .equipment__list-sl .equipment__item-sl:nth-child(3){
-    display: none;
+/* EQUIPMENT FREE */
+
+.equipment__free {
+  background-image: url(../img/free-bottle.png);
+  background-size: cover; /* Можете использовать 'contain', если предпочитаете */
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 39px; /* 39, 46 */
 }
 
-.equipment__carousel i {
-    width: 30px;
-    height: 30px;
-    background-color: var(--btn-dark-cooler);
-    text-align: center;
-    line-height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
+.free__spacer {
+  height: 60px;
 }
 
-.equipment__carousel i:first-child {
-    left: -15px;
+.free__title-text {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--title-text-color);
+  margin: 0;
 }
 
-.equipment__carousel i:last-child {
-    right: -1px;
+.free__subtitle-text {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--accent-text-color);
+  font-family: var(--about-some-text);
+  margin: 25px 0 0;
 }
 
-.equipment__list-sl {
-    list-style: none;
+.free__subtitle-text:last-of-type {
+  margin: 0;
 }
 
-/* CAROUSEL MEDIA REQUESTS */
-
-@media (max-width: 766px) {
-    .equipment__carousel .equipment__list-sl {
-        grid-auto-columns: calc(100%);
-    }
-})
-
-@media (min-width: 767px) and (max-width: 991px) {
-    .equipment__carousel .equipment__list-sl {
-        grid-auto-columns: calc(100% / 2);
-    }
+.free__separator {
+  border: 2px solid var(--title-text-color);
+  width: 10%;
+  margin: 15px 0;
 }
 
-@media (min-width: 1199px) {
-    .equipment__carousel i {
-        background-color: var(--btn-light-cooler);
-    }
+.free__description-text {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
 }
 
-/* EQUIPMENT INFO */
-
-.equipment__info-title {
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--title-text-color);
+.free__description-text span {
+  color: var(--accent-color);
 }
 
-.equipment__info-subtitle {
-    font-size: 38px;
-    font-weight: 800;
-    font-family: 'Nunito', sans-serif;
-    color: var(--accent-text-color);
+/* DISCOUNT */
 
-    margin-top: 20px;
+.equipment__discount {
+  background-image: url(../img/discount.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  padding: 31px 27px; /* 31-27, 34-28 */
 }
 
-.equipment__info-description {
-    font-size: 19px;
-    font-weight: 600;
-    color: var(--standart-text-color);
-
-    margin-top: 25px;
+.discount__spacer {
+  height: 40px;
 }
 
-.equipment__info-offer {
-    font-size: 17px;
-    font-weight: 400;
-color: var(--standart-text-color);
-
-    margin-top: 25px;
+.discount__spacer:last-of-type {
+  height: 100px;
 }
 
-.equipment__info-box {
-    margin-top: 20px;
-    display: flex;
+.discount__percent-text {
+  font-size: 60px;
+  font-weight: 800;
+  color: var(--title-text-color);
+  font-family: var(--about-some-text);
 }
 
-.equipment__info-box-date {
-    min-width: 207px;
-    margin: 7.5px;
+.discount__separator {
+  border: 2px solid var(--accent-color);
+  width: 10%;
+  margin: 15px 0;
 }
 
-.equipment__info-answer {
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--accent-text-color);
+.discount__description-text {
+  font-size: 14;
+  font-weight: 400;
 }
-
-.equipment__info-number {
-    font-size: 17px;
-    font-weight: 400;
-    color: var(--standart-text-color);
-}
-
-.equipment__ico-phone-box {
-    width: 50px;
-    height: 50px;
-    background-color: var(--accent-color);
-    border-radius: 50%;
-    padding: 13px;
-    margin: 7.5px;
-}
-
-
