@@ -1,39 +1,27 @@
 .equipment {
   max-width: 1200px;
-  margin: 120px auto 60px;
+  margin: 120px auto;
+  padding: 0 15px;
   display: grid;
-  padding: 0 32px;
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
   color: var(--standart-text-color);
-  row-gap: 30px;
-}
-
-.block__carousel {
-  width: 370px;
-  height: 200px;
-  background-color: rgb(124, 26, 26);
-  border: 2px solid blue;
+  row-gap: 60px;
 }
 
 @media (min-width: 768px) {
-  .equipment {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .equipment__bottom {
+    grid-template-columns: 58% 39%;
     column-gap: 30px;
-    grid-template-rows: auto;
-  }
-
-  .equipment__free {
-    padding: 46px !important;
-  }
-
-  .equipment__discount {
-    padding: 34px 28px !important;
   }
 }
 
-
-/* EQUIPMENT INFO */
-
+@media (min-width: 992px) {
+.equipment__top {
+    display: grid;
+    grid-template-columns: 28% 72%;
+  }
+}
+              /* EQUIPMENT TOP */
 
 .info__title-text {
   font-size: 12px;
@@ -90,25 +78,61 @@
   margin: 0;
 }
 
-/* EQUIPMENT CAROUSEL */
+/* equipment carousel */
 
 .equipment__carousel {
-  max-width: 770px;
-  display: flex;
+  min-height: 350px;
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+  align-items: center;
 }
 
-.equipment__list{
+.equipment__carousel .eq__carousel-box {
   display: flex;
+  font-size: 26px;
+  font-weight: 800;
+  font-family: var(--about-some-text);
+  color: var(--accent-text-color);
 }
 
-/* EQUIPMENT FREE */
+.eq__carousel-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
 
+.eq__carousel-box img {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.eq__carousel-box p {
+  margin-top: 15px;
+}
+
+.equipment__carousel i {
+  width: 30px;
+  height: 30px;
+  background-color: var(--title-text-color);
+  cursor: pointer;
+  border-radius: 50%;
+  line-height: 30px;
+}
+
+              /* EQUIPMENT BOTTOM */
+.equipment__bottom {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 30px;
+}
 .equipment__free {
   background-image: url(../img/free-bottle.png);
-  background-size: cover; /* Можете использовать 'contain', если предпочитаете */
+  background-size: cover; 
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  padding: 39px; /* 39, 46 */
+  padding: 39px;
 }
 
 .free__spacer {
@@ -150,14 +174,14 @@
   color: var(--accent-color);
 }
 
-/* DISCOUNT */
+/* equipment discount */
 
 .equipment__discount {
   background-image: url(../img/discount.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  padding: 31px 27px; /* 31-27, 34-28 */
+  padding: 31px 27px;
 }
 
 .discount__spacer {
