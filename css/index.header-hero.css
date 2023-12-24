@@ -42,7 +42,6 @@
 
 .header__buttons-container {
     margin-top: 35px;
-
 }
 
 .header__button-button {
@@ -60,9 +59,6 @@
     color: var(--button-font-color);
     border-radius: 25px;
     text-decoration: none;
-
-
-
 }
 
 .header__button-button:hover {
@@ -72,8 +68,6 @@
 
 .header__watch-container {
     margin-top: 35px;
-
-
 }
 
 .header__watch-container:hover {
@@ -92,7 +86,6 @@
     font-weight: 700;
     letter-spacing: 1.3px;
     align-items: center;
-
 }
 
 .header__video-icon {
@@ -100,7 +93,6 @@
     width: 25px;
     margin-right: 8px;
     display: flex;
-
 }
 
 @media (min-width: 768px) {
