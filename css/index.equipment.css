@@ -8,6 +8,12 @@
   row-gap: 60px;
 }
 
+@media (max-width: 991px) {
+  .equipment__container {
+    max-width: 720px;
+  }
+}
+
 @media (min-width: 768px) {
   .equipment__bottom {
     grid-template-columns: 58% 39%;
@@ -16,9 +22,15 @@
 }
 
 @media (min-width: 992px) {
-.equipment__top {
+  .equipment__top {
     display: grid;
     grid-template-columns: 28% 72%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .equipment__carousel .eq__button {
+    background-color: var(--btn-light-cooler) !important;
   }
 }
               /* EQUIPMENT TOP */
@@ -81,44 +93,83 @@
 /* equipment carousel */
 
 .equipment__carousel {
-  min-height: 350px;
-  display: grid;
-  grid-template-columns: 30px 1fr 30px;
-  align-items: center;
-}
-
-.equipment__carousel .eq__carousel-box {
-  display: flex;
-  font-size: 26px;
-  font-weight: 800;
-  font-family: var(--about-some-text);
-  color: var(--accent-text-color);
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .eq__carousel-box {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+  transition: transform 0.5s ease-in-out;
 }
 
-.eq__carousel-box img {
-  height: 250px;
-  object-fit: cover;
-  border-radius: 5px;
+.eq__carousel-box .eq__carousel-item {
+  flex: 0 0 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.eq__carousel-box p {
-  margin-top: 15px;
+@media (min-width: 768px) {
+  .eq__carousel-box .eq__carousel-item {
+    flex: 0 0 50%;
+  }
 }
 
-.equipment__carousel i {
-  width: 30px;
-  height: 30px;
-  background-color: var(--title-text-color);
+.equipment__carousel .eq__button {
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  border: none;
   cursor: pointer;
+  background-color: var(--btn-dark-cooler);
   border-radius: 50%;
-  line-height: 30px;
+}
+
+.equipment__carousel .eq__button--prev {
+  left: 5px;
+}
+
+.equipment__carousel .eq__button--next {
+  right: 5px;
+}
+
+.eq__button--prev:before,
+.eq__button--next::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  position: absolute;
+}
+
+.eq__button--prev:before {
+  border-top: 1px solid var(--accent-text-color);
+  border-left: 1px solid var(--accent-text-color);
+  transform: rotate(-45deg);
+  top: 8px;
+  left: 12px;
+}
+
+.eq__button--next:before {
+  border-top: 1px solid var(--accent-text-color);
+  border-left: 1px solid var(--accent-text-color);
+  transform: rotate(135deg);
+  top: 8px;
+  left: 5px;
+}
+
+.eq__item-text {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--accent-text-color);
+  font-family: var(--about-some-text);
+  margin-top: 20px;
+}
+
+.eq__item-image {
+  width: 100%;
+  border-radius: 13px;
 }
 
               /* EQUIPMENT BOTTOM */

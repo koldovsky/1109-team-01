@@ -1,37 +1,77 @@
-const equipmentSlider = [
-  '<div><img src="img/archway-cooler.png" alt="Archway Cooler"><p>Archway cooler</p></div>',
-  '<div><img src="img/premium-cooler.png" alt="Premium Cooler"><p>Premium cooler</p></div>',
-  '<div><img src="img/apex-cooler.png" alt="Apex Cooler"><p>Apex cooler</p></div>'
-];
+const carousel = document.querySelector('.equipment__carousel');
+const carouselBox = carousel.querySelector('.eq__carousel-box');  
+const moveLeft = carousel.querySelector('.eq__button--prev');
+const moveRight = carousel.querySelector('.eq__button--next');
 
-let currentIndex = 0;
+let productDisplay = getProductDisplay();			
+let gallery = Array.from(carouselBox.children); 
+let currentIndex = productDisplay;
 
-function renderSlide() {
-  const carouselBox = document.querySelector('.eq__carousel-box');
-  carouselBox.innerHTML = equipmentSlider[currentIndex];
-  if(window.matchMedia('(min-width: 767px)').matches) {
-    const secondSlide = currentIndex + 1 > equipmentSlider.length - 1 ? 0 : currentIndex + 1;
-    carouselBox.innerHTML += equipmentSlider[secondSlide];
-  }
+createCarousel();
+
+function getProductDisplay() {
+	if (window.innerWidth > 767) return 2;
+	return 1;
 }
 
+function createCarousel() {
+	gallery = gallery.filter(slide => !slide.classList.contains('clone'));
 
-function nextSlide() {
-  currentIndex = currentIndex + 1 > equipmentSlider.length - 1 ? 0 : currentIndex + 1;
-  renderSlide();
+	const clonesStart = gallery.slice(-3).map(cloneSlide);
+	const clonesEnd = gallery.slice(0, 3).map(cloneSlide);
+	// const clonesStart = gallery.slice(-productDisplay).map(cloneSlide);
+	// const clonesEnd = gallery.slice(0, productDisplay).map(cloneSlide);
+
+	carouselBox.append(...clonesStart, ...gallery, ...clonesEnd);
+
+	gallery = Array.from(carouselBox.children);
+
+	updateCarousel();
 }
 
-function prevSlide() {
-  currentIndex = currentIndex - 1 < 0 ? equipmentSlider.length - 1 : currentIndex - 1;
-  renderSlide();
+function cloneSlide(slide) {
+	const clone = slide.cloneNode(true);
+	clone.classList.add('clone');
+	return clone;
 }
 
-renderSlide();
+function updateCarousel() {
+	carouselBox.style.transform = `translateX(-${currentIndex * 100 / productDisplay}%)`;
+	// carouselBox.style.transform = `translateX(-${currentIndex * 100 / 1}%)`;
+}
 
-const buttonNext = document.querySelector('.eq__btn-next')
-buttonNext.addEventListener('click', nextSlide);
+moveLeft.addEventListener('click', () => {
+	if (--currentIndex < 0) {
+		currentIndex = gallery.length - productDisplay * 2 - 1;
+		carouselBox.style.transition = 'none';
+		updateCarousel();
 
-const buttonPrev = document.querySelector('.eq__btn-prev')
-buttonPrev.addEventListener('click', prevSlide);
+		requestAnimationFrame(() => {
+			requestAnimationFrame(() => {
+				carouselBox.style.transition = '';
+			});
+		});
+	}
+	updateCarousel();
+})
 
-window.addEventListener('resize', renderSlide)
+moveRight.addEventListener('click', () => {
+	carouselBox.style.transition = '';
+	if (++currentIndex >= gallery.length - productDisplay) {
+		currentIndex = productDisplay;
+		carouselBox.style.transition = 'none';
+		updateCarousel();
+
+		requestAnimationFrame(() => {
+			requestAnimationFrame(() => {
+				carouselBox.style.transition = '';
+			});
+		});
+	}
+	updateCarousel();
+})
+
+window.addEventListener('resize', () => {
+	productDisplay = getProductDisplay();
+	createCarousel();
+});
