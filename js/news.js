@@ -53,27 +53,17 @@ const news_data = [{
     object_position: -115,
 }
 ];
-function shuffle(a) {
-    var j, x, i;
-    for (i = a.length - 1; i > 0; i--) {
-        j = Math.floor(Math.random() * (i + 1));
-        x = a[i];
-        a[i] = a[j];
-        a[j] = x;
-    }
-    return a;
-  }
+
 
 function renderNews(news) {
     let newsDomString = '';
-    const rand = [0, 1, 2, 3, 4, 5];
-    shuffle(rand);
+    const rand = [0, 1, 2, 3, 4, 5].sort((a, b) => 0.5 - Math.random());
     for (let i = 0; i < 4; i++) {
         const card = news[rand[i]];
         newsDomString += `
-        <div id="${card.id}" class="news__card">
+        <div class="news__card">
             <div class="card__foto">
-                <img id="${card.id}" class="card__foto" src="${card.scr}" alt="${card.alt}" object-position=${card.object_position}px>
+                <img id="${card.id}" class="card__foto" src="${card.scr}" alt="${card.alt}">
             </div>
             <div class="card__colector">
                 <div class="card__date">
@@ -95,7 +85,8 @@ function renderNews(news) {
                     <a class="card__more" href="#">READ MORE</a>
                 </div>
             </div>`
-    }
+            //document.getElementById(card.id).style.objectPosition = "${card.object_position}px";
+        }
     const newsContainer = document.querySelector(".news__cards");
     newsContainer.innerHTML = newsDomString;
 }
