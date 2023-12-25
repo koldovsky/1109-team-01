@@ -1,6 +1,6 @@
 const news_data = [{
     id: "water_cooler_talks",
-    scr: "../img/chating_people.png",
+    scr: "img/chating_people.png",
     alt: "people chatting by the water cooler",
     date: "October 23, 2021",
     title: "Water Cooler Talks",
@@ -9,7 +9,7 @@ const news_data = [{
 },
 {
     id: "new_bottles",
-    scr: "../img/new_bottles.jpg",
+    scr: "img/new_bottles.jpg",
     alt: "new bottles in production",
     date: "January 03, 2022",
     title: "New Year — New Sparkle Bottles",
@@ -18,7 +18,7 @@ const news_data = [{
 },
 {
     id: "water_quality",
-    scr: "../img/water_quality.webp",
+    scr: "img/water_quality.webp",
     alt: "water from the bottle is poured into a glass",
     date: "March 26, 2022",
     title: "How to Test Water Quality?",
@@ -27,7 +27,7 @@ const news_data = [{
 },
 {
     id: "water_delivery",
-    scr: "../img/water_delivery.webp",
+    scr: "img/water_delivery.webp",
     alt: "the woman receives water from the courier and confirms the delivery",
     date: "July 29, 2022",
     title: "New Promo on Water Delivery",
@@ -36,7 +36,7 @@ const news_data = [{
 },
 {
     id: "exciting_news",
-    scr: "../img/exciting_news.jpg",
+    scr: "img/exciting_news.jpg",
     alt: "exciting news illustration",
     date: "September 15, 2022",
     title: "Exciting News Announcement",
@@ -45,7 +45,7 @@ const news_data = [{
 },
 {
     id: "healthy_hydration",
-    scr: "../img/healthy_hydration.jpg",
+    scr: "img/healthy_hydration.jpg",
     alt: "healthy hydration image",
     date: "November 10, 2022",
     title: "Achieve Healthy Hydration",
