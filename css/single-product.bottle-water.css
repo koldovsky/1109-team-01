@@ -141,6 +141,7 @@
     flex-direction: column;
     background-color: var(--single-product-bg-color);
     padding: 34px 28px 34px 28px;
+    margin: 0 25px;
 }
 
 .pricing-option__label,
