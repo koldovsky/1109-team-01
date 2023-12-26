@@ -152,10 +152,16 @@
     width: 80%;
 }
 
-.error .input-field {
+.error .input-field,
+.error .select-text {
     border-color: var(--error-color);
     margin-bottom: 5px;
 }
+.error .select-date {
+    border-color: var(--error-color);
+    margin-bottom: 5px;
+} 
+
 .error-label {
     display: block;
     color: var(--error-color);
@@ -164,7 +170,7 @@
 }
 
 .input-field,
-.delivery__form input[type="date"],
+.select-date,
 .delivery__form select {
     margin-bottom: 30px;
     padding: 11px 22px 11px 22px;

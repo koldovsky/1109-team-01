@@ -1,39 +1,39 @@
 .equipment {
   max-width: 1200px;
-  margin: 120px auto 60px;
+  margin: 120px auto;
+  padding: 0 15px;
   display: grid;
-  padding: 0 32px;
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
   color: var(--standart-text-color);
-  row-gap: 30px;
+  row-gap: 60px;
 }
 
-.block__carousel {
-  width: 370px;
-  height: 200px;
-  background-color: rgb(124, 26, 26);
-  border: 2px solid blue;
+@media (max-width: 991px) {
+  .equipment__container {
+    max-width: 720px;
+  }
 }
 
 @media (min-width: 768px) {
-  .equipment {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .equipment__bottom {
+    grid-template-columns: 58% 39%;
     column-gap: 30px;
-    grid-template-rows: auto;
-  }
-
-  .equipment__free {
-    padding: 46px !important;
-  }
-
-  .equipment__discount {
-    padding: 34px 28px !important;
   }
 }
 
+@media (min-width: 992px) {
+  .equipment__top {
+    display: grid;
+    grid-template-columns: 28% 72%;
+  }
+}
 
-/* EQUIPMENT INFO */
-
+@media (min-width: 1200px) {
+  .equipment__carousel .eq__button {
+    background-color: var(--btn-light-cooler) !important;
+  }
+}
+              /* EQUIPMENT TOP */
 
 .info__title-text {
   font-size: 12px;
@@ -90,25 +90,100 @@
   margin: 0;
 }
 
-/* EQUIPMENT CAROUSEL */
+/* equipment carousel */
 
 .equipment__carousel {
-  max-width: 770px;
-  display: flex;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-.equipment__list{
+.eq__carousel-box {
   display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
-/* EQUIPMENT FREE */
+.eq__carousel-box .eq__carousel-item {
+  flex: 0 0 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
 
+@media (min-width: 768px) {
+  .eq__carousel-box .eq__carousel-item {
+    flex: 0 0 50%;
+  }
+}
+
+.equipment__carousel .eq__button {
+  width: 31px;
+  height: 31px;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  border: none;
+  cursor: pointer;
+  background-color: var(--btn-dark-cooler);
+  border-radius: 50%;
+}
+
+.equipment__carousel .eq__button--prev {
+  left: 5px;
+}
+
+.equipment__carousel .eq__button--next {
+  right: 5px;
+}
+
+.eq__button--prev:before,
+.eq__button--next::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  position: absolute;
+}
+
+.eq__button--prev:before {
+  border-top: 1px solid var(--accent-text-color);
+  border-left: 1px solid var(--accent-text-color);
+  transform: rotate(-45deg);
+  top: 8px;
+  left: 12px;
+}
+
+.eq__button--next:before {
+  border-top: 1px solid var(--accent-text-color);
+  border-left: 1px solid var(--accent-text-color);
+  transform: rotate(135deg);
+  top: 8px;
+  left: 5px;
+}
+
+.eq__item-text {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--accent-text-color);
+  font-family: var(--about-some-text);
+  margin-top: 20px;
+}
+
+.eq__item-image {
+  width: 100%;
+  border-radius: 13px;
+}
+
+              /* EQUIPMENT BOTTOM */
+.equipment__bottom {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 30px;
+}
 .equipment__free {
   background-image: url(../img/free-bottle.png);
-  background-size: cover; /* Можете использовать 'contain', если предпочитаете */
+  background-size: cover; 
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  padding: 39px; /* 39, 46 */
+  padding: 39px;
 }
 
 .free__spacer {
@@ -150,14 +225,14 @@
   color: var(--accent-color);
 }
 
-/* DISCOUNT */
+/* equipment discount */
 
 .equipment__discount {
   background-image: url(../img/discount.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  padding: 31px 27px; /* 31-27, 34-28 */
+  padding: 31px 27px;
 }
 
 .discount__spacer {

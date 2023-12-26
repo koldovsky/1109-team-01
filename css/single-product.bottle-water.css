@@ -43,11 +43,6 @@
     padding: 80px 20px 15px 20px;
 }
 
-.bottle-water__benefits {
-    padding: 15px 0 120px 0;
-}
-
-
 .bottel_water__drop {
     display: inline;
     width: 20px;
@@ -146,6 +141,7 @@
     flex-direction: column;
     background-color: var(--single-product-bg-color);
     padding: 34px 28px 34px 28px;
+    margin: 0 25px;
 }
 
 .pricing-option__label,
