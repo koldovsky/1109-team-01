@@ -1,5 +1,5 @@
 .carousel-partners {
-    background-color: rgb(241, 246, 252);
+    background-color: var(--carousel-background-color);
 }
 
 .carousel-container {
@@ -11,7 +11,7 @@
 }
 
 .carousel__title {
-    color: rgb(29, 182, 255);
+    color: var(--carousel-title-color);
     font-size: 22px;
     font-weight: 600;
     line-height: 27.06px;
@@ -44,7 +44,7 @@
 }
 
 .carousel-container .carousel-indicators [data-bs-target] {
-    background-color: rgb(33, 37, 41);
+    background-color: var(--carousel-slide-indicator-color);
 }
 
 .carousel-control-prev .carousel-control-prev-icon {
