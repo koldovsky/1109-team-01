@@ -1,5 +1,16 @@
 .water-technology {
-    background-color: var(--brightest-background-color);}
+    background-color: var(--brightest-background-color);
+    margin: auto;
+    max-width: 1200px;
+}
+
+.water-technology__content {
+    margin: auto;
+}
+
+.water-technology__image-container {
+    margin: auto;
+}
 
 .water-technology__title {   
     font-size: 12px;
