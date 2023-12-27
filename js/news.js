@@ -85,9 +85,9 @@ function renderNews(news) {
                     <a class="card__more" href="#">READ MORE</a>
                 </div>
             </div>`
-            //document.getElementById(card.id).style.objectPosition = "${card.object_position}px";
         }
-    const newsContainer = document.querySelector(".news__cards");
-    newsContainer.innerHTML = newsDomString;
+    //const newsContainer = document.querySelector(".news__cards");
+    //newsContainer.innerHTML = newsDomString;
+    return rand;
 }
 renderNews(news_data);
