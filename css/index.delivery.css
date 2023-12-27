@@ -14,7 +14,7 @@
 }
 
 .delivery-main {
-    /* width: 600px; */
+    max-width: 600px;
     padding: 0 15px;
 }
 
@@ -41,7 +41,6 @@
 }
 
 .delivery-content {
-    /* max-width: 50%; */
     padding-top: 120px;
     padding-bottom: 100px;
 }
