@@ -71,7 +71,7 @@ function formValidator(form) {
     removeDateError(dateInput);
   
     if (!dateInput.value || dateInput.value === "2023-01-01") {
-      createDateError(dateInput, "Select date!!");
+      createDateError(dateInput, "Select date!");
       result = false;
     }
     return result;
