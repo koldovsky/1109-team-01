@@ -5,7 +5,7 @@ const news_data = [{
     date: "October 23, 2021",
     title: "Water Cooler Talks",
     text: "Water cooler talks is a phenomenon in offices when employees stop at coolers to chat.",
-    object_position: -115,
+    object_position: '-115px',
 },
 {
     id: "new_bottles",
@@ -14,7 +14,7 @@ const news_data = [{
     date: "January 03, 2022",
     title: "New Year — New Sparkle Bottles",
     text: "We are pleased to introduce our new Sparkle water bottles. They are great for offices.",
-    object_position: -260,
+    object_position: '-260px',
 },
 {
     id: "water_quality",
@@ -23,7 +23,7 @@ const news_data = [{
     date: "March 26, 2022",
     title: "How to Test Water Quality?",
     text: "How to make sure that the water is really clean? Read our article and become a skilled expert!",
-    object_position: -90,
+    object_position: '-90px',
 },
 {
     id: "water_delivery",
@@ -32,7 +32,7 @@ const news_data = [{
     date: "July 29, 2022",
     title: "New Promo on Water Delivery",
     text: "Order water delivery from Monday to Wednesday in New York and get a 15% discount on your order!",
-    object_position: -220,
+    object_position: '-220px',
 },
 {
     id: "exciting_news",
@@ -41,7 +41,7 @@ const news_data = [{
     date: "September 15, 2022",
     title: "Exciting News Announcement",
     text: "We have some exciting news to share with you! Stay tuned for the big reveal.",
-    object_position: -115,
+    object_position: '-115px',
 },
 {
     id: "healthy_hydration",
@@ -50,7 +50,7 @@ const news_data = [{
     date: "November 10, 2022",
     title: "Achieve Healthy Hydration",
     text: "Discover the benefits of staying hydrated and how it contributes to a healthy lifestyle.",
-    object_position: -115,
+    object_position: 'center',
 }
 ];
 
@@ -88,8 +88,11 @@ function renderNews(news) {
         }
     const newsContainer = document.querySelector(".news__cards");
     newsContainer.innerHTML = newsDomString;
-
-    //const cardImg = document.getElementById(card.id);
-    //cardImg.style.objectPosition = card.object_position;
 }
 renderNews(news_data);
+for (let i = 0; news_data.length - 1; i++){
+    const cardImg = document.getElementById(news_data[i].id);
+    if (cardImg){
+        cardImg.style.objectPosition = news_data[i].object_position;
+    }
+}
