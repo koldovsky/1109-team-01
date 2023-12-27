@@ -86,8 +86,10 @@ function renderNews(news) {
                 </div>
             </div>`
         }
-    //const newsContainer = document.querySelector(".news__cards");
-    //newsContainer.innerHTML = newsDomString;
-    return rand;
+    const newsContainer = document.querySelector(".news__cards");
+    newsContainer.innerHTML = newsDomString;
+
+    //const cardImg = document.getElementById(card.id);
+    //cardImg.style.objectPosition = card.object_position;
 }
 renderNews(news_data);
