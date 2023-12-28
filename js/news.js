@@ -1,51 +1,51 @@
 const news_data = [{
     id: "water_cooler_talks",
-    scr: "img/chating_people.png",
+    src: "img/chating_people.png",
     alt: "people chatting by the water cooler",
     date: "October 23, 2021",
     title: "Water Cooler Talks",
     text: "Water cooler talks is a phenomenon in offices when employees stop at coolers to chat.",
-    object_position: '-115px',
+    object_position: '30%',
 },
 {
     id: "new_bottles",
-    scr: "img/new_bottles.jpg",
+    src: "img/new_bottles.jpg",
     alt: "new bottles in production",
     date: "January 03, 2022",
     title: "New Year — New Sparkle Bottles",
     text: "We are pleased to introduce our new Sparkle water bottles. They are great for offices.",
-    object_position: '-260px',
+    object_position: '55%',
 },
 {
     id: "water_quality",
-    scr: "img/water_quality.webp",
+    src: "img/water_quality.webp",
     alt: "water from the bottle is poured into a glass",
     date: "March 26, 2022",
     title: "How to Test Water Quality?",
     text: "How to make sure that the water is really clean? Read our article and become a skilled expert!",
-    object_position: '-90px',
+    object_position: '32%',
 },
 {
     id: "water_delivery",
-    scr: "img/water_delivery.webp",
+    src: "img/water_delivery.webp",
     alt: "the woman receives water from the courier and confirms the delivery",
     date: "July 29, 2022",
     title: "New Promo on Water Delivery",
     text: "Order water delivery from Monday to Wednesday in New York and get a 15% discount on your order!",
-    object_position: '-220px',
+    object_position: '50%',
 },
 {
     id: "exciting_news",
-    scr: "img/exciting_news.jpg",
+    src: "img/exciting_news.jpg",
     alt: "exciting news illustration",
     date: "September 15, 2022",
     title: "Exciting News Announcement",
     text: "We have some exciting news to share with you! Stay tuned for the big reveal.",
-    object_position: '-115px',
+    object_position: 'center',
 },
 {
     id: "healthy_hydration",
-    scr: "img/healthy_hydration.jpg",
+    src: "img/healthy_hydration.jpg",
     alt: "healthy hydration image",
     date: "November 10, 2022",
     title: "Achieve Healthy Hydration",
@@ -53,17 +53,18 @@ const news_data = [{
     object_position: 'center',
 }
 ];
+const NumCards = 4;
+const rand = [...new Array(news_data.length)].map((el, ind) => ind);
+rand.sort((a, b) => 0.5 - Math.random());
 
-
-function renderNews(news) {
+function renderNews(news, rand, NumCards) {
     let newsDomString = '';
-    const rand = [0, 1, 2, 3, 4, 5].sort((a, b) => 0.5 - Math.random());
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < NumCards; i++) {
         const card = news[rand[i]];
         newsDomString += `
         <div class="news__card">
             <div class="card__foto">
-                <img id="${card.id}" class="card__foto" src="${card.scr}" alt="${card.alt}">
+                <img id="${card.id}" class="card__foto" src="${card.src}" alt="${card.alt}">
             </div>
             <div class="card__colector">
                 <div class="card__date">
@@ -85,14 +86,20 @@ function renderNews(news) {
                     <a class="card__more" href="#">READ MORE</a>
                 </div>
             </div>`
-        }
+    }
     const newsContainer = document.querySelector(".news__cards");
     newsContainer.innerHTML = newsDomString;
+    ReStyle(news, rand, NumCards);
 }
-renderNews(news_data);
-for (let i = 0; news_data.length - 1; i++){
-    const cardImg = document.getElementById(news_data[i].id);
-    if (cardImg){
-        cardImg.style.objectPosition = news_data[i].object_position;
+function ReStyle(news, rand, NumCards) {
+    if (window.innerWidth >= 1000) {
+        for (let i = 0; i < NumCards; i++) {
+            const cardImg = document.getElementById(news[rand[i]].id);
+            if (cardImg) {
+                cardImg.style.objectPosition = news[rand[i]].object_position;
+            }
+        }
     }
 }
+renderNews(news_data,rand, NumCards);
+window.addEventListener("resize", ReStyle(news_data, rand, NumCards));

@@ -35,6 +35,7 @@ div.news__header{
 .news__card{
     min-height: 504px;
     min-width: 327px;
+    max-width: 650px;
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 25px;
@@ -46,6 +47,10 @@ div.news__header{
 }
 .news .card__foto{
     border-radius: 5px 5px 0px 0px;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center 10%;
 }
 .news .card__colector{
     display: flex;
@@ -85,6 +90,8 @@ div.news__header{
 @media (max-width: 999px){
     .news .card__foto{
         width: 100%;
+        max-height: 300px;
+        object-fit: cover;
     }
 }
 @media (min-width: 1000px){

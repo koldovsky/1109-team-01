@@ -72,9 +72,9 @@ img {
     --head-teg-text-size: 0.7em;
     --head-name-text-size: 2.4em;
     --head-text-size: 1.3em;
-    --tag-text-size: 14px;
-    --nane-text-size: 24px;
-    --text-size: 17px;
+    --tag-text-size: 1em;
+    --nane-text-size: 1.7em;
+    --text-size: 1.3em;
     --footer-text-size: 15px;
     --about-title-size: 55px ;
     --about-teg-size: 12px;
