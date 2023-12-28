@@ -10,7 +10,7 @@
     box-sizing: border-box;
     display: flex;
     margin: 0;
-    margin-top: +1.5%;
+    margin-top: +1.2%;
 
     background-image: url(../img/water_paralax_bottom.png) ;
     background-size: cover;
@@ -64,11 +64,6 @@
 .about__trial-wave{
     transform: scaleY(-1) translateY(-100%);
     margin-top: auto;
-}
-@media screen and (max-width: 768px){
-    .about__trial-wave{
-    margin-top
-    }
 }
 @media screen and (max-width: 768px){
     .about__rent-a-water{
