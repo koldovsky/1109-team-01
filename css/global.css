@@ -35,9 +35,9 @@ img {
     --even-more-dark-background-color: #002d92;
     --the-darkest-background-color:#002579; 
     --avarage-background-color: #306fff;
-    --carousel-background-color: rgb(241, 246, 252);
-    --carousel-title-color: rgb(29, 182, 255);
-    --carousel-slide-indicator-color: rgb(33, 37, 41);
+    --carousel-background-color: #f1f6fc;
+    --carousel-title-color: #1db6ff;
+    --carousel-slide-indicator-color: #212529;
     --light-blueish-color: #20b6ff;
     --slate-gray: #5c607c;
     --light-text-color: #21b6ff;
