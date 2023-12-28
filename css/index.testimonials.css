@@ -2,6 +2,7 @@
   min-width: 375px;
   padding-top: 90px;
   background-color: rgb(241, 246, 252);
+  margin: auto;
 }
 
 .testimonials__title {

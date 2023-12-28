@@ -1,45 +1,44 @@
 .equipment {
-  max-width: 1200px;
-  margin: 120px auto;
-  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1175px;
+  min-width: 320px;
+  height: 100%;
+  /* padding: 90px 15px; */
+  margin: auto;
+}
+
+
+.d-none {
+  display: none;
+}
+
+                    /* EQUIPMENT TOP */
+
+.equipment__top {
   display: grid;
-  grid-template-rows: repeat(2, auto);
-  color: var(--standart-text-color);
-  row-gap: 60px;
+  grid-template-rows: auto;
+  padding: 90px 0 30px;
 }
 
-@media (max-width: 991px) {
-  .equipment__container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 768px) {
-  .equipment__bottom {
-    grid-template-columns: 58% 39%;
-    column-gap: 30px;
-  }
-}
-
-@media (min-width: 992px) {
+@media (min-width: 991px) {
   .equipment__top {
-    display: grid;
-    grid-template-columns: 28% 72%;
+    grid-template-columns: 30% 70%;
   }
 }
 
-@media (min-width: 1200px) {
-  .equipment__carousel .eq__button {
-    background-color: var(--btn-light-cooler) !important;
-  }
+/* EQUIPMENT INFO */
+
+.equipment__info {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  padding: 0 15px;
 }
-              /* EQUIPMENT TOP */
 
 .info__title-text {
   font-size: 12px;
   font-weight: 700;
   color: var(--title-text-color);
-  margin: 0;
 }
 
 .info__subtitle-text {
@@ -64,17 +63,20 @@
 
 .info__contacts {
   display: flex;
-  margin-top: 20px;
-  padding: 7.5px 7.5px 7.5px 0;
+  margin: 20px 0 0;
+  align-items: center;
 }
 
 .contact__ico {
-  width: 45px;
-  height: 45px;
-  padding: 9px;
-  margin: 7.5px 7.5px 7.5px 0;
+  width: 50px;
+  height: 50px;
   background-color: var(--accent-color);
   border-radius: 50%;
+  padding: 10px;
+}
+
+.contact__info {
+  padding: 10px;
 }
 
 .contact__info-text {
@@ -90,12 +92,13 @@
   margin: 0;
 }
 
-/* equipment carousel */
+/* EQUIOMENT CAROUSEL */
 
 .equipment__carousel {
   position: relative;
   width: 100%;
   overflow: hidden;
+  padding: 0 15px;
 }
 
 .eq__carousel-box {
@@ -127,12 +130,18 @@
   border-radius: 50%;
 }
 
+@media (min-width: 1201px) {
+  .equipment__carousel .eq__button {
+    background-color: var(--title-text-color);
+  }
+}
+
 .equipment__carousel .eq__button--prev {
-  left: 5px;
+  left: 20px;
 }
 
 .equipment__carousel .eq__button--next {
-  right: 5px;
+  right: 20px;
 }
 
 .eq__button--prev:before,
@@ -159,30 +168,43 @@
   left: 5px;
 }
 
+.eq__item-image {
+  max-width: 720px;
+  border-radius: 10px;
+}
+
 .eq__item-text {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 800;
   color: var(--accent-text-color);
   font-family: var(--about-some-text);
-  margin-top: 20px;
+  margin: 20px 0 0;
 }
 
-.eq__item-image {
-  width: 100%;
-  border-radius: 13px;
-}
+                    /* EQUIPMENT BOTTOM */
 
-              /* EQUIPMENT BOTTOM */
 .equipment__bottom {
   display: grid;
   grid-template-rows: auto;
   row-gap: 30px;
+  padding: 0 15px 90px;
 }
+
+@media (min-width: 768px) {
+  .equipment__bottom {
+    grid-template-columns: 60% 35%;
+    column-gap: 5%;
+  }
+}
+
+/* EQUIPMENT FREE */
+
 .equipment__free {
+  position: relative;
   background-image: url(../img/free-bottle.png);
   background-size: cover; 
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center;
   padding: 39px;
 }
 
@@ -225,13 +247,13 @@
   color: var(--accent-color);
 }
 
-/* equipment discount */
+/* EQUIPMENT DISCOUNT */
 
 .equipment__discount {
   background-image: url(../img/discount.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center;
   padding: 31px 27px;
 }
 

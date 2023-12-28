@@ -1,30 +1,29 @@
 const carousel = document.querySelector('.equipment__carousel');
-const carouselBox = carousel.querySelector('.eq__carousel-box');  
-const moveLeft = carousel.querySelector('.eq__button--prev');
-const moveRight = carousel.querySelector('.eq__button--next');
+const carouselInner = carousel.querySelector('.eq__carousel-box');  
+const prevButton = carousel.querySelector('.eq__button--prev');
+const nextButton = carousel.querySelector('.eq__button--next');
 
-let productDisplay = getProductDisplay();			
-let gallery = Array.from(carouselBox.children); 
-let currentIndex = productDisplay;
+let slidesPerView = getSlidesPerView();			
+let slides = Array.from(carouselInner.children); 
+let currentIndex = slidesPerView;
 
-createCarousel();
+setupCarousel();
 
-function getProductDisplay() {
+function getSlidesPerView() {
 	if (window.innerWidth > 767) return 2;
 	return 1;
 }
 
-function createCarousel() {
-	gallery = gallery.filter(slide => !slide.classList.contains('clone'));
+function setupCarousel() {
+	// slides = Array.from(carouselInner.children).filter(slide => !slide.classList.contains('clone'));
+	slides = slides.filter(slide => !slide.classList.contains('clone'));
 
-	const clonesStart = gallery.slice(-3).map(cloneSlide);
-	const clonesEnd = gallery.slice(0, 3).map(cloneSlide);
-	// const clonesStart = gallery.slice(-productDisplay).map(cloneSlide);
-	// const clonesEnd = gallery.slice(0, productDisplay).map(cloneSlide);
+	const clonesStart = slides.slice(-slidesPerView).map(cloneSlide);
+	const clonesEnd = slides.slice(0, slidesPerView).map(cloneSlide);
 
-	carouselBox.append(...clonesStart, ...gallery, ...clonesEnd);
+	carouselInner.append(...clonesStart, ...slides, ...clonesEnd);
 
-	gallery = Array.from(carouselBox.children);
+	slides = Array.from(carouselInner.children);
 
 	updateCarousel();
 }
@@ -36,35 +35,34 @@ function cloneSlide(slide) {
 }
 
 function updateCarousel() {
-	carouselBox.style.transform = `translateX(-${currentIndex * 100 / productDisplay}%)`;
-	// carouselBox.style.transform = `translateX(-${currentIndex * 100 / 1}%)`;
+	carouselInner.style.transform = `translateX(-${currentIndex * 100 / slidesPerView}%)`;
 }
 
-moveLeft.addEventListener('click', () => {
+prevButton.addEventListener('click', () => {
 	if (--currentIndex < 0) {
-		currentIndex = gallery.length - productDisplay * 2 - 1;
-		carouselBox.style.transition = 'none';
+		currentIndex = slides.length - slidesPerView * 2 - 1;
+		carouselInner.style.transition = 'none';
 		updateCarousel();
 
 		requestAnimationFrame(() => {
 			requestAnimationFrame(() => {
-				carouselBox.style.transition = '';
+				carouselInner.style.transition = '';
 			});
 		});
 	}
 	updateCarousel();
 })
 
-moveRight.addEventListener('click', () => {
-	carouselBox.style.transition = '';
-	if (++currentIndex >= gallery.length - productDisplay) {
-		currentIndex = productDisplay;
-		carouselBox.style.transition = 'none';
+nextButton.addEventListener('click', () => {
+	carouselInner.style.transition = '';
+	if (++currentIndex >= slides.length - slidesPerView) {
+		currentIndex = slidesPerView;
+		carouselInner.style.transition = 'none';
 		updateCarousel();
 
 		requestAnimationFrame(() => {
 			requestAnimationFrame(() => {
-				carouselBox.style.transition = '';
+				carouselInner.style.transition = '';
 			});
 		});
 	}
@@ -72,6 +70,6 @@ moveRight.addEventListener('click', () => {
 })
 
 window.addEventListener('resize', () => {
-	productDisplay = getProductDisplay();
-	createCarousel();
+	slidesPerView = getSlidesPerView();
+	setupCarousel();
 });
