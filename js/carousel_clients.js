@@ -10,9 +10,7 @@ const slides = [
 let currentSlideIdx = 0;
 
 function updateCarousel() {
-    const slideContainer = document.querySelector('.carousel-clients__slide');
-    slideContainer.innerHTML = '';
-
+    let carouselDomString = "";
     const numSlidesToShow = window.matchMedia('(min-width: 1200px)').matches
         ? 5
         : window.matchMedia('(min-width: 767px)').matches
@@ -23,11 +21,10 @@ function updateCarousel() {
 
     for (let i = 0; i < numSlidesToShow; i++) {
         const index = (currentSlideIdx + i) % slides.length;
-        const item = document.createElement('div');
-        item.className = 'carousel__slide' + (i === 0 ? ' active' : '');
-        item.innerHTML = slides[index];
-        slideContainer.appendChild(item);
+        carouselDomString += slides[index];
     }
+    const slideContainer = document.querySelector('.carousel-clients__slide');
+    slideContainer.innerHTML = carouselDomString;
 }
 
 function nextSlide() {
