@@ -31,7 +31,6 @@
     justify-content: center;
     gap: 25px;
     min-width: 163px;
-    min-height: 120px;
     transition: opacity 0.05s ease-in-out;
 }
 
@@ -39,8 +38,3 @@
     background-color: var(--carousel-background-color);
     border: 0;
 }
-
-.carousel__slide {
-    width: 295px;
-}
-
