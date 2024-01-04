@@ -59,7 +59,11 @@
 }
 
 .quality{
-    background-color: var(--bottle-water-bg-color);    
+    background-color: var(--bottle-water-bg-color);  
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    row-gap: 20px;     
 }
 
 @media (min-width: 600px){
