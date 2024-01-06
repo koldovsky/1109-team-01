@@ -43,6 +43,7 @@
     text-align: center;
     padding: 20px;
     font: inherit;
+    color: var(--bold-text-color);
 }
 
 
