@@ -3,6 +3,7 @@
     color: var(--light-button-color);
     text-align: center;
     text-transform: uppercase;
+    font-weight: 700;
     padding: 20px;
 }
 .whychooseus__subtitle{
