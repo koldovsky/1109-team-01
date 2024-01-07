@@ -35,6 +35,11 @@ img {
     --even-more-dark-background-color: #002d92;
     --the-darkest-background-color:#002579; 
     --avarage-background-color: #306fff;
+    --testimonials-background-color: #f2f7fc;
+    --testimonials-title-color: #5bace8;
+    --carousel-background-color: #f1f6fc;
+    --carousel-title-color: #1db6ff;
+    --carousel-slide-indicator-color: #212529;
     --light-blueish-color: #20b6ff;
     --slate-gray: #5c607c;
     --light-text-color: #21b6ff;
@@ -69,9 +74,9 @@ img {
     --head-teg-text-size: 0.7em;
     --head-name-text-size: 2.4em;
     --head-text-size: 1.3em;
-    --tag-text-size: 14px;
-    --nane-text-size: 24px;
-    --text-size: 17px;
+    --tag-text-size: 1em;
+    --nane-text-size: 1.7em;
+    --text-size: 1.3em;
     --footer-text-size: 15px;
     --about-title-size: 55px ;
     --about-teg-size: 12px;

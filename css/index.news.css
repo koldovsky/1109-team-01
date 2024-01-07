@@ -33,8 +33,9 @@ div.news__header{
     margin-top: 50px;
 }
 .news__card{
-    height: 504px;
+    min-height: 504px;
     min-width: 327px;
+    max-width: 650px;
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 25px;
@@ -46,6 +47,10 @@ div.news__header{
 }
 .news .card__foto{
     border-radius: 5px 5px 0px 0px;
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center 10%;
 }
 .news .card__colector{
     display: flex;
@@ -82,12 +87,14 @@ div.news__header{
     letter-spacing: 0.1em;
 }
 
-@media (max-width: 759px){
+@media (max-width: 999px){
     .news .card__foto{
         width: 100%;
+        max-height: 300px;
+        object-fit: cover;
     }
 }
-@media (min-width: 760px){
+@media (min-width: 1000px){
     .news{
         padding-top: 120px;
         padding-bottom: 120px;
@@ -98,7 +105,7 @@ div.news__header{
     }
     .news .card__foto{
         height: 100%;
-        width: 228px;
+        min-width: 228px;
         border-radius: 5px 0px 0px 5px ;
     }
     .news__cards{
@@ -110,20 +117,9 @@ div.news__header{
         min-width: 467px;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
     .news .card__foto{
         object-fit: cover;
-    }
-    img#water_deliwery{
-        object-position: -220px;
-    }
-    img#water_cooler_talks{
-        object-position: -115px;
-    }
-    img#new_bottles{
-        object-position: -260px;
-    }
-    img#water_quality{
-        object-position: -90px;
     }
 }

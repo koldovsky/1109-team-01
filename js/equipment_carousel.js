@@ -1,37 +1,75 @@
-const equipmentSlider = [
-  '<div><img src="img/archway-cooler.png" alt="Archway Cooler"><p>Archway cooler</p></div>',
-  '<div><img src="img/premium-cooler.png" alt="Premium Cooler"><p>Premium cooler</p></div>',
-  '<div><img src="img/apex-cooler.png" alt="Apex Cooler"><p>Apex cooler</p></div>'
-];
+const carousel = document.querySelector('.equipment__carousel');
+const carouselInner = carousel.querySelector('.eq__carousel-box');  
+const prevButton = carousel.querySelector('.eq__button--prev');
+const nextButton = carousel.querySelector('.eq__button--next');
 
-let currentIndex = 0;
+let slidesPerView = getSlidesPerView();			
+let slides = Array.from(carouselInner.children); 
+let currentIndex = slidesPerView;
 
-function renderSlide() {
-  const carouselBox = document.querySelector('.eq__carousel-box');
-  carouselBox.innerHTML = equipmentSlider[currentIndex];
-  if(window.matchMedia('(min-width: 767px)').matches) {
-    const secondSlide = currentIndex + 1 > equipmentSlider.length - 1 ? 0 : currentIndex + 1;
-    carouselBox.innerHTML += equipmentSlider[secondSlide];
-  }
+setupCarousel();
+
+function getSlidesPerView() {
+	if (window.innerWidth > 767) return 2;
+	return 1;
 }
 
+function setupCarousel() {
+	// slides = Array.from(carouselInner.children).filter(slide => !slide.classList.contains('clone'));
+	slides = slides.filter(slide => !slide.classList.contains('clone'));
 
-function nextSlide() {
-  currentIndex = currentIndex + 1 > equipmentSlider.length - 1 ? 0 : currentIndex + 1;
-  renderSlide();
+	const clonesStart = slides.slice(-slidesPerView).map(cloneSlide);
+	const clonesEnd = slides.slice(0, slidesPerView).map(cloneSlide);
+
+	carouselInner.append(...clonesStart, ...slides, ...clonesEnd);
+
+	slides = Array.from(carouselInner.children);
+
+	updateCarousel();
 }
 
-function prevSlide() {
-  currentIndex = currentIndex - 1 < 0 ? equipmentSlider.length - 1 : currentIndex - 1;
-  renderSlide();
+function cloneSlide(slide) {
+	const clone = slide.cloneNode(true);
+	clone.classList.add('clone');
+	return clone;
 }
 
-renderSlide();
+function updateCarousel() {
+	carouselInner.style.transform = `translateX(-${currentIndex * 100 / slidesPerView}%)`;
+}
 
-const buttonNext = document.querySelector('.eq__btn-next')
-buttonNext.addEventListener('click', nextSlide);
+prevButton.addEventListener('click', () => {
+	if (--currentIndex < 0) {
+		currentIndex = slides.length - slidesPerView * 2 - 1;
+		carouselInner.style.transition = 'none';
+		updateCarousel();
 
-const buttonPrev = document.querySelector('.eq__btn-prev')
-buttonPrev.addEventListener('click', prevSlide);
+		requestAnimationFrame(() => {
+			requestAnimationFrame(() => {
+				carouselInner.style.transition = '';
+			});
+		});
+	}
+	updateCarousel();
+})
 
-window.addEventListener('resize', renderSlide)
+nextButton.addEventListener('click', () => {
+	carouselInner.style.transition = '';
+	if (++currentIndex >= slides.length - slidesPerView) {
+		currentIndex = slidesPerView;
+		carouselInner.style.transition = 'none';
+		updateCarousel();
+
+		requestAnimationFrame(() => {
+			requestAnimationFrame(() => {
+				carouselInner.style.transition = '';
+			});
+		});
+	}
+	updateCarousel();
+})
+
+window.addEventListener('resize', () => {
+	slidesPerView = getSlidesPerView();
+	setupCarousel();
+});

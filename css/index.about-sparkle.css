@@ -1,6 +1,9 @@
 .about-section{
     background-color: var(--brightest-background-color);
+    margin: auto;
+    max-width: 1200px;
 }
+
 
 .about-section__title {   
     font-size: 12px;
