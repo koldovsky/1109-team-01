@@ -5,4 +5,5 @@ document.addEventListener("partialsLoaded", () => {
   import("./carousel_clients.js"); 
   import("./news.js");
   import("./delivery_ripples.js");
+  import("./index_delivery.js");
 });

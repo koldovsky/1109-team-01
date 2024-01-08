@@ -76,6 +76,8 @@ border-bottom: 2px solid #21b6ff;
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
+    margin: auto;
+    width: 100%;
 }
 
 .header-burger-container {
