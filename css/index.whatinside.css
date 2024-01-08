@@ -1,7 +1,7 @@
 @import url(global.css);
 
 .water-info {
-  background-color: var(--dark-background-color);
+  background-color: #002c8f;
   padding-top: 90px;
   padding-bottom: 80px;
   padding-left: 24px;
