@@ -30,6 +30,8 @@
   font-size: 19px;
   color: #c2c9dc;
   font-family: "Work Sans", sans-serif;
+  border-bottom: 1px solid #002c8f; 
+  margin-bottom: 10px;
 }
 
 .water-info__description{
