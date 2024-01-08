@@ -11,7 +11,7 @@ function renderProducts(products) {
             </div>
             <h3 class="card__title">${product.title}</h3>
             <p class="card__description">${product.description}</p>
-            <a class="button" href="single-product.html">Lern More</a>
+            <a class="button" href="single-product.html">Learn More</a>
         </article>`;
     }
     const productsContainer = document.querySelector(".products__cards");
