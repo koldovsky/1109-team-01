@@ -14,14 +14,6 @@
   font-family: "Work Sans";
 }
 
-.water-info_mineral-title::before {
-  content: ''; 
-  display: block;
-  width: 21px; /* Задає ширину полоски */
-  height: 26.25px; /* Задає висоту полоски */
-  background-color: #78ee4a; /* Задає колір полоски */
-}
-
 .water-info__subtitle{
   color: white;
   font-size: 46px;
