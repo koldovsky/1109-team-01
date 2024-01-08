@@ -40,16 +40,16 @@
 }
 
 .menu-list__item:hover {
-border-bottom: 2px solid #21b6ff;
+border-bottom: 2px solid var(--light-background-color);
 }
 
 .menu-list__link {
-    color: #ffffff96;
+    color: var(--light-dark-text-color);
     text-decoration: none;
 }
 
 .menu-list__link:hover {
-    color: #f2f2f2; 
+    color: var(--footer-title-color); 
 }
 
 .social-list {
@@ -63,13 +63,13 @@ border-bottom: 2px solid #21b6ff;
 }
 
 .social-list__link {
-    color:#a4c2f4;
+    color: var(--testimonials-title-color);
 }
 
 .social-list__icon {
     width: 30px;
     fill: currentColor;
-    color: #21b6ff;
+    color: var(--light-background-color);
 }
 
 .header-burger-menu {
@@ -112,7 +112,7 @@ border-bottom: 2px solid #21b6ff;
         width: 21px;
         height: 1px;
         position: relative;
-        background-color: #fff;
+        background-color: var(--footer-title-color);
         display: inline-block;
         cursor: pointer;
         transition: all .2s ease-out; 
@@ -127,7 +127,7 @@ border-bottom: 2px solid #21b6ff;
         position: absolute;
         width: 100%;
         height: 1px;
-        background-color: #fff;
+        background-color: var(--footer-title-color);
         transition: all .2s ease-out;
     }
     
