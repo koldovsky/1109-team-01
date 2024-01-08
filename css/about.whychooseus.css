@@ -3,38 +3,48 @@
     color: var(--light-button-color);
     text-align: center;
     text-transform: uppercase;
+    font-weight: 700;
+    padding: 20px;
 }
 .whychooseus__subtitle{
     font-size: xx-large;
     text-align: center;
     color: var(--the-darkest-background-color);
+    padding: 20px;
 }
 .quality__Experienced{
-    font-size: large;
+    font-size: x-large;
     text-align: center;
     color: var(--the-darkest-background-color);
+    padding: 20px;
 }
 
 .quality__Fresh{
-    font-size: large;
+    font-size: x-large;
     text-align: center;
     color: var(--the-darkest-background-color);
+    padding: 20px;
 }
 
 .Proven__quality{
-    font-size: large;
+    font-size: x-large;
     text-align: center;
     color: var(--the-darkest-background-color);
+    padding: 20px;
 }
 
 .whychooseus__of-water{
     font-size: large;
     text-align: center;
     color: var(--the-darkest-background-color);
+    padding: 20px;
 }
 
 .delivery__team{
     text-align: center;
+    padding: 20px;
+    font: inherit;
+    color: var(--bold-text-color);
 }
 
 
@@ -51,5 +61,57 @@
 }
 
 .quality{
-    background-color: var(--text-color);    
+    background-color: var(--bottle-water-bg-color);  
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    row-gap: 20px;
+    padding: 5px;     
+}
+
+@media (min-width: 600px){
+.whychooseus__quality{
+    display: grid;
+    width: auto;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    padding: 20px;
+}
+}
+
+.Fresh-box{
+    height: auto;
+    width: auto;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-radius: 10px;
+    background-color: var(--single-product-bg-color);
+    padding: 30px;
+}
+
+.Experienced-box{
+    height: auto;
+    width: auto;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-radius: 10px;
+    background-color: var(--single-product-bg-color);
+    padding: 30px;
+}
+
+.Proven-box{
+    height: auto;
+    width: auto;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-radius: 10px;
+    background-color: var(--single-product-bg-color);
+    padding: 30px;
 }

@@ -1,7 +1,8 @@
 .testimonials {
   min-width: 375px;
   padding-top: 90px;
-  background-color: rgb(241, 246, 252);
+  background-color: var(--testimonials-background-color);
+  margin: auto;
 }
 
 .testimonials__title {
@@ -12,7 +13,7 @@
   text-align: center;
   line-height: 20.04px;
   font-family: var(--button-font);
-  color: rgb(91, 172, 232);
+  color: var(--testimonials-title-color);
 }
 
 .testimonials__tagline {

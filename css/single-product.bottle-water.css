@@ -43,11 +43,6 @@
     padding: 80px 20px 15px 20px;
 }
 
-.bottle-water__benefits {
-    padding: 15px 0 120px 0;
-}
-
-
 .bottel_water__drop {
     display: inline;
     width: 20px;
@@ -82,7 +77,7 @@
 
 .bottle-water__filtration {
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 70px 1fr;
 }
 
 
@@ -146,6 +141,7 @@
     flex-direction: column;
     background-color: var(--single-product-bg-color);
     padding: 34px 28px 34px 28px;
+    margin: 0 25px;
 }
 
 .pricing-option__label,
@@ -274,6 +270,11 @@
 
     .filtration-info__clear-water {
         padding: 8px 0 0 15px;
+    }
+
+    .bottle-water__filtration {
+        display: grid;
+        grid-template-columns: 90px 1fr;
     }
 
     .bottle-water__pricing,

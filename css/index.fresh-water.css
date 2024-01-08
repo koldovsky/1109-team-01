@@ -1,231 +1,162 @@
-.freshwater {
-    max-width: 1700px;
-    margin: 0;
-}
-
-.freshwater__img {
-    max-width: 100%;
-    height: 650px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background: url('img/two_glasses_of_water.png') repeat-x center top;
-    background-size: cover; /* Use 'cover' to fill the entire container */
-}
-
-.freshwater__img img {
-    max-width: 100%;
-    max-height: 100%;
-    width: 1500px;
-    height: 650px;
-}
-
-.freshwater__photo {
-    position: relative;
-    overflow: hidden;
-}
-
-.wave {
-    position: absolute;
-    top: -3%;
-    left: 50%;
-    transform: translateX(-50%) scaleY(-1);
-    width: 100%;
-    height: auto; 
-    z-index: 2;
-}
-
-@media screen and (max-width: 768px) {
-    .freshwater__img {
-        width: 100%;
-        height: auto;
-    }
-
-    .freshwater__img img {
-        width: 100%;
-        height: auto;
-    }
-
-    .freshwater__facts {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .experience__fact,
-    .anybottlesize__fact,
-    .quickdelivery__fact {
-        width: 100%;
-        margin-bottom: 20px;
-        height: auto;
-    }
-}
-.freshwater__img {
-    width: 100%; /* Adjust the width as needed */
-    height: 650px; /* Adjust the height as needed */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    background: url('img/two_glasses_of_water.png') repeat-x center top;
-    background-size: cover; /* Use 'cover' to fill the entire container */
-}
-
-.freshwater__img img {
-    max-width: 100%;
-    max-height: 100%;
-    width: 1500px;
-    height: 650px;
-}
-
-.freshwater__photo {
-    position: relative;
-    overflow: hidden;
-}
-
-.wave {
-    position: absolute;
-    top: -3%;
-    left: 50%;
-    transform: translateX(-50%) scaleY(-1);
-    width: 100%;
-    height: auto; 
-    z-index: 2;
-}
-
 .freshwater__container {
+    background: url('../img/two_glasses_of_water.jpg');
+    background-position: right;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    min-width: 338px;
+}
+.background__play-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--light-button-color);
+    border-radius: 50%;
     position: relative;
 }
-
-.background-wrapper_RZ2 {
+.freshwater__play-icon {
+    width: 34px;
     position: absolute;
-    top: 25%;
-    left: 23%;
-    transform: translateX(-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.freshwater__info {
+    padding: 100px 24px 190px 24px;
+}
+
+.freshwater__icon-wrap {
+    display: flex;
     width: 70px;
     height: 70px;
+    background-color: var(--light-button-color);
     border-radius: 50%;
-    overflow: hidden;
-    z-index: 2;
-}
-
-.background_2xT {
-    width: 100%;
-    height: 100%;
-    background: var(--title-text-color);
-    display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2;
 }
 
 .freshwater__icon {
     width: 40px;
     height: 40px;
-    z-index: 2;
-}
-
-.freshwater__container {
-    position: relative;
-}
-
-.freshwater__title,
-.freshwater__description {
-    position: absolute;
-    left: 20%;
-    box-sizing: border-box;
-    white-space: pre-line;
-    overflow-wrap: break-word;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    z-index: 2
-}
-
-.freshwater__title {
-    top: 40%;
-    border-bottom: 0;
-    color: var(--dark-bg-color);
-    font-family: 'Nunito', sans-serif;
-    font-size: 38px;
-    font-weight: 800;
-    line-height: 43.32px;
-    z-index: 2
-}
-
-.freshwater__description {
-    top: 55%;
-    border-bottom-color: ver(--bald-text-color);
-    border-bottom-style: none;
-    border-bottom-width: 0px;
-    color: var(--bald-text-color);
-    font-family: 'Work Sans', sans-serif;
-    font-size: 19px;
-    font-weight: 600;
-    line-height: 26.6px;
 }
 
 .freshwater__facts {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1700px;
+    display: grid;
+}
+
+.experience__fact {
+    background-color: var(--dark-background-color);
+}
+
+.anybottlesize__fact { 
+    background-color: var(--even-more-dark-background-color);
+}
+
+.quickdelivery__fact {
+    background-color: var(--the-darkest-background-color);
 }
 
 .experience__fact,
 .anybottlesize__fact,
 .quickdelivery__fact {
-    width: calc(33.33% - 20px);
-    margin-bottom: 30px;
-    display: block;
-    color: #FFFFFF;
-    font-size: 19px;
-    font-weight: 600;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    height: 5.5cm; /* Increase the height by 0.5 centimeters */
+    padding: 39px;
+    border: none;
+}
+
+.freshwater__title {
+    color: var(--dark-bg-color);
+    font-family: 'Nunito', sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 43.32px;
 }
 
 .freshwater__subtitle {
-    font-family: Nunito, sans-serif;
-    font-size: 24px;
-    box-sizing: border-box;
-    line-height: 29.52px;
-}
-
-@media .freshwater__subtitle * {
-    font-size: inherit;
+    font-family: 'Nunito', sans-serif;
+    color: var(--text-color);
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 31.98px;
 }
 
 .freshwater__text {
-    color: #c2c9dc;
-    font-family: "Work Sans", sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    color: var(--light-dark-text-color);
     font-size: 17px;
-    font-weight: 100;
-    box-sizing: border-box;
+    font-weight: 400;
+    line-height: 23.8px;
+}
+.freshwater__description {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--bold-text-color);
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 26.6px;
 }
 
-.freshwater__icon {
-    display: block;
-    margin: 10px;
+.freshwater__wave {
+    margin: 0;
+    padding: 0;
+    transform: rotate(180deg);
 }
 
-.background-color-1,
-.background-color-2,
-.background-color-3 {
-    margin-bottom: 0;
-    width: 480px;
-    height: 6cm; 
+@media (min-width: 768px) {
+    .freshwater__info {
+        padding: 190px 310px 190px 24px;
+    }
+    .freshwater__title {
+        font-size: 44px;
+    }
+    .freshwater__container {
+        height: 600px;
+    }
+    .freshwater__facts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .experience__fact,
+    .anybottlesize__fact {
+        padding: 46px;
+    }
+
+    .quickdelivery__fact {
+        padding: 46px;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
 }
 
-.background-color-1 {
-    background-color: #0035ac;
-}
 
-.background-color-2 {
-    background-color: #002d92;
-}
+@media (min-width: 992px) {
+    .freshwater__info {
+        padding: 210px 24px 190px 24px;
+    }
 
-.background-color-3 {
-    background-color: #002579;
+    .freshwater__title {
+        font-size: 55px;
+        padding: 10px 50px 10px 0px;
+    }
+    
+    .freshwater__container {
+        height: 700px;
+    }
+
+    .freshwater__facts {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .experience__fact,
+    .anybottlesize__fact,
+    .quickdelivery__fact {
+        padding: 60px;
+    }
+
+    .quickdelivery__fact {
+        padding: 60px;
+        grid-column: 3;
+        grid-row: 1;
+    }
 }
