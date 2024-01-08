@@ -3,6 +3,7 @@
     color: var(--light-button-color);
     text-align: center;
     text-transform: uppercase;
+    font-weight: 700;
     padding: 20px;
 }
 .whychooseus__subtitle{
@@ -12,21 +13,21 @@
     padding: 20px;
 }
 .quality__Experienced{
-    font-size: large;
+    font-size: x-large;
     text-align: center;
     color: var(--the-darkest-background-color);
     padding: 20px;
 }
 
 .quality__Fresh{
-    font-size: large;
+    font-size: x-large;
     text-align: center;
     color: var(--the-darkest-background-color);
     padding: 20px;
 }
 
 .Proven__quality{
-    font-size: large;
+    font-size: x-large;
     text-align: center;
     color: var(--the-darkest-background-color);
     padding: 20px;
@@ -43,6 +44,7 @@
     text-align: center;
     padding: 20px;
     font: inherit;
+    color: var(--bold-text-color);
 }
 
 
