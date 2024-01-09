@@ -49,7 +49,9 @@
 
 @media (min-width: 768px) {
   .water-info {
+    background-color: #002c8f;
     max-width: 1122px;
+    text-align: center;
     display: flex;
     flex-direction: row;
     padding-left: 40px;
