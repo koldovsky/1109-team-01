@@ -51,7 +51,7 @@
   .water-info {
     background-color: #002c8f;
     max-width: 1122px;
-    text-align: center;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     padding-left: 40px;
