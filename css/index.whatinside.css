@@ -59,6 +59,13 @@
 }
 
 @media (max-width: 1122px) {
+  .water-info__image-container, .water-info__container {
+  max-width: 1122px;
+  margin: 0 auto;
+  }
+}
+
+@media (max-width: 1122px) {
   .water-info {
     max-width: 1122px;
     margin: 0 auto;
