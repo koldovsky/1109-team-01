@@ -1,5 +1,3 @@
-@import url(global.css);
-
 .water-info {
   background-color: #002c8f;
   padding-top: 90px;
@@ -8,12 +6,16 @@
   padding-right: 24px;
 }
 
+.water-info__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .water-info__title {
   color: #78ee4a;
   font-size : 12px;
   font-family: "Work Sans";
 }
-
 
 .water-info__subtitle{
   color: white;
@@ -48,7 +50,7 @@
 }
 
 @media (min-width: 768px) {
-  .water-info {
+  .water-info__wrapper {
     display: flex;
     flex-direction: row;
     padding-left: 40px;
@@ -58,13 +60,10 @@
   }
 }
 
-@media (max-width: 1122px) {
-  .water-info {
-    max-width: 1122px;
-    margin: 0 auto;
+@media (min-width: 1122px) {
+  .water-info__wrapper {
     background-color: #002c8f;
     display: flex;
     flex-direction: row;
-
   }
 }
