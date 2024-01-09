@@ -49,14 +49,20 @@
 
 @media (min-width: 768px) {
   .water-info {
-    background-color: #002c8f;
-    max-width: 1122px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 100px;
     padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 1122px) {
+  .water-info {
+    max-width: 1122px;
+    margin: 0 auto;
+    background-color: #002c8f;
+    display: flex;
+    flex-direction: row;
+
   }
 }
